@@ -5,6 +5,7 @@
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 li {
@@ -26,7 +27,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    width: 5%;
+    width: 6%;
     padding-top: 1%;
     padding-bottom: 1%;
 }
@@ -70,7 +71,7 @@ nav {
     padding: 20px;
 }
 
-.toOrder {
+.to-order{
     background-color: #B59571
     ;
 
@@ -92,10 +93,10 @@ footer {
 footer ol {
     display: flex;
     justify-content: space-around;
-    color: white;
 }
 
 footer li {
     display: flex;
     align-items: center;
+   color: white;
 }
