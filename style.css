@@ -23,7 +23,7 @@ header {
 }
 
 .left-bar {
-    background-color:#333333 ;
+    background-color: #333333;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -71,10 +71,8 @@ nav {
     padding: 20px;
 }
 
-.to-order{
-    background-color: #B59571
-    ;
-
+.to-order {
+    background-color: #B59571;
 }
 
 header p {
@@ -98,5 +96,5 @@ footer ol {
 footer li {
     display: flex;
     align-items: center;
-   color: white;
+    color: white;
 }
