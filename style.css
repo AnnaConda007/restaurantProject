@@ -22,21 +22,21 @@ header {
     background-size: cover;
 }
 
-.left-bar {
+.sidebar{
     background-color: #333333;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     width: 6%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 20px;     /*размер прямо указан в фигме*/
+    padding-bottom: 20px;
 }
 
-.left-bar img {
-    width: 50px;
+.sidebar img {
+    width: 50px;/*в фигме указаны размеры, но они явно неверные - Width Hug (40px) Height Hug (160px)*/
 }
 
-.left-menu {
+.menu {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -51,24 +51,24 @@ header {
 }
 
 nav {
-    margin-right: 5%;
-    margin-top: 1%;
+    margin-right: 50px;/*указано в фигме*/
+    margin-top: 1%;/*не нашла размер отступа в фигме */
 }
 
-.menu {
+.nav {
     display: flex;
     justify-content: space-between;
 }
 
-.menu a {
+.nav a {
     color: white;
     font: circle;
     size: 16px;
     line-height: 22px;
 }
 
-.menu li {
-    padding: 20px;
+.nav li {
+    padding: 20px;/*не нахожу размеров отступа между элементами меню*/
 }
 
 .to-order {
@@ -80,17 +80,20 @@ header p {
     padding-bottom: 10%;
     color: white;
     font-size: 50px;
-    margin-left: 10%;
+    margin-left: 10%;   /*нет размера отсупа*/
 }
 
-footer {
+footer { 
+    height: 120px;/*высота задана в фигме*/
     background-color: #333333;
-    padding: 1%;
+
 }
 
 footer ol {
     display: flex;
     justify-content: space-around;
+    padding-top: 37px;  /*(120-46)/2*/
+    padding-bottom: 37px;
 }
 
 footer li {
