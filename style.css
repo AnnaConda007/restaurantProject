@@ -53,7 +53,6 @@ header {
 nav {
     margin-right: 50px;/*указано в фигме*/
     margin-top: 1%;/*не нашла размер отступа в фигме */
-    padding-right: 50px;
 }
 
 .nav {
@@ -61,19 +60,23 @@ nav {
     justify-content: space-between;
 }
 
+.nav li {
+ display: flex;
+flex-direction: column;
+justify-content: center;
+padding-left: 50px;
+padding-right: 50px;
+height: 42px;
+}
+
 .nav a {
     color: white;
     font: circle;
     size: 16px;
     line-height: 22px;
+
 }
 
-.nav li {
-    padding-left: 50px;/*не нахожу размеров отступа между элементами меню*/
-    padding-right: 50px;
-    padding-top: 20px;     /*размер прямо указан в фигме*/
-    padding-bottom: 20px;
-}
 
 .to-order {
     background-color: #B59571;
@@ -90,16 +93,19 @@ header p {
 }
 
 footer { 
+    display: flex;
+    justify-content: center;
     height: 120px;/*высота задана в фигме*/
     background-color: #333333;
 
 }
 
 footer ol {
+    width: 67%;
     display: flex;
     justify-content: space-around;
-    padding-top: 37px;  /*(120-46)/2*/
-    padding-bottom: 37px;
+    padding-top: 34px;  /*(120-46)/2*/
+    padding-bottom: 39px;
 }
 
 footer li {
