@@ -53,6 +53,7 @@ header {
 nav {
     margin-right: 50px;/*указано в фигме*/
     margin-top: 1%;/*не нашла размер отступа в фигме */
+    padding-right: 50px;
 }
 
 .nav {
@@ -68,7 +69,10 @@ nav {
 }
 
 .nav li {
-    padding: 20px;/*не нахожу размеров отступа между элементами меню*/
+    padding-left: 50px;/*не нахожу размеров отступа между элементами меню*/
+    padding-right: 50px;
+    padding-top: 20px;     /*размер прямо указан в фигме*/
+    padding-bottom: 20px;
 }
 
 .to-order {
@@ -76,6 +80,8 @@ nav {
 }
 
 header p {
+    width: 856px;
+    height: 152px;
     align-self: flex-end;
     padding-bottom: 10%;
     color: white;
