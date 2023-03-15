@@ -22,7 +22,7 @@ header {
 }
 
 .left-bar {
-    background-color:#333333 ;
+    background-color: #333333;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -71,8 +71,7 @@ nav {
 }
 
 .toOrder {
-    background-color: #B59571
-    ;
+    background-color: #B59571;
 
 }
 
@@ -83,6 +82,162 @@ header p {
     font-size: 50px;
     margin-left: 10%;
 }
+
+
+.about-block-wrap {
+    margin-top: 403px;
+    /* верно ли задавать отступ этому блоку? не будет ли то мешать повторному спользованию ?*/
+    display: flex;
+    justify-content: center;
+}
+
+.about-block {
+    width: 1076px;
+    height: 381px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-block {
+    width: 228px;
+    height: 28px;
+    display: flex;
+}
+
+.name-block h3 {
+    font-weight: 700;
+    size: 20px;
+    line-height: 28px;
+    width: 138px;
+    padding-right: 30px;
+}
+
+.name-block img {
+    width: 60px;
+}
+
+.title-text {
+    padding-top: 108px;
+    text-align: center;
+    width: 196px;
+    height: 231px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 76.8px;
+    padding-bottom: 42px;
+}
+
+.base-text {
+    width: 526px;
+    height: 266px;
+    padding-top: 115px;
+}
+
+.base-text p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25.2px;
+    margin-bottom: 1em;
+}
+
+.menu-block-wrap {
+    margin-top: 150px;
+    /* верно ли задавать отступ этому блоку? не будет ли то мешать повторному спользованию ?*/
+    display: flex;
+    justify-content: center;
+}
+
+.menu-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1076px;
+    height: 718px;
+}
+
+.inner-wrap {
+    width: 100%;
+    height: 324px;
+    display: flex;
+    justify-content: end;
+}
+
+.main-menu {
+    width: 416px;
+    height: 324px;
+}
+
+.bar-card {
+    width: 416px;
+    height: 324px;
+    margin-left: 24px;
+}
+
+.img-frame {
+    width: 416px;
+    height: 240px;
+    position: absolute;
+}
+
+figure {
+    position: relative;
+    top: 40px;
+    left: 40px;
+    width: 336px;
+}
+
+figcaption {
+    margin-top: 24px;
+}
+
+.inner-wrap figcaption {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.inner-wrap h2 {
+    margin-right: 30px;
+    color: black;
+}
+
+.delivery-block-wrap {}
+
+.delivery-block {
+    height: 150px;
+    background-color: rgb(50, 216, 75);
+}
+
+.contacts-block-wrap {}
+
+.contacts-block {
+    height: 150px;
+    background-color: rgb(255, 0, 149);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer {
     background-color: #333333;
