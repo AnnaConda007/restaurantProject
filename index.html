@@ -8,6 +8,7 @@
     <title>restaurantProject</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <div class="sidebar">
@@ -34,8 +35,8 @@
         </nav>
     </header>
     <main>
-        <div class="about-block-wrap">
-            <div class="about-block">
+        <div class="flex-wrap">
+            <section class="about-block">
                 <div class="name-block">
                     <h3>О ресторане</h3>
                     <img src="img\decorate-line.svg" alt="декоративная линия">
@@ -57,10 +58,10 @@
                         scelerisque vulputate risus massa dictum. Cras at quis in eu, faucibus feugiat vel. At.
                     </p>
                 </div>
-            </div>
+            </section>
         </div>
-        <div class="menu-block-wrap">
-            <div class="menu-block">
+        <div class="flex-wrap">
+            <section class="menu-block">
                 <div class="name-block">
                     <h3>Меню</h3>
                     <img src="img\decorate-line.svg" alt="декоративная линия">
@@ -102,10 +103,10 @@
                         </figure>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
-        <div class="delivery-block-wrap">
-            <div class="delivery-block">
+        <div class="flex-wrap">
+            <section class="delivery-block">
                 <div class="name-block">
                     <h3>Доставка</h3>
                     <img src="img\decorate-line.svg" alt="декоративная линия">
@@ -126,13 +127,87 @@
                     </p>
                 </div>
                 <div class="inner-wrap">
-                    <button type="button" class="btn btn-more-information">Подробнее</button>
-                    <button type="button" class="btn btn-conditions" >Условия</button>
+                    <button type="button" class="btn btn-beige btn-more-inform">Подробнее</button>
+                    <button type="button" class="btn btn-transperent btn-conditions">Условия</button>
                 </div>
-            </div>
+            </section>
         </div>
-        <div class="contacts-block-wrap">
-            <div class="contacts-block"></div>
+        <div class="flex-wrap wrap">
+            <section class="contacts-block">
+                <div class="name-block">
+                    <h3>Контакты</h3>
+                    <img src="img\decorate-line.svg" alt="декоративная линия">
+                </div>
+                <div class="inner-wrap-content">
+                    <div class="time">
+                        <div class="adress-city">
+                            <div class="minutes">
+                                <h2>2</h2>
+                                <p>мин</p>
+                            </div>
+                            <div class="route">
+                                <p>из центра <br> Санкт-Петербурга</p>
+                            </div>
+                        </div>
+                        <div class="adress-city">
+                            <div class="minutes">
+                                <h2>12</h2>
+                                <p>мин</p>
+                            </div>
+                            <div class="route">
+                                <p>из центра <br> Зеленогорск</p>
+                            </div>
+                        </div>
+                        <div class="adress-city">
+                            <div class="minutes">
+                                <h2>42</h2>
+                                <p>мин</p>
+                            </div>
+                            <div class="route">
+                                <p>из центра <br>Пулково</p>
+                            </div>
+                        </div>
+                        <div class="adress-city">
+                            <div class="minutes">
+                                <h2>52</h2>
+                                <p>мин</p>
+                            </div>
+                            <div class="route">
+                                <p>из центра <br>Павловск</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="address">
+                        <img class="img-adress" src="img/map.svg" alt="">
+                        <div class="address-wrap">
+                            <div class="all-address-block first-line">
+                                <img src="img/mapIcon.svg" alt="">
+                                <p> Санкт-Петербург,Северная дорога, 11 </p>
+                            </div>
+                            <div class="all-address-block second-line">
+                                <img src="img/phoneIcon.svg" alt="">
+                                <p>+7 (921) 777-77-77</p>
+                            </div>
+                            <div class="all-address-block three-line">
+                                <p> Время работы</p>
+                            </div>
+                            <div class="all-address-block four-line">
+                                <p class="work-days">Вск-Чт</p>
+                                <p class="work-time">с 12:00 до 23:00</p>
+                            </div>
+                            <div class="all-address-block five-line">
+                                <p class="weekend">Пт-Сб</p>
+                                <p class="weekend-time">с 12:00 до 03:00</p>
+                            </div>
+                            <div class="all-address-block six-line inner-wrap">
+                                    <button type="button" class="btn btn-beige btn-order">Бронь столика</button>
+                                    <button type="button" class="btn btn-transperent btn-question">Задать вопрос</button>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
     <footer>
@@ -143,4 +218,5 @@
         </ol>
     </footer>
 </body>
+
 </html>
