@@ -5,6 +5,7 @@
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 li {
@@ -21,21 +22,22 @@ header {
     background-size: cover;
 }
 
-.left-bar {
-    background-color:#333333 ;
+.sidebar {
+    background-color: #333333;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    width: 5%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    width: 6%;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.left-bar img {
+.sidebar img {
     width: 50px;
+    padding-top: 20px;
 }
 
-.left-menu {
+.menu {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -50,33 +52,38 @@ header {
 }
 
 nav {
-    margin-right: 5%;
+    margin-right: 50px;
     margin-top: 1%;
 }
 
-.menu {
+.nav {
     display: flex;
     justify-content: space-between;
 }
 
-.menu a {
+.nav li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 42px;
+}
+
+.nav a {
     color: white;
     font: circle;
     size: 16px;
     line-height: 22px;
 }
 
-.menu li {
-    padding: 20px;
-}
-
-.toOrder {
-    background-color: #B59571
-    ;
-
+.to-order {
+    background-color: #B59571;
 }
 
 header p {
+    width: 856px;
+    height: 152px;
     align-self: flex-end;
     padding-bottom: 10%;
     color: white;
@@ -85,17 +92,22 @@ header p {
 }
 
 footer {
+    display: flex;
+    justify-content: center;
+    height: 120px;
     background-color: #333333;
-    padding: 1%;
 }
 
 footer ol {
+    width: 67%;
     display: flex;
     justify-content: space-around;
-    color: white;
+    padding-top: 34px;
+    padding-bottom: 39px;
 }
 
 footer li {
     display: flex;
     align-items: center;
+    color: white;
 }
