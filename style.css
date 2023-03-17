@@ -94,15 +94,14 @@ header p {
 
 .flex-wrap {
     display: flex;
-    justify-content: stretch;
-    margin-left: 15%;
+     justify-content:flex-start;
+margin-left: 10%;
    
 }
 .size-block{
     max-width: 1076px;
     width: 100%;
      display: flex;
-     justify-content: space-between;
       background-color: aqua;
 }
 .about-block {
@@ -160,6 +159,8 @@ header p {
     width: 100%;
     flex-wrap: wrap;
     margin-top: 150px; 
+    display: flex;
+    justify-content:flex-start;
 }
 
 .top-wrap{
@@ -204,6 +205,8 @@ header p {
     width: 100%;
     flex-wrap: wrap;
     margin-top: 150px;
+    display: flex;
+    justify-content:flex-start;
 }
  
  .text-align{
@@ -252,6 +255,9 @@ button:active {
 .contacts-block {
     margin-top: 150px;
     width: 100%;
+    max-width: 1296px;
+    display: flex;
+    justify-content:flex-start;
 }
 .size-block_width {
     max-width: 1296px;}
