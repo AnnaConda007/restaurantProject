@@ -94,17 +94,19 @@ header p {
 
 .flex-wrap {
     display: flex;
-    justify-content: end;
+    justify-content: stretch;
+    margin-left: 15%;
    
 }
-
+.size-block{
+    max-width: 1076px;
+    width: 100%;
+     display: flex;
+     justify-content: space-between;
+      background-color: aqua;
+}
 .about-block {
     margin-top: 403px;
-   max-width: 1388px;
-   width: 72%;
-    display: flex;
-    justify-content: space-between;
-    padding-right: 21%;
 }
 
 .name-block {
@@ -155,28 +157,17 @@ header p {
 }
  
 .menu-block {
-    display: flex;
     width: 100%;
-    justify-content: end;
     flex-wrap: wrap;
-    margin-top: 150px;
- 
+    margin-top: 150px; 
 }
-
- .inner-wrap{
-    max-width: 1388px;
-    width: 72%;
-    display: flex;
-    justify-content: start;
-    padding-right: 21%;
- }
 
 .top-wrap{
-   
-    justify-content: space-between;
-
+    width: 100%;
+     
 }
 .bottom-wrap {
+    width: 100%;
     justify-content: end;
     
 }
@@ -211,9 +202,9 @@ header p {
 
  
 .delivery-block {
-    display: flex;
+
     width: 100%;
-    justify-content: end;
+   
     flex-wrap: wrap;
     margin-top: 150px;
 }
