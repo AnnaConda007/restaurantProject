@@ -59,6 +59,7 @@ nav {
 .nav {
     display: flex;
     justify-content: space-between;
+    max-width: 459px;
 }
 
 .nav li {
@@ -66,7 +67,6 @@ nav {
     flex-direction: column;
     justify-content: center;
     width: 145px;
-    /*если свернуть окно,nav  выходит за гарницы body*/
     height: 42px;
     text-align: center;
 }
@@ -130,7 +130,7 @@ header p {
 .title-text {
     padding-top: 108px;
     text-align: center;
-    min-width: 196px;
+    min-width: 270px;
     width: 18%;
     font-weight: 700;
     font-size: 64px;
@@ -141,11 +141,10 @@ header p {
 }
 
 .base-text {
-    min-width: 526px;
-    width: 38%;
+    max-width: 526px;
+    width: 50%;
     padding-top: 115px;
     color: #333333; 
-  
 }
 
 .base-text p {
@@ -221,7 +220,7 @@ header p {
  
 
  .title-text_width{
-    min-width: 270px;
+   
     text-align: start;
  }
 
