@@ -113,7 +113,6 @@ header p {
     width: 20%;
     height: 28px;
     display: flex;
-    background-color: blue;
 }
 
 .name-block h3 {
@@ -139,7 +138,6 @@ header p {
     line-height: 76.8px;
     padding-bottom: 42px;
     color: #333333;
-    background-color: greenyellow;
     
 }
 
@@ -148,7 +146,6 @@ header p {
     width: 38%;
     padding-top: 115px;
     color: #333333; 
-    background-color: red;
   
 }
 
@@ -158,8 +155,6 @@ header p {
     line-height: 25.2px;
     margin-bottom: 1em;
 }
-
-
  
 .menu-block {
     display: flex;
@@ -171,23 +166,23 @@ header p {
 }
 
  .inner-wrap{
+    max-width: 1388px;
     width: 72%;
     display: flex;
     justify-content: start;
     padding-right: 21%;
     min-width: 750px;
-
  }
-.top-wrap{max-width: 1388px;
+
+.top-wrap{
+   
     justify-content: space-between;
 
 }
-.bottom-wrap {max-width: 1388px;
+.bottom-wrap {
     justify-content: end;
     
 }
-
-
 
 .main-menu {
     width: 416px;
@@ -224,16 +219,13 @@ header p {
     justify-content: end;
     flex-wrap: wrap;
     margin-top: 150px;
-    background-color: #e1d8bc;
 }
-.inner-wrap-width{
-   
-}
-.title-text_width {
-    width: 306px;
-    text-align: left;
-     
-}
+ 
+
+ .title-text_width{
+    min-width: 270px;
+    text-align: start;
+ }
 
 .btn :hover {
     background-color: #D4AF37;
