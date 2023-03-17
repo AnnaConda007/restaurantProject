@@ -105,7 +105,6 @@ header p {
     display: flex;
     justify-content: space-between;
     padding-right: 21%;
-    min-width: 750px;   
 }
 
 .name-block {
@@ -171,7 +170,6 @@ header p {
     display: flex;
     justify-content: start;
     padding-right: 21%;
-    min-width: 750px;
  }
 
 .top-wrap{
@@ -287,6 +285,7 @@ button:active {
     margin-right: 24px;
     display: flex;
     flex-wrap: wrap;
+    background-color: papayawhip;
 }
 
 .adress-city {
@@ -300,6 +299,7 @@ button:active {
     width: 856px;
     height: 450px;
     position: relative;
+    background-color: papayawhip;
 }
 
 .img-adress {
