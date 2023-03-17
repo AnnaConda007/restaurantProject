@@ -200,18 +200,13 @@ header p {
     width: 100%;
 }
 
- 
 .delivery-block {
-
     width: 100%;
-   
     flex-wrap: wrap;
     margin-top: 150px;
 }
  
-
- .title-text_width{
-   
+ .text-align{
     text-align: start;
  }
 
@@ -256,17 +251,11 @@ button:active {
 
 .contacts-block {
     margin-top: 150px;
-    margin-bottom: 100px;
-    width: 1296px;
-    height: 558px;
-}
-
-.inner-wrap-content {
-    height: 530px;
     width: 100%;
-    display: flex;
-    align-items: end;
 }
+.size-block_width {
+    max-width: 1296px;}
+
 
 .time {
     width: 430px;
