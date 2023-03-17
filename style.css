@@ -5,7 +5,7 @@
 
 a {
     text-decoration: none;
-    color: white;
+    color:#333333
 }
 
 li {
@@ -94,29 +94,33 @@ header p {
 
 .flex-wrap {
     display: flex;
-    justify-content: center;
+    justify-content: end;
+   
 }
 
 .about-block {
     margin-top: 403px;
-    width: 1076px;
-    height: 381px;
+   max-width: 1388px;
+   width: 72%;
     display: flex;
     justify-content: space-between;
-    margin-left: -232px;
+    padding-right: 21%;
+    min-width: 750px;   
 }
 
 .name-block {
-    width: 228px;
+   min-width: 228px;
+    width: 20%;
     height: 28px;
     display: flex;
+    background-color: blue;
 }
 
 .name-block h3 {
+    min-width: 138px;
     font-weight: 700;
     size: 20px;
     line-height: 28px;
-    width: 138px;
     padding-right: 30px;
     color: #333333;
 }
@@ -128,20 +132,24 @@ header p {
 .title-text {
     padding-top: 108px;
     text-align: center;
-    width: 196px;
-    height: 231px;
+    min-width: 196px;
+    width: 18%;
     font-weight: 700;
     font-size: 64px;
     line-height: 76.8px;
     padding-bottom: 42px;
     color: #333333;
+    background-color: greenyellow;
+    
 }
 
 .base-text {
-    width: 526px;
-    height: 266px;
+    min-width: 526px;
+    width: 38%;
     padding-top: 115px;
-    color: #333333;
+    color: #333333; 
+    background-color: red;
+  
 }
 
 .base-text p {
@@ -151,21 +159,35 @@ header p {
     margin-bottom: 1em;
 }
 
+
+ 
 .menu-block {
-    margin-top: 150px;
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: end;
     flex-wrap: wrap;
-    width: 1076px;
-    height: 718px;
-    margin-left: -232px;
+    margin-top: 150px;
+ 
 }
 
-.inner-wrap {
-    width: 100%;
+ .inner-wrap{
+    width: 72%;
     display: flex;
-    justify-content: end;
+    justify-content: start;
+    padding-right: 21%;
+    min-width: 750px;
+
+ }
+.top-wrap{max-width: 1388px;
+    justify-content: space-between;
+
 }
+.bottom-wrap {max-width: 1388px;
+    justify-content: end;
+    
+}
+
+
 
 .main-menu {
     width: 416px;
@@ -179,48 +201,38 @@ header p {
 }
 
 .img-frame {
-    width: 416px;
+    background-image: url(./img/img-frame.svg); 
     height: 240px;
-    position: absolute;
-
+    display: flex;
+    justify-content: center;
 }
 
-figure {
-    position: relative;
-    top: 40px;
-    left: 40px;
-    width: 336px;
-}
+ figure{
+    margin-top: 40px;
+ }
 
-figcaption {
-    margin-top: 24px;
-}
-
-.inner-wrap figcaption {
+ figcaption {
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-.inner-wrap h2 {
-    margin-right: 30px;
-    color: black;
-}
-
+ 
 .delivery-block {
-    margin-top: 150px;
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: end;
     flex-wrap: wrap;
-    width: 1076px;
-    height: 458px;
-    margin-left: -232px;
+    margin-top: 150px;
+    background-color: #e1d8bc;
 }
-
-.delivery-block .title-text {
-    /*верно ли так переопределять стили? сверху есть общий класс title-text, но там другая ширина блока */
+.inner-wrap-width{
+   
+}
+.title-text_width {
     width: 306px;
-    text-align: left
+    text-align: left;
+     
 }
 
 .btn :hover {
