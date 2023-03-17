@@ -254,13 +254,14 @@ button:active {
 
 .contacts-block {
     margin-top: 150px;
-    width: 100%;
-    max-width: 1296px;
     display: flex;
+    flex-wrap: wrap;
     justify-content:flex-start;
 }
 .size-block_width {
-    max-width: 1296px;}
+    max-width: 1296px;
+    width: 100%;
+}
 
 
 .time {
