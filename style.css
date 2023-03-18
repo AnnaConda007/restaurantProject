@@ -93,10 +93,13 @@ header p {
 
 
 
-.flex-wrap{
+main{
     background-color:red;
-    width: 1076px;
+    max-width: 1076px;
     height: 50px;
+    display: flex;
+    justify-content: start;
+    margin-left: 15%;
 }
 
 
