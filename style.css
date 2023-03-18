@@ -5,7 +5,7 @@
 
 a {
     text-decoration: none;
-    color:#333333
+    color: #333333
 }
 
 li {
@@ -94,22 +94,22 @@ header p {
 
 .flex-wrap {
     display: flex;
-     justify-content:flex-start;
-margin-left: 10%;
-   
+    justify-content: flex-start;
+    margin-left: 10%;
+
 }
-.size-block{
+
+.size-block {
     max-width: 1076px;
-    width: 100%;
-     display: flex;
-      background-color: aqua;
+    display: flex;
 }
+
 .about-block {
     margin-top: 403px;
 }
 
 .name-block {
-   min-width: 228px;
+    min-width: 228px;
     width: 20%;
     height: 28px;
     display: flex;
@@ -138,14 +138,14 @@ margin-left: 10%;
     line-height: 76.8px;
     padding-bottom: 42px;
     color: #333333;
-    
+
 }
 
 .base-text {
     max-width: 526px;
     width: 50%;
     padding-top: 115px;
-    color: #333333; 
+    color: #333333;
 }
 
 .base-text p {
@@ -154,23 +154,24 @@ margin-left: 10%;
     line-height: 25.2px;
     margin-bottom: 1em;
 }
- 
+
 .menu-block {
     width: 100%;
     flex-wrap: wrap;
-    margin-top: 150px; 
+    margin-top: 150px;
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
 }
 
-.top-wrap{
+.top-wrap {
     width: 100%;
-     
+
 }
+
 .bottom-wrap {
     width: 100%;
     justify-content: end;
-    
+
 }
 
 .main-menu {
@@ -185,17 +186,17 @@ margin-left: 10%;
 }
 
 .img-frame {
-    background-image: url(./img/img-frame.svg); 
+    background-image: url(./img/img-frame.svg);
     height: 240px;
     display: flex;
     justify-content: center;
 }
 
- figure{
+figure {
     margin-top: 40px;
- }
+}
 
- figcaption {
+figcaption {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -206,12 +207,12 @@ margin-left: 10%;
     flex-wrap: wrap;
     margin-top: 150px;
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
 }
- 
- .text-align{
+
+.text-align {
     text-align: start;
- }
+}
 
 .btn :hover {
     background-color: #D4AF37;
@@ -254,10 +255,12 @@ button:active {
 
 .contacts-block {
     margin-top: 150px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content:flex-start;
+    justify-content: flex-start;
 }
+
 .size-block_width {
     max-width: 1296px;
     width: 100%;
@@ -268,36 +271,34 @@ button:active {
     width: 430px;
     height: 314px;
     margin-bottom: 63px;
+    margin-top: 181px;
     margin-right: 24px;
     display: flex;
     flex-wrap: wrap;
-    background-color: papayawhip;
-}
-
-.adress-city {
-    width: 200px;
-    height: 132px;
-    margin-right: 9.8px;
-    margin-bottom: 50px;
 }
 
 .address {
     width: 856px;
     height: 450px;
-    position: relative;
-    background-color: papayawhip;
+    margin-top: 108px;
+    display: flex;
+    justify-content: end;
 }
 
-.img-adress {
-    width: 746px;
-    height: 450px;
-    position: absolute;
-    top: 0;
-    right: 0;
+.adress-city {
+    max-width: 200px;
+    width: 45%;
+    height: 132px;
+    margin-right: 9.8px;
+    margin-bottom: 50px;
 }
+
+
+
 
 .minutes {
     display: flex;
+
 }
 
 .minutes h2 {
@@ -326,12 +327,18 @@ button:active {
     color: #5B5B5B;
 }
 
+.img-adress {
+    max-width: 746px;
+    width: 87%;
+    height: 450px;
+    background-image: url("img/map.svg");
+}
+
 .address-wrap {
-    position: relative;
-    width: 416px;
+    max-width: 416px;
+    width: 55%;
     height: 349px;
     margin-top: 55px;
-    margin-right: 110px;
     background-color: #5B5B5B;
     display: flex;
     flex-direction: column;
