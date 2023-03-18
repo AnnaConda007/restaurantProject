@@ -91,22 +91,73 @@ header p {
     margin-left: 10%;
 }
 
-
-
-main{
-    background-color:red;
+.wrapper{
     max-width: 1076px;
-    height: 50px;
     display: flex;
     justify-content: start;
     margin-left: 15%;
 }
 
+.wrapper_about-restaurant {
+    margin-top: 400px;
+}
 
+.section-wrapper{
+display: flex;
+flex-wrap: wrap; /*будет использоваться в следующих блоках*/
+}
 
+.section-wrapper_content-wrap {
+display: flex;
+justify-content: space-between;
+}
 
+.content-wrap_title-wrap {
+    max-width: 228px;
+    width: 20%;
+    height: 28px;
+    display: flex;
+}
 
+.title-wrap_title-text {
+    min-width: 138px;
+    font-weight: 700;
+    size: 20px;
+    line-height: 28px;
+    color: #333333;
+ }
 
+.title-wrap_title-img { 
+    max-width: 60px;
+}
+
+.content-wrap_tagline-wrapper{
+    margin-top: 108px;
+    text-align: start;
+    max-width: 270px;
+    width: 18%;
+}
+
+.tagline-wrapper_tagline {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 76.8px;
+    color: #333333;
+    
+}
+.content-wrap_text-wrapper{
+    margin-left: 135px;
+    max-width: 526px;
+    margin-top: 115px;
+}
+
+.text-wrapper_text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25.2px;
+    margin-bottom: 1em;
+    color: #333333;
+}
 
 footer {
     display: flex;
