@@ -8,28 +8,33 @@
     <title>restaurantProject</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <div class="sidebar">
-            <div class="menu">
-                <img src="img\left-bar\logo.svg" alt="logo">
-                <img src="img\left-bar\menu-left.svg" alt="меню">
+            <div class="sidebar_menu">
+                <img class="sidebar_menu_img" src="img\left-bar\logo.svg" alt="logo">
+                <img class="sidebar_menu_img" src="img\left-bar\menu-left.svg" alt="меню">
             </div>
-            <div class="socialmedia">
-                <a href="#"><img src="img\left-bar\u-tube.svg" alt="u-tube"></a>
-                <a href="#"><img src="img\left-bar\vk.svg" alt="vk"></a>
-                <a href="#"><img src="img\left-bar\telegramm.svg" alt="телеграмм"></a>
+            <div class="sidebar_socialmedia-wrap">
+                <a href="#"><img class="sidebar_socialmedia-wrap_img" src="img\left-bar\u-tube.svg" alt="u-tube"></a>
+                <a href="#"><img class="sidebar_socialmedia-wrap_img" src="img\left-bar\vk.svg" alt="vk"></a>
+                <a href="#"><img class="sidebar_socialmedia-wrap_img" src="img\left-bar\telegramm.svg"
+                        alt="телеграмм"></a>
             </div>
         </div>
-        <p>
-            Видовой ресторан Food Exxe Relo <br> на Крестовском острове
-        </p>
-        <nav>
-            <ul class="nav">
-                <li><a href="#">Меню</a></li>
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Оплата</a></li>
-                <li class="to-order"><a href="#">Бронь столика</a></li>
+        <div class="sidebar_text-wrap">
+            <p class="sidebar_text-wrap_text">
+                Видовой ресторан Food Exxe Relo <br> на Крестовском острове
+            </p>
+        </div>
+        <nav class="sidebar_nav-wrap">
+            <ul class="sidebar_nav-wrap_nav">
+                <li class="sidebar_nav-wrap_nav_item"><a href="#">Меню</a></li>
+                <li class="sidebar_nav-wrap_nav_item"><a href="#">Доставка</a></li>
+                <li class="sidebar_nav-wrap_nav_item"><a href="#">Оплата</a></li>
+                <li class="sidebar_nav-wrap_nav_item sidebar_nav-wrap_nav_item--order "><a href="#">Бронь столика</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -44,4 +49,5 @@
         </ol>
     </footer>
 </body>
+
 </html>
