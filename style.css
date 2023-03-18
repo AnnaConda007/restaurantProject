@@ -96,16 +96,29 @@ header p {
     display: flex;
     justify-content: flex-start;
     margin-left: 10%;
-
+    max-width: 1076px;
 }
 
-.size-block {
-    max-width: 1076px;
-    display: flex;
+.flex-wrap_width {
+    max-width: 1296px;
 }
 
 .about-block {
     margin-top: 403px;
+    display: flex;
+}
+
+.top-wrap {
+    width: 100%;
+    margin-top: 150px;
+    display: flex;
+
+}
+
+.bottom-wrap {
+    display: flex;
+    width: 100%;
+    justify-content: end;
 }
 
 .name-block {
@@ -155,25 +168,6 @@ header p {
     margin-bottom: 1em;
 }
 
-.menu-block {
-    width: 100%;
-    flex-wrap: wrap;
-    margin-top: 150px;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.top-wrap {
-    width: 100%;
-
-}
-
-.bottom-wrap {
-    width: 100%;
-    justify-content: end;
-
-}
-
 .main-menu {
     width: 416px;
     height: 324px;
@@ -200,14 +194,6 @@ figcaption {
     display: flex;
     justify-content: center;
     width: 100%;
-}
-
-.delivery-block {
-    width: 100%;
-    flex-wrap: wrap;
-    margin-top: 150px;
-    display: flex;
-    justify-content: flex-start;
 }
 
 .text-align {
@@ -253,16 +239,8 @@ button:active {
     color: #333333;
 }
 
-.contacts-block {
-    margin-top: 150px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
-
-.size-block_width {
-    max-width: 1296px;
+.contacts-block,
+.bottom-wrap {
     width: 100%;
 }
 
@@ -278,11 +256,13 @@ button:active {
 }
 
 .address {
-    width: 856px;
+    max-width: 856px;
+    width: 87%;
     height: 450px;
     margin-top: 108px;
     display: flex;
     justify-content: end;
+
 }
 
 .adress-city {
@@ -293,12 +273,8 @@ button:active {
     margin-bottom: 50px;
 }
 
-
-
-
 .minutes {
     display: flex;
-
 }
 
 .minutes h2 {
@@ -383,7 +359,6 @@ button:active {
     font-size: 20px;
     line-height: 28px;
     margin-left: 36px;
-
 }
 
 .four-line {
