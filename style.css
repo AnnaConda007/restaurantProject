@@ -91,6 +91,20 @@ header p {
     margin-left: 10%;
 }
 
+
+
+.flex-wrap{
+    background-color:red;
+    width: 1076px;
+    height: 50px;
+}
+
+
+
+
+
+
+
 footer {
     display: flex;
     justify-content: center;
