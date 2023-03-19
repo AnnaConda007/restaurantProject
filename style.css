@@ -12,6 +12,104 @@ li {
     list-style-type: none
 }
 
+.header-wrap {
+    height: 100vh;
+    display: flex;
+    background-color: black;
+    background-image: url(screenImg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.header-wrap_sidebar {
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 120px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header-wrap_sidebar_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-wrap_sidebar_menu_img {
+    width: 50px;
+}
+
+.header-wrap_sidebar_socialmedia-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-wrap_mobail-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.header-wrap_mobail-wrap_nav-wrap {
+    /*margin-right: 5%;           медиазапрос*/
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-wrap_mobail-wrap_nav-wrap_nav {
+    max-width: 460px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+
+.header-wrap_mobail-wrap_nav-wrap_nav_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header-wrap_mobail-wrap_nav-wrap_nav_item--order {
+    background-color: #B59571;
+}
+
+.header-wrap_mobail-wrap_text { /*почему высота блока не не равна содержимому ? */
+    display: flex;     /*корректно ли задавать display: flex для элемента p */
+    align-items: end;
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 140%;
+    background-color: red;
+    /* margin-left: 15%; медиазапрос*/
+    margin-bottom: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
 header {
     height: 100vh;
     display: flex;
@@ -84,7 +182,7 @@ header {
 .sidebar_nav-wrap_nav_item--order {
     background-color: #B59571;
 }
-
+*/
 footer {
     display: flex;
     justify-content: center;
