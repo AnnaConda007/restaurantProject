@@ -91,72 +91,61 @@ header p {
     margin-left: 10%;
 }
 
-.wrapper{
-    max-width: 1076px;
-    display: flex;
-    justify-content: start;
-    margin-left: 15%;
+.wrapper {
+    max-width: 1075px;  
+    margin-left: 15%; /*по идее этот отсуп тоже должен постепенно исчезнуть*/
+    background-color: black;
 }
 
-.wrapper_about-restaurant {
-    margin-top: 400px;
+.about-restaurant {
+    margin-top: 450px;
 }
 
-.section-wrapper{
-display: flex;
-flex-wrap: wrap; /*будет использоваться в следующих блоках*/
-}
-
-.section-wrapper_content-wrap {
-display: flex;
-justify-content: space-between;
-}
-
-.content-wrap_title-wrap {
-    max-width: 228px;
-    width: 20%;
-    height: 28px;
+.wrapper_title-wrap { 
+    background-color: blue;
     display: flex;
 }
 
-.title-wrap_title-text {
-    min-width: 138px;
+.wrapper_title-wrap_title-text {
     font-weight: 700;
-    size: 20px;
+    font-size: 20px;
     line-height: 28px;
     color: #333333;
  }
 
-.title-wrap_title-img { 
-    max-width: 60px;
+.wrapper_title-wrap_title-img{
+    margin-left: 30px;
 }
 
-.content-wrap_tagline-wrapper{
-    margin-top: 108px;
-    text-align: start;
-    max-width: 270px;
-    width: 18%;
-}
+.wrapper_text-wrap {
+    background-color: aqua;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-top: 60px;
+ 
+ }
 
-.tagline-wrapper_tagline {
+.wrapper_text-wrap_tagline {
+    background-color: antiquewhite;
+    margin-right: 135px;/*не знаю как задать уменьшие этого отсупа при сжатии окна браузера*/
     font-weight: 700;
     font-size: 64px;
     line-height: 76.8px;
     color: #333333;
-    
-}
-.content-wrap_text-wrapper{
-    margin-left: 135px;
-    max-width: 526px;
-    margin-top: 115px;
+    text-align: start;
 }
 
-.text-wrapper_text{
+.wrapper_text-wrap_p-wrapper { 
+    background-color: plum;
+    max-width: 525px;/* ширина задана, что бы на большом мониторе не срабатывало flex-wrap у родительского контейнера*/
+}
+
+.wrapper_text-wrap_p-wrapper_p { 
     font-weight: 400;
     font-size: 18px;
     line-height: 25.2px;
-    margin-bottom: 1em;
-    color: #333333;
+    color: #333333; 
 }
 
 footer {
