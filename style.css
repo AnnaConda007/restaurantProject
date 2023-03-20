@@ -30,8 +30,8 @@ li {
 
 .sidebar-container {
     /*верно ли так называть клас - с привязкой к sidebar */
-    margin-top: 20px;
-    margin-bottom: 20px;
+   padding-top: 20px;
+   padding-bottom: 20px;
 }
 
 .sidebar__img-wrap {
@@ -183,6 +183,7 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: white; ;
 }
 
 
@@ -202,3 +203,5 @@ li {
         margin-right: 0px;
     }
 }
+
+
