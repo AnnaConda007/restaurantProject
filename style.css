@@ -12,112 +12,125 @@ li {
     list-style-type: none
 }
 
-header {
+.header {
     height: 100vh;
     display: flex;
-    justify-content: space-between;
     background-color: black;
     background-image: url(screenImg.png);
     background-position: center;
     background-size: cover;
 }
 
-.sidebar {
+.header__sidebar {
     background-color: #333333;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
-    width: 6%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    justify-content: space-between;
 }
 
-.sidebar img {
-    width: 50px;
-    padding-top: 20px;
+.sidebar-container {
+    /*верно ли так называть клас - с привязкой к sidebar */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar__img-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.img-wrap__img {
+    max-width: 50px;
 }
 
 .menu {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
+    margin-top: 20px;
 }
 
-.socialmedia {
+.header__mobail-wrap {
+    width: 100%;
+    /* ?????????????????????????????????????????*/
     display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 10px;
 }
 
-nav {
-    margin-right: 50px;
-    margin-top: 1%;
+.header__nav-wrap {
+    /*margin-right: 5%;           медиазапрос*/
+    width: 100%;
+    /*?????????????????????????????*/
+    height: fit-content;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.nav {
+.header__nav {
+    max-width: 460px;
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.nav li {
+.header__nav-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 50px;
-    padding-right: 50px;
-    height: 42px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-.nav a {
-    color: white;
-    font: circle;
-    size: 16px;
-    line-height: 22px;
-}
-
-.to-order {
+.header__nav-item--order {
     background-color: #B59571;
 }
 
-header p {
-    width: 856px;
-    height: 152px;
-    align-self: flex-end;
-    padding-bottom: 10%;
+
+.header__text {
+    /*высота меняется после добавления при добавление .header__mobail-wrap display: flex; */
+    display: flex;
+    /*корректно ли задавать display: flex для элемента p */
+    align-items: end;
     color: white;
-    font-size: 50px;
-    margin-left: 10%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 140%;
+    background-color: red;
+    /* margin-left: 15%; медиазапрос*/
+    margin-bottom: 10%;
 }
 
-.about { 
-    margin-top: 450px;}
+.about {
+    margin-top: 450px;
+}
 
-.container{
+.container {
     margin-left: 15%;
 }
- 
+
 .text-content {
     max-width: 1024px;
- }
+}
 
 .text-content__heading {
     display: flex;
- }
+}
 
 .heading__title {
     font-weight: 700;
     font-size: 20px;
     line-height: 28px;
     color: #333333;
- }
+}
 
 .heading__img {
     margin-left: 30px;
- }
+}
 
-.text-content__main-text { 
+.text-content__main-text {
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
@@ -131,44 +144,57 @@ header p {
     line-height: 76px;
     color: #333333;
     text-align: start;
- }
+}
+
 .text-content__description-wrap {
     max-width: 525px;
 
- }
-.text-content__description { 
+}
+
+.text-content__description {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
     color: #333333;
 }
 
-footer {
+.footer {
     display: flex;
     justify-content: center;
-    height: 120px;
     background-color: #333333;
+
 }
 
-footer ol {
-    width: 67%;
+.footer__content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    padding-top: 34px;
-    padding-bottom: 39px;
+    width: 65%;
+    padding-top: 35px;
+    padding-bottom: 35px;
+
 }
 
-footer li {
+.footer__item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
     display: flex;
-    align-items: center;
-    color: white;
+    flex-direction: column;
+    justify-content: center;
 }
+
+
+
+
 
 @media (max-width:900px) {
-    .container  {
+    .container {
         margin-left: 0%;
     }
-    .text-content__main-text  {
+
+    .text-content__main-text {
         justify-content: flex-start;
     }
 
