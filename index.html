@@ -11,28 +11,35 @@
 
 <body>
     <header>
-        <div class="sidebar">
-            <div class="menu">
-                <img src="img\left-bar\logo.svg" alt="logo">
-                <img src="img\left-bar\menu-left.svg" alt="меню">
+        <div class="header">
+            <div class="header__sidebar sidebar-container "> <!-- sidebar - это блок так как в фигме он повторяется на соседних макетах-->
+                <div class="sidebar__img-wrap"> 
+                    <img class="img-wrap__img" src="img\left-bar\logo.svg" alt="logo">
+                    <img class="img-wrap__img menu" src="img\left-bar\menu-left.svg" alt="меню">
+                </div>
+                <div class="sidebar__img-wrap">
+                    <a href="#"><img class="img-wrap__img" src="img\left-bar\u-tube.svg"
+                            alt="u-tube"></a>
+                    <a href="#"><img class="img-wrap__img" src="img\left-bar\vk.svg"
+                            alt="vk"></a>
+                    <a href="#"><img class="img-wrap__img" src="img\left-bar\telegramm.svg"
+                            alt="телеграмм"></a>
+                </div>
             </div>
-            <div class="socialmedia">
-                <a href="#"><img src="img\left-bar\u-tube.svg" alt="u-tube"></a>
-                <a href="#"><img src="img\left-bar\vk.svg" alt="vk"></a>
-                <a href="#"><img src="img\left-bar\telegramm.svg" alt="телеграмм"></a>
+            <div class="header__mobail-wrap">
+                <nav class="header__nav-wrap"> 
+                    <ul class="header__nav">
+                        <li class="header__nav-item"><a href="#">Меню</a></li>
+                        <li class="header__nav-item"><a href="#">Доставка</a></li>
+                        <li class="header__nav-item"><a href="#">Оплата</a></li>
+                        <li class="header__nav-item header__nav-item--order "><a href="#">Бронь столика</a></li>
+                    </ul>
+                </nav>
+                <p class="header__text">
+                    Видовой ресторан Food Exxe Relo <br> на Крестовском острове
+                </p>
             </div>
         </div>
-        <p>
-            Видовой ресторан Food Exxe Relo <br> на Крестовском острове
-        </p>
-        <nav>
-            <ul class="nav">
-                <li><a href="#">Меню</a></li>
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Оплата</a></li>
-                <li class="to-order"><a href="#">Бронь столика</a></li>
-            </ul>
-        </nav>
     </header>
     <main>
         
@@ -66,11 +73,11 @@
         <div class="heading">
         </div>
     </main>
-    <footer>
-        <ol>
-            <li><img src="img\left-bar\logo.svg" alt="лого"></li>
-            <li>Политика конфиденциальности</li>
-            <li> <a href=""> Дизайн d-e-n.ru</a></li>
+    <footer class="footer">
+        <ol class="footer__content">
+            <li class="footer__item"><img src="img\left-bar\logo.svg" alt="лого"></li>
+            <li  class="footer__item">Политика конфиденциальности</li>
+             <li  class="footer__item"><a href="">Дизайн d-e-n.ru</a></li>
         </ol>
     </footer>
 </body>
