@@ -26,11 +26,7 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.sidebar-container {
-    /*верно ли так называть клас - с привязкой к sidebar */
-   padding-top: 20px;
+    padding-top: 20px;
    padding-bottom: 20px;
 }
 
@@ -51,7 +47,6 @@ li {
 
 .header__mobail-wrap {
     width: 100%;
-    /* ?????????????????????????????????????????*/
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -59,9 +54,8 @@ li {
 }
 
 .header__nav-wrap {
-    /*margin-right: 5%;           медиазапрос*/
+  margin-right: 5%;        
     width: 100%;
-    /*?????????????????????????????*/
     height: fit-content;
     display: flex;
     justify-content: flex-end;
@@ -87,19 +81,15 @@ li {
     background-color: #B59571;
 }
 
-
 .header__text {
-    /*высота меняется после добавления при добавление .header__mobail-wrap display: flex; */
     display: flex;
-    /*корректно ли задавать display: flex для элемента p */
     align-items: end;
     color: white;
     font-style: normal;
     font-weight: 700;
     font-size: 54px;
     line-height: 140%;
-    background-color: red;
-    /* margin-left: 15%; медиазапрос*/
+    margin-left: 15%;
     margin-bottom: 10%;
 }
 
@@ -162,7 +152,6 @@ li {
     display: flex;
     justify-content: center;
     background-color: #333333;
-
 }
 
 .footer__content {
@@ -172,25 +161,28 @@ li {
     width: 65%;
     padding-top: 35px;
     padding-bottom: 35px;
-
 }
 
 .footer__item {
     font-style: normal;
+    min-width: 220px;
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: white; ;
+    color: white; 
+    align-items: center;
 }
 
 
-
-
-
 @media (max-width:900px) {
+    .header__nav-wrap {
+        margin-right: 0%}
+        .header__text {
+            margin-left: 0%;}
+
     .container {
         margin-left: 0%;
     }
