@@ -94,9 +94,12 @@ header p {
 .about { 
     margin-top: 450px;}
 
+.container{
+    margin-left: 15%;
+}
+ 
 .text-content {
     max-width: 1024px;
-    margin-left: 15%;
  }
 
 .text-content__heading {
@@ -162,7 +165,7 @@ footer li {
 }
 
 @media (max-width:900px) {
-    .text-content  {
+    .container  {
         margin-left: 0%;
     }
     .text-content__main-text  {
