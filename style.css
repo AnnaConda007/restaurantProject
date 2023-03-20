@@ -91,6 +91,58 @@ header p {
     margin-left: 10%;
 }
 
+.wrapper {
+    max-width: 1024px;
+    margin-left: 15%;
+}
+
+.about-restaurant {
+    margin-top: 450px;
+}
+
+.wrapper_title-wrap {
+    display: flex;
+}
+
+.wrapper_title-wrap_title-text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #333333;
+}
+
+.wrapper_title-wrap_title-img {
+    margin-left: 30px;
+}
+
+.wrapper_text-wrap {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.wrapper_text-wrap_tagline {
+    margin-right: 75px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 76px;
+    color: #333333;
+    text-align: start;
+}
+
+
+.wrapper_text-wrap_p-wrapper {
+    max-width: 525px;
+}
+
+.wrapper_text-wrap_p-wrapper_p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #333333;
+}
+
 footer {
     display: flex;
     justify-content: center;
@@ -110,4 +162,18 @@ footer li {
     display: flex;
     align-items: center;
     color: white;
+}
+
+@media (max-width:900px) {
+    .wrapper {
+        margin-left: 0%;
+    }
+
+    .wrapper_text-wrap {
+        justify-content: flex-start;
+    }
+
+    .wrapper_text-wrap_tagline {
+        margin-right: 0px;
+    }
 }
