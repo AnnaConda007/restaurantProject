@@ -105,7 +105,6 @@ li {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: blue;
 }
 
 .main__text-content{
