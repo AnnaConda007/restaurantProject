@@ -185,10 +185,10 @@ li {
 }
 
 .bottom-section__content {
-    max-width: 416px;
+    max-width: 416px; /*для постепенного уменьшения блока*/
     width: 100%;
     height: 315px;
-    /*значение max-height не работает*/
+    /*значение max-height не работает, если не задать фиксированную высоту , содержимое вызодит за пределы блока*/
     display: flex;
     justify-content: center;
 }
@@ -197,7 +197,7 @@ li {
     width: 100%;
     margin-right: 25px;
     height: 240px;
-    /*задано, так как в макете рамка имеет высоту меньшую? чем весь блок и .content__img  "выезжает за пределы рамки"*/
+    /*задано, так как в макете рамка имеет высоту меньшую, чем весь блок и .content__img  "выезжает за пределы рамки"*/
     display: flex;
     justify-content: center;
     border: solid rgba(51, 51, 51, 0.2);
