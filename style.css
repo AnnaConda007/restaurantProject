@@ -93,15 +93,14 @@ li {
     margin-bottom: 10%;
 }
 
-.about {
-    margin-top: 450px;
-}
-
 .container {
     margin-left: 15%;
     max-width: 1024px;
 }
 
+.text-content{
+margin-top: 150px;
+}
 
 .text-content__heading {
     display: flex;
