@@ -203,6 +203,7 @@ li {
     border-radius: 0;
     border: none;
     color: white;
+    background-color: #B59571;
  }
 
 .button--large { 
@@ -212,13 +213,6 @@ li {
     padding: 15px 30px 15px 30px
 }
 
-.button--primary {
-    background-color: #B59571;
- }
-
-.button-more {
-    margin-right: 30px;
-}
 
 .button--additional { 
     background-color: transparent;
@@ -233,7 +227,9 @@ li {
 .button-conditions { 
     margin-right: 110px;
 }
-
+.button-more {
+    margin-right: 30px;
+}
 
  
  
