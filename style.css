@@ -210,7 +210,7 @@ li {
     color: #333333;
 }
 
-.alignment {
+.additional-section__alignment{
     max-width: 855px;
     width: 100%;
     display: flex;
