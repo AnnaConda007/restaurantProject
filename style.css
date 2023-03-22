@@ -61,6 +61,7 @@ li {
     justify-content: flex-end;
 }
 
+ 
 .header__nav {
     max-width: 460px;
     width: 100%;
@@ -95,12 +96,12 @@ li {
 
 .main{
     display: flex;
-    justify-content: end;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1300px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
