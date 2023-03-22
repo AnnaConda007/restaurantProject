@@ -205,14 +205,14 @@ li {
     color: white;
  }
 
-.button-delivery { 
+.button--delivery { 
     font-weight: 700;
     font-size: 20px;
     line-height: 140%;
     padding: 15px 30px 15px 30px
 }
 
-.button-primary {
+.button--primary {
     background-color: #B59571;
  }
 
@@ -220,13 +220,13 @@ li {
     margin-right: 30px;
 }
 
-.button-additional { 
+.button--additional { 
     background-color: transparent;
     border: solid rgba(51, 51, 51, 0.2);
     border-width: 1px;
 }
 
-.button-dark-text { 
+.button--dark-text { 
     color: #333333;
 }
 
