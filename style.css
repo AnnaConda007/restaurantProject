@@ -108,11 +108,11 @@ li {
     justify-content: center;
 }
 
-.main__text-content {
+.main__major-content {
     margin-top: 150px;
 }
 
-.text-content__heading {
+.major-content__heading {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -133,7 +133,7 @@ li {
     margin-left: 30px;
 }
 
-.text-content__main-text {
+.major-content__main-text {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -143,7 +143,7 @@ li {
 
 }
 
-.text-content__tagline {
+.major-content__tagline {
     font-family: 'Circe';
     font-style: normal;
     font-weight: 700;
@@ -153,12 +153,12 @@ li {
     text-align: start;
 }
 
-.text-content__description-wrap {
+.major-content__description-wrap {
     max-width: 525px;
     width: 100%;
 }
 
-.text-content__description {
+.major-content__description {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
@@ -170,6 +170,7 @@ li {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: aqua;
 }
 
 .additional-section__content {
@@ -285,16 +286,102 @@ li {
     align-items: center;
 }
 
+.major-content__contacts{
+    width: 100%;
+    background-color: #2de436;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.major-content__time {
+    max-width: 416px;
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(55, 0, 255);
+}
+
+.major-content__city  {
+    max-width: 200px;
+    width: 45%;
+    margin-bottom: 50px;
+}
+
+.city__minutes-wrap{
+    display: flex;
+}
+
+.city__minutes{
+    font-weight: 700;
+    font-size: calc(2vw + 32px);
+    line-height: 64px;
+    color: #B59571;
+    margin-right: 15px;
+}
+
+.city__minutes-text{
+    font-weight: 700;
+    font-size: calc(2vw + 16);
+    line-height: 76.8px;
+    color: #B59571;
+}
+
+.city__from{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25.2px;
+    color: #5B5B5B;
+}
+
+ .major-content__map-wrap{
+    max-width: 745px;
+    width: 55%;
+    height: 450px;
+    background-image: url("img/map.svg")
+ }
+ 
+/*
+.major-content__address{
+    max-width: 745px;
+    width: 100%;
+    ;
+}
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width:800px) {
     .header__nav-wrap {
         margin-right: 0px
     }
 
-    .text-content__main-text {
+    .major-content__main-text {
         margin-top: 0px;
     }
 
-    .text-content__description-wrap {
+    .major-content__description-wrap {
         max-width: 100%;
     }
 
