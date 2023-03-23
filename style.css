@@ -305,14 +305,13 @@ padding: 10px 20px 10px 20px
 
  .major-content__contacts__time-wrap { 
  max-width: 416px;
- width: 40%;
+ width: 50%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .major-content__contacts__time-wrap__time {
-
     max-width: 195px;
     width: 50%;
 }
@@ -368,7 +367,7 @@ align-items: center;
 }
 .adres-desk__address-line{
     margin-left: 40px;
-    width: 336px;
+    max-width: 336px;
     color: white;
     display: flex;
     justify-content: flex-start;
@@ -393,113 +392,6 @@ margin-bottom: 15px;
     font-weight: 400px;
 margin-left: 15px;
 }
-
-
-/*
-.major-content__contacts{
-    
-}
-
-.major-content__time {
-    max-width: 416px;
-    width: 45%;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: paleturquoise;
-}
-
-.major-content__city  {
-    max-width: 200px;
-    width: 45%;
-    margin-bottom: 50px;
-}
-
-.city__minutes-wrap{
-    display: flex;
-}
-
-.city__minutes{
-    font-weight: 700;
-    font-size: calc(2vw + 32px);
-    line-height: 64px;
-    color: #B59571;
-    margin-right: 15px;
-}
-
-.city__minutes-text{
-    font-weight: 700;
-    font-size: calc(2vw + 16);
-    line-height: 76.8px;
-    color: #B59571;
-}
-
-.city__from{
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25.2px;
-    color: #5B5B5B;
-}
-
- .major-content__map-wrap{
-    width: 68%;
-    height: 450px;
-    background-image: url("img/map.svg");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: auto 90%;
-    display: flex;
-    justify-content: flex-start;
-    background-color: aqua;
- }
- 
-.map-wrap__adres-desk {
-    max-width: 416px;
-    padding-top: 40px;
-    margin-top: 55px;
-    background-color: #5B5B5B;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.adres-desk__address-line  {
-    width: 336px;
-    color: white;
-    display: flex;
-    justify-content: flex-start;
-    font-family: 'Circe';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 140%;
-    margin-bottom: 20px;
-}
-.adres-desk__address-line--additione-font{
-font-weight: 700;
-font-size: 20px;
-margin-bottom: 15px;
-}
-.adres-desk__address-line--modified-additione-font {
-    font-weight: 400px;
-margin-left: 15px;
-}
-.adres-desk__address-line {
-    margin-bottom: 20px;
-}
-.adres-desk__img{
-    margin-right: 15px;
-}
- */
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media (max-width:800px) {
@@ -527,5 +419,6 @@ margin-left: 15px;
         margin-bottom: 5px;
         margin-right: 2px;
     }
-
+    .adres-desk__address-line{
+        margin-left: 0px;}
 }
