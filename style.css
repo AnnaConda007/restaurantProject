@@ -305,6 +305,7 @@ padding: 10px 20px 10px 20px
  .major-content__contacts__time-wrap {
     background-color: #de8716;  
  max-width: 416px;
+ width: 40%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -339,7 +340,15 @@ color: #B59571;
     color: #5B5B5B;   
 }
 
-
+.major-content__contacts__map { 
+    background-color: red;
+  flex-grow: 1;
+  display: flex;
+}
+.map__adress-desk {
+    background-color: rgb(0, 4, 255);
+    max-width: 415px;
+ }
 
 
 
