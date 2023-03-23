@@ -1,3 +1,5 @@
+ 
+
 * {
     padding: 0;
     margin: 0;
@@ -108,11 +110,11 @@ li {
     justify-content: center;
 }
 
-.main__text-content {
+.main__major-content {
     margin-top: 150px;
 }
 
-.text-content__heading {
+.major-content__heading {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -133,7 +135,7 @@ li {
     margin-left: 30px;
 }
 
-.text-content__main-text {
+.major-content__main-text {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -143,7 +145,7 @@ li {
 
 }
 
-.text-content__tagline {
+.major-content__tagline {
     font-family: 'Circe';
     font-style: normal;
     font-weight: 700;
@@ -153,12 +155,12 @@ li {
     text-align: start;
 }
 
-.text-content__description-wrap {
+.major-content__description-wrap {
     max-width: 525px;
     width: 100%;
 }
 
-.text-content__description {
+.major-content__description {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
@@ -233,26 +235,34 @@ li {
 }
 
 .button--large {
+    font-family: 'Circe';
+    font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 140%;
     padding: 15px 30px 15px 30px
 }
-
+.button--smal{
+font-size: 16px;
+padding: 10px 20px 10px 20px
+}
 .button--additional {
     background-color: transparent;
-    border: solid rgba(51, 51, 51, 0.2);
+    border: solid white;
     border-width: 1px;
 }
 
 .button--dark-text {
     color: #333333;
+    border: solid rgba(51, 51, 51, 0.2);
 }
 
 .button-more {
     margin-right: 30px;
 }
-
+.button-order{
+    margin-right: 20px;
+}
 .button-conditions {
     margin-right: 110px;
 }
@@ -285,16 +295,150 @@ li {
     align-items: center;
 }
 
+.major-content__contacts{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rosybrown;
+}
+
+ .major-content__contacts__time-wrap {
+    background-color: #de8716;  
+ width: 416px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.major-content__contacts__time-wrap__time {
+    background-color: aqua;
+    margin-bottom: 50px;
+    max-width: 200px;
+}
+
+
+ 
+
+
+
+/*
+.major-content__contacts{
+    
+}
+
+.major-content__time {
+    max-width: 416px;
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: paleturquoise;
+}
+
+.major-content__city  {
+    max-width: 200px;
+    width: 45%;
+    margin-bottom: 50px;
+}
+
+.city__minutes-wrap{
+    display: flex;
+}
+
+.city__minutes{
+    font-weight: 700;
+    font-size: calc(2vw + 32px);
+    line-height: 64px;
+    color: #B59571;
+    margin-right: 15px;
+}
+
+.city__minutes-text{
+    font-weight: 700;
+    font-size: calc(2vw + 16);
+    line-height: 76.8px;
+    color: #B59571;
+}
+
+.city__from{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25.2px;
+    color: #5B5B5B;
+}
+
+ .major-content__map-wrap{
+     
+    width: 68%;
+    height: 450px;
+    background-image: url("img/map.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto 90%;
+    display: flex;
+    justify-content: flex-start;
+    background-color: aqua;
+ }
+ 
+.map-wrap__adres-desk {
+    max-width: 416px;
+    padding-top: 40px;
+    margin-top: 55px;
+    background-color: #5B5B5B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.adres-desk__address-line  {
+    width: 336px;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 20px;
+}
+.adres-desk__address-line--additione-font{
+font-weight: 700;
+font-size: 20px;
+margin-bottom: 15px;
+}
+.adres-desk__address-line--modified-additione-font {
+    font-weight: 400px;
+margin-left: 15px;
+}
+.adres-desk__address-line {
+    margin-bottom: 20px;
+}
+.adres-desk__img{
+    margin-right: 15px;
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width:800px) {
     .header__nav-wrap {
         margin-right: 0px
     }
 
-    .text-content__main-text {
+    .major-content__main-text {
         margin-top: 0px;
     }
 
-    .text-content__description-wrap {
+    .major-content__description-wrap {
         max-width: 100%;
     }
 
