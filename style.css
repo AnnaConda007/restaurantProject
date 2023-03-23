@@ -304,7 +304,7 @@ padding: 10px 20px 10px 20px
 
  .major-content__contacts__time-wrap {
     background-color: #de8716;  
- width: 416px;
+ max-width: 416px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -313,11 +313,33 @@ padding: 10px 20px 10px 20px
 .major-content__contacts__time-wrap__time {
     background-color: aqua;
     margin-bottom: 50px;
-    max-width: 200px;
+    max-width: 195px;
+    width: 50%;
+}
+.time__minutes-wrap{
+    display: flex;
+}
+.time__minutes{
+    font-weight: 700;
+    font-size: calc(2vw + 32px);
+    line-height: 64px;
+    color: #B59571;
+    margin-right: 15px;
+}
+ .time__minutes-text{
+    font-weight: 700;
+font-size: calc(2vw + 16);
+line-height: 76.8px;
+color: #B59571;
+ }
+.time__city__text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25.2px;
+    color: #5B5B5B;   
 }
 
 
- 
 
 
 
