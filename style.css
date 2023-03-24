@@ -269,6 +269,111 @@
      margin-right: 110px;
  }
 
+ .major__contacts {
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.major__contacts__terms {
+    max-width: 416px;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.major__contacts__terms__time {
+    max-width: 195px;
+    width: 50%;
+}
+
+.time--margine {
+    margin-bottom: 50px;
+}
+
+.time__minutes-wrap {
+    display: flex;
+}
+
+.time__minutes {
+    font-weight: 700;
+    font-size: calc(2vw + 32px);
+    line-height: 64px;
+    color: #B59571;
+    margin-right: 15px;
+}
+
+.time__minutes-text {
+    font-weight: 700;
+    font-size: calc(2vw + 16);
+    line-height: 76.8px;
+    color: #B59571;
+}
+
+.time__city__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25.2px;
+    color: #5B5B5B;
+}
+
+.major__contacts__map {
+    height: 450px;
+    background-image: url("img/map.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.map__billboard {
+    max-width: 415px;
+    max-height: 350px;
+}
+
+.map__billboard {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    max-width: 416px;
+    width: 100%;
+    background-color: #5B5B5B;
+    display: flex;
+    flex-direction: column;
+}
+
+.billboard__line {
+    margin-left: 40px;
+    max-width: 336px;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 20px;
+}
+
+.billboard__line--bottom {
+    margin-bottom: 25px;
+}
+
+.billboard__line--font {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.billboard__line--modified-font {
+    font-weight: 400px;
+    margin-left: 15px;
+}
  .footer {
      display: flex;
      justify-content: center;
@@ -296,113 +401,6 @@
      color: white;
      align-items: center;
  }
-
- .major__contacts {
-     margin-top: 80px;
-     width: 100%;
-     display: flex;
-     flex-wrap: wrap;
-     align-items: center;
-     justify-content: center;
- }
-
- .major__contacts__terms {
-     max-width: 416px;
-     width: 50%;
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: space-between;
- }
-
- .major__contacts__terms__time {
-     max-width: 195px;
-     width: 50%;
- }
-
- .time--margine {
-     margin-bottom: 50px;
- }
-
- .time__minutes-wrap {
-     display: flex;
- }
-
- .time__minutes {
-     font-weight: 700;
-     font-size: calc(2vw + 32px);
-     line-height: 64px;
-     color: #B59571;
-     margin-right: 15px;
- }
-
- .time__minutes-text {
-     font-weight: 700;
-     font-size: calc(2vw + 16);
-     line-height: 76.8px;
-     color: #B59571;
- }
-
- .time__city__text {
-     font-weight: 400;
-     font-size: 18px;
-     line-height: 25.2px;
-     color: #5B5B5B;
- }
-
- .major__contacts__map {
-     height: 450px;
-     background-image: url("img/map.svg");
-     background-repeat: no-repeat;
-     background-position: right;
-     flex-grow: 1;
-     display: flex;
-     align-items: center;
- }
-
- .map__billboard {
-     max-width: 415px;
-     max-height: 350px;
- }
-
- .map__billboard {
-     padding-top: 40px;
-     padding-bottom: 40px;
-     max-width: 416px;
-     width: 100%;
-     background-color: #5B5B5B;
-     display: flex;
-     flex-direction: column;
- }
-
- .billboard__line {
-     margin-left: 40px;
-     max-width: 336px;
-     color: white;
-     display: flex;
-     justify-content: flex-start;
-     font-family: 'Circe';
-     font-style: normal;
-     font-weight: 400;
-     font-size: 16px;
-     line-height: 140%;
-     margin-bottom: 20px;
- }
-
- .billboard__line--bottom {
-     margin-bottom: 25px;
- }
-
- .billboard__line--font {
-     font-weight: 700;
-     font-size: 20px;
-     margin-bottom: 15px;
- }
-
- .billboard__line--modified-font {
-     font-weight: 400px;
-     margin-left: 15px;
- }
-
 
  @media (max-width:800px) {
      .header__nav-wrap {
