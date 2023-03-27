@@ -36,7 +36,62 @@
                     Видовой ресторан Food Exxe Relo <br> на Крестовском острове
                 </p>
             </div>
+            <div class="burger-nav">
+                <div class="burger-nav__img-wrap">
+                    <img class="burger-nav__img modal-logo" src="img\left-bar\logo.svg" alt="logo">
+                    <img class="burger-nav__img modal-close-button" src="img/close-fill.svg" alt="close">
+                </div>
+                <nav class="burger-nav__wrap">
+                    <ul class="burger-nav__wrap__menu">
+                        <li class="burger-nav__wrap__item"><a href="#">Меню</a></li>
+                        <li class="burger-nav__wrap__item"><a href="#">Доставка</a></li>
+                        <li class="burger-nav__wrap__item"><a href="#">Оплата</a></li>
+                        <li class="burger-nav__wrap__item burger-nav__wrap__item--order "><a href="#">Бронь
+                                столика</a></li>
+                    </ul>
+                </nav>
+                <div class="burger-nav__media">
+                    <a href="#"><img class="burger-nav__media__img" src="img\left-bar\u-tube.svg" alt="u-tube"></a>
+                    <a href="#"><img class="burger-nav__media__img" src="img\left-bar\vk.svg" alt="vk"></a>
+                    <a href="#"><img class="burger-nav__media__img" src="img\left-bar\telegramm.svg"
+                            alt="телеграмм"></a>
+                </div>
+            </div>
         </div>
+        <section class="modal-form">
+            <div class="modal-form__form-background">
+                <div class="modal-form__form-wrap">
+                    <img class="modal-form__form-wrap__img" src="img\left-bar\logo.svg" alt="logo">
+                    <form class="modal-form__form-wrap__form form" action="">
+                        <legend class="form__title">Забронировать столик</legend>
+                        <input class="form__item form__item--padding form__item--font" autocomplete="off" type="text"
+                            id="name" name="name" placeholder="Имя" />
+                        <div class="form__item">
+                            <select class="form__select form__item--border  form__item--padding form__item--font"
+                                id="phone-code" name="phone-code">
+                                <option class="form__option " value="">Телефон</option>
+                                <option class="form__option" value="+7">+(7)</option>
+                                <option class="form__option" value="+374 ">+(374)</option>
+                                <option class="form__option" value="+995">+(995)</option>
+                                <option class="form__option" value="+380">+(380)</option>
+                                <option class="form__option" value="+373">+(373)</option>
+                            </select>
+                            <input class="form__item  form__item--border form__item--font" autocomplete="off"
+                                type="text" id="phone" name="phone" />
+                        </div>
+                        <div class="form__item form__item--border ">
+                            <input class="form__item form__item--short form__item--padding  form__item--font"
+                                autocomplete="off" type="text" id="guests" name="guests" placeholder="Гостей" />
+                            <input class="form__item form__item--short form__item--padding  form__item--font"
+                                autocomplete="off" type="text" id="time" name="time" placeholder="Время" />
+                        </div>
+                        <div class="form__button-wrap">
+                            <button class="form__button button button--smal " type="submit">Забронировать</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
     </header>
     <main class="main">
         <section class="container main__major major">
@@ -148,7 +203,6 @@
             </div>
             <div class="major__contacts">
                 <div class="major__contacts__terms">
-
                     <div class="major__contacts__terms__time time--margine">
                         <div class="time__minutes-wrap">
                             <h2 class="time__minutes">2</h2>
@@ -227,4 +281,5 @@
         </ol>
     </footer>
 </body>
+
 </html>
