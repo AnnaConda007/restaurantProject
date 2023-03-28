@@ -12,7 +12,7 @@
     src: url('./fonts/OpenSans-Bold.ttf')
 }
 
-@import url("base.css");/*не*/
+@import url("base.css");/*не работает*/
 
  * {
      padding: 0;
