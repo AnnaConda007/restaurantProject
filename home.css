@@ -336,12 +336,7 @@
      }
  }
 
- @media (max-width:500px) {
-     .major__contacts__terms {
-         width: 100%;
-     }
- }
-
+ 
  @media (max-height:360px) {
      .burger-nav__img-wrap {
          max-width: 150px;

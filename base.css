@@ -308,3 +308,47 @@
     justify-content: space-between;
     max-height: 15%;
 }
+
+
+
+@media (max-width:800px) {
+    .billboard__line,
+    .heading__img {
+        margin-left: 0px;
+    }
+
+    .major__tagline {
+        font-size: calc(2vw + 32px);
+        line-height: 45px;
+    }
+
+    .content__img {
+        margin-top: 0px;
+    }
+
+    .major__contacts__map{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .button {
+        margin-bottom: 5px;
+        margin-right: 2px;
+    }
+
+    .map__billboard {
+        align-items: center;
+    }
+}
+
+@media (max-width:500px) {
+    .major__contacts__terms {
+        width: 100%;
+    }
+}
+
+@media (max-height:360px) {
+    .burger-nav__img-wrap {
+        max-width: 150px;
+    }
+}
