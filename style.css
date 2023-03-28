@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/OpenSans-Regular.ttf')
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./fonts/OpenSans-Bold.ttf')
+}
+ 
  * {
      padding: 0;
      margin: 0;
@@ -163,6 +177,7 @@
  }
 
  .major__description {
+    font-family: 'Open Sans';
      font-weight: 400;
      font-size: 18px;
      line-height: 24px;
@@ -236,8 +251,6 @@
  }
 
  .button--large {
-     font-family: 'Open Sans';
-     font-style: normal;
      font-weight: 700;
      font-size: 20px;
      line-height: 140%;
