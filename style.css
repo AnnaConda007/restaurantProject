@@ -1,6 +1,24 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/OpenSans-Regular.ttf')
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./fonts/OpenSans-Bold.ttf')
+}
+ 
  * {
      padding: 0;
      margin: 0;
+ }
+
+ body{
+    font-family: 'Open Sans';
  }
 
  a {
@@ -124,7 +142,6 @@
  }
 
  .heading__title {
-     font-family: 'Circe';
      font-style: normal;
      font-weight: 700;
      font-size: 20px;
@@ -138,7 +155,6 @@
  }
 
  .major__tagline {
-     font-family: 'Circe';
      font-style: normal;
      font-weight: 700;
      font-size: 64px;
@@ -221,7 +237,7 @@
  }
 
  .button {
-     font-family: 'Circe';
+    font-family: 'Open Sans';
      font-style: normal;
      border-radius: 0;
      border: none;
@@ -235,8 +251,6 @@
  }
 
  .button--large {
-     font-family: 'Circe';
-     font-style: normal;
      font-weight: 700;
      font-size: 20px;
      line-height: 140%;
@@ -354,7 +368,6 @@
      color: white;
      display: flex;
      justify-content: flex-start;
-     font-family: 'Circe';
      font-style: normal;
      font-weight: 400;
      font-size: 16px;
@@ -444,7 +457,6 @@
  .burger-nav__wrap__item {
      width: 100%;
      text-align: center;
-     font-family: 'Circe';
      font-style: normal;
      font-weight: 700;
      font-size: 48px;
@@ -454,7 +466,6 @@
  .burger-nav__wrap__item--order {
      background-color: var(--element);
      max-width: 237px;
-     font-family: 'Circe';
      font-style: normal;
      font-weight: 700;
      font-size: 24px;
@@ -521,7 +532,6 @@
  }
 
  .form__title {
-     font-family: 'Circe';
      font-style: normal;
      font-weight: 700;
      font-size: 20px;
@@ -543,7 +553,6 @@
 
  .form__item--font {
      color: #FFFFFF;
-     font-family: 'Circe';
      font-style: normal;
      font-weight: 400;
      font-size: 16px;
@@ -576,7 +585,6 @@
 
  .form__item::placeholder {
      color: #FFFFFF;
-     font-family: 'Circe';
      font-style: normal;
      font-weight: 400;
      font-size: 16px;
