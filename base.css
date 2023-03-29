@@ -107,6 +107,10 @@
      color: var(--background);
      border: solid rgba(51, 51, 51, 0.2);
  }
+ 
+ .button-order {
+    margin-right: 20px;
+}
 
  
  .major__contacts {
@@ -336,6 +340,13 @@
     .map__billboard {
         align-items: center;
     }
+
+
+
+
+
+
+    
 }
 
 @media (max-width:500px) {
