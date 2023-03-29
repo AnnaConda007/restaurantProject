@@ -9,7 +9,6 @@
 }
 
 .container {
-    max-width: 1300px;
     width: 90%;
     display: flex;
     flex-wrap: wrap;
@@ -325,6 +324,10 @@
     .button {
         margin-bottom: 5px;
         margin-right: 2px;
+    }
+
+    .content__frame {
+        min-height: 300px;
     }
 
     .map__billboard {

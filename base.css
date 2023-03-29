@@ -118,6 +118,7 @@
 
  
  .major__contacts {
+    max-width: 1290px;
     margin-top: 80px;
     width: 100%;
     display: flex;
