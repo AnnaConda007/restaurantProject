@@ -113,7 +113,7 @@
 
 
 @media (max-width:1000px) {
-    .main__shopping-cart {
+    .shopping-cart {
         margin-right: 30px;
     }
 
@@ -129,6 +129,8 @@
 }
 
 @media (max-width:650px) {
+    .container {
+        padding-left: 0px;}
     .product {
         width: 90%;
     }
