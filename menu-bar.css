@@ -17,20 +17,30 @@
 }
 
 .inner-container {
-    max-width: 1295px;
-    width: 100%;
+    width: 100%; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: aquamarine;
+ 
 }
 
-.main__shopping-cart {
+.shopping-cart {
     display: flex;
     justify-content: flex-end;
     margin-top: 30px;
+    background-color: blue;
+    max-width: 1290px;
+    width: 100%;
+    background-color: blue;
+    
 }
 
-.main__menu-wrap {
+.menu-wrap {
     margin-top: 60px;
     max-width: 1250px;
     width: 100%;
+    background-color: blue;
 }
 
 .menu-wrap__list {
