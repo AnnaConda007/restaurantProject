@@ -8,13 +8,6 @@
     margin-top: 150px;
 }
 
-.container {
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-left: 20px;
-}
 
 .header {
     height: 100vh;
