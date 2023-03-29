@@ -35,7 +35,8 @@
      --background: #333333;
  }
 
- .header__sidebar {
+ .sidebar {
+    box-sizing: border-box;
     background-color: var(--background);
     display: flex;
     flex-direction: column;
@@ -55,25 +56,21 @@
     max-width: 50px;
 }
 
-.main {
+
+.major__heading {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-}
-
-.main__major {
-    margin-top: 150px;
-}
-
-.container {
-    max-width: 1300px;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-left: 20px;
 }
 
+.heading__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: var(--background);
+}
 .button {
     font-family: 'Open Sans';
      font-style: normal;

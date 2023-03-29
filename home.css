@@ -1,4 +1,24 @@
- .header {
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.main__major {
+    margin-top: 150px;
+}
+
+.container {
+    max-width: 1300px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+.header {
      height: 100vh;
      display: flex;
      background-color: var(--background);
@@ -57,21 +77,6 @@
      line-height: 140%;
      margin-left: 15%;
      margin-bottom: 10%;
- }
-
- .major__heading {
-     display: flex;
-     flex-wrap: wrap;
-     width: 100%;
- }
-
- .heading__title {
-     font-style: normal;
-     font-weight: 700;
-     font-size: 20px;
-     line-height: 140%;
-     text-transform: uppercase;
-     color: var(--background);
  }
 
  .heading__img {
