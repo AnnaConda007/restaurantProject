@@ -12,7 +12,7 @@
 
 <body>
     <main class="main">
-        <div class="main__sidebar sidebar sidebar--height ">
+        <div class="main__sidebar sidebar">
             <div class="sidebar__img-wrap img-wrap">
                 <a href="index.html"> <img class="img-wrap__img" src="img\left-bar\logo.svg" alt="logo"></a>
                 <img class="img-wrap__img menu" src="img\left-bar\menu-left.svg" alt="меню">
@@ -26,24 +26,28 @@
             </div>
         </div>
         <div class="main__container container">
-            <div class="main__shopping-cart shopping-cart inner-container">
-                <img class="shopping-cart__img" src="img/shopping-basket.svg" alt="" id="shopping-basket">
+            <div class="main__inner-container inner-container">
+                <div class="inner-container__shopping-cart shopping-cart ">
+                    <img class="shopping-cart__img" src="img/shopping-basket.svg" alt="корзина" id="shopping-basket">
+                </div>
             </div>
             <div class="main__menu-wrap  menu-wrap inner-container ">
                 <ul class="menu-wrap__list">
-                    <li class="menu-wrap__item  active" id="breakfast">Алкогольные напитки</li>
-                    <li class="menu-wrap__item" id="raw">Безалкогольные напитки</li>
+                    <li class="menu-wrap__item  active" id="alcohol">Алкагольные напитки</li>
+                    <li class="menu-wrap__item" id="alcohol-free">Безалкогольные напитки</li>
                 </ul>
             </div>
-            <div class="main__product-wrap product-wrap inner-container">
-                <div class="product-wrap__product product" id="">
-                    <figure class="product__figure">
-                        <img class="product__img" src=" " alt="фото блюда">
-                        <figcaption class="product__figcaption">  </figcaption>
-                    </figure>
-                    <div class="product__order">
-                        <h2 class="product__price"> &#x20bd</h2>
-                        <button class="button button--smal"> В корзину</button>
+            <div class="main__inner-container inner-container">
+                <div class="inner-container__product-wrap product-wrap">
+                    <div class="product-wrap__product product" id="">
+                        <figure class="product__figure">
+                            <img class="product__img" src=" " alt="фото блюда">
+                            <figcaption class="product__figcaption"> </figcaption>
+                        </figure>
+                        <div class="product__order">
+                            <h2 class="product__price"> &#x20bd</h2>
+                            <button class="button button--smal"> В корзину</button>
+                        </div>
                     </div>
                 </div>
             </div>

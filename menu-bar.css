@@ -1,11 +1,40 @@
-.sidebar--height {
+.sidebar {
     height: 100vh;
     max-width: 10%;
 }
 
+@media (max-width:650px) {
+    .sidebar {
+        max-width: 100%;
+        width: 100%;
+        height: fit-content;
+        flex-direction: row;
+        padding: 0;
+        position: fixed;
+    }
+}
+
+@media (max-width:650px) {
+    .img-wrap {
+        flex-direction: row;
+    }
+}
+
+@media (max-width:650px) {
+    .img-wrap__img {
+        padding: 0px 10px;
+    }
+}
+
 .main {
-    display: flex; 
+    display: flex;
     justify-content: space-between;
+}
+
+@media (max-width:650px) {
+    .main {
+        flex-wrap: wrap;
+    }
 }
 
 .container {
@@ -16,12 +45,17 @@
     height: 100%;
 }
 
+@media (max-width:650px) {
+    .container {
+        padding-left: 0px;
+    }
+}
+
 .inner-container {
-    width: 100%; 
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
- 
 }
 
 .shopping-cart {
@@ -30,7 +64,13 @@
     margin-top: 30px;
     max-width: 1290px;
     width: 100%;
-    
+    margin-right: 30px;
+}
+
+@media (max-width:650px) {
+    .shopping-cart {
+        margin-top: 50px;
+    }
 }
 
 .menu-wrap {
@@ -66,6 +106,14 @@
     margin-bottom: 150px;
 }
 
+@media (max-width:1000px) {
+    .product-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
 .product {
     border: 1px solid #33333333;
     max-width: 305px;
@@ -73,6 +121,18 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 20px;
+}
+
+@media (max-width:1000px) {
+    .product {
+        width: 51%;
+    }
+}
+
+@media (max-width:650px) {
+    .product {
+        width: 90%;
+    }
 }
 
 .product__figure {
@@ -109,60 +169,4 @@
     font-weight: 700;
     font-size: 32px;
     line-height: 120%;
-}
-
-
-@media (max-width:1000px) {
-    .shopping-cart {
-        margin-right: 30px;
-    }
-
-    .product-wrap {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
-    .product {
-        width: 51%;
-    }
-}
-
-@media (max-width:650px) {
-    .container {
-        padding-left: 0px;}
-    .product {
-        width: 90%;
-    }
-
-     
-    .main {
-        flex-wrap: wrap;
-    }
-    .sidebar--height {
-        max-width: 100%;
-        width: 100%;
-       height: fit-content;
-        flex-direction: row;
-        padding:0; 
-        position: fixed;
-       
-    }
-
-    .img-wrap{
-        flex-direction: row;
-    }
-
-    .img-wrap__img{
-        padding:0px 10px;
-    }
-
-    .shopping-cart{
-        margin-top: 50px;
-    }
-
-
-
-
-
 }
