@@ -4,7 +4,7 @@
 }
 
 .main {
-    display: flex;
+    display: flex; 
     justify-content: space-between;
 }
 
@@ -135,7 +135,34 @@
         width: 90%;
     }
 
-    .sidebar--height {
-        min-width: 50px;
+     
+    .main {
+        flex-wrap: wrap;
     }
+    .sidebar--height {
+        max-width: 100%;
+        width: 100%;
+       height: fit-content;
+        flex-direction: row;
+        padding:0; 
+        position: fixed;
+       
+    }
+
+    .img-wrap{
+        flex-direction: row;
+    }
+
+    .img-wrap__img{
+        padding:0px 10px;
+    }
+
+    .shopping-cart{
+        margin-top: 50px;
+    }
+
+
+
+
+
 }
