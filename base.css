@@ -76,6 +76,12 @@ li {
     padding-left: 20px;
 }
 
+@media (max-width:800px) {
+    .container {
+        padding-left: 0px;
+    }
+}
+
 .major__heading {
     display: flex;
     flex-wrap: wrap;
@@ -191,6 +197,7 @@ li {
 .major__contacts__terms__time {
     max-width: 195px;
     width: 50%;
+    text-align: center;
 }
 
 .time--margine {
@@ -199,6 +206,7 @@ li {
 
 .time__minutes-wrap {
     display: flex;
+    justify-content: center;
 }
 
 .time__minutes {
