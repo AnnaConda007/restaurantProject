@@ -61,3 +61,8 @@ gulp.task('html', function() {
   });
   
   gulp.task('default', gulp.series('html'));
+
+
+  const imagemin = require('gulp-imagemin').default;
+
+  
