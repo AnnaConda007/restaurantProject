@@ -2,9 +2,10 @@
   "name": "restaurantproject",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
   },
   "repository": {
     "type": "git",
@@ -16,8 +17,10 @@
     "url": "https://github.com/AnnaConda007/restaurantProject/issues"
   },
   "homepage": "https://github.com/AnnaConda007/restaurantProject#readme",
-  "dependencies": {
+  "devDependencies": {
     "gulp": "^4.0.2",
-    "save-dev": "^0.0.1-security"
+    "gulp-clean-css": "^4.3.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-strip-css-comments": "^2.0.0"
   }
 }
