@@ -17,7 +17,6 @@ gulp.task('minify-css', function() {
     .pipe(gulp.dest('./dist'));
 });
  
-
 gulp.task('minify-html', () => {
   return gulp.src('src/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
@@ -30,7 +29,6 @@ gulp.task('minify-js', function() {
     .pipe(uglify())
     .pipe(gulp.dest('./dist/js'));
 });
-
 
 gulp.task('scripts', function() {
     return gulp.src('./src/js/*.js')
