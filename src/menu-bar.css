@@ -142,8 +142,10 @@
 }
 
 .product__img {
+    margin-top: 10px;
     margin-bottom: 30px;
-    width: 100%;
+    width: 250px;
+    height: 250px;
     max-height: 220px;
 }
 
