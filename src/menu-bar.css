@@ -91,6 +91,10 @@
     margin: 0px 10px;
 }
 
+.menu-wrap__item:hover{
+    cursor: pointer;  
+}
+
 .active {
     border-bottom: 4px solid var(--element);
     display: flex;
