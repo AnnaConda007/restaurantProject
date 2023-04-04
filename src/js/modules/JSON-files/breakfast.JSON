@@ -1,0 +1,40 @@
+[ 
+    {
+        "src": "../src/img/img-menu/breakfast/breakfast-1.jpg",
+        "price": "500",
+        "name": "breakfast_1",
+        "class": "breakfast",
+        "id": "breakfast_1"
+    },
+    {
+        "src": "../src/img/img-menu/breakfast/breakfast-2.jpg",
+        "price": "500",
+        "name": "breakfast_2",
+        "class": "breakfast",
+        "id": "breakfast_2"
+    },
+    {
+        "src": "../src/img/img-menu/breakfast/breakfast-3.jpg",
+        "price": "500",
+        "name": "breakfast_3",
+        "class": "breakfast",
+        "id": "breakfast_3"
+    },
+    {
+        "src": "../src/img/img-menu/breakfast/breakfast-4.jpg",
+        "price": "500",
+        "name": "breakfast_4",
+        "class": "breakfast",
+        "id": "breakfast_4"
+    },
+    {
+        "src": "../src/img/img-menu/breakfast/breakfast-5.jpg",
+        "price": "500",
+        "name": "breakfast_5",
+        "class": "breakfast",
+        "id": "breakfast_5"
+    }
+     
+]
+
+ 

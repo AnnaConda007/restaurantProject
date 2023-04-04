@@ -1,0 +1,33 @@
+[ 
+    {
+        "src": "../src/img/img-menu/garnish/garnish-1.jpg",
+        "price": "500",
+        "name": "garnish_1",
+        "class": "garnish",
+        "id": "garnish_1"
+    },
+    {
+        "src": "../src/img/img-menu/garnish/garnish-2.jpg",
+        "price": "500",
+        "name": "garnish_2",
+        "class": "garnish",
+        "id": "garnish_2"
+    },
+    {
+        "src": "../src/img/img-menu/garnish/garnish-3.jpg",
+        "price": "500",
+        "name": "garnish_3",
+        "class": "garnish",
+        "id": "garnish_3"
+    },
+    {
+        "src": "../src/img/img-menu/garnish/garnish-4.jpg",
+        "price": "500",
+        "name": "garnish_4",
+        "class": "garnish",
+        "id": "garnish_4"
+    } 
+     
+]
+
+ 

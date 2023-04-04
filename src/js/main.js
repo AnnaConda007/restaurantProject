@@ -1,5 +1,5 @@
-import barJSON from "./modules/JSON.js"
+import JSON from "./modules/JSON.js"
 
 window.addEventListener("DOMContentLoaded", function () {
-    barJSON(".product-wrap")
-})
+    JSON()
+})   
