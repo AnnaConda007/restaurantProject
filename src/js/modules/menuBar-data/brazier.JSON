@@ -1,0 +1,19 @@
+[ 
+    {
+        "src": "../src/img/img-menu/brazier/brazier-1.jpg",
+        "price": "600",
+        "name": "brazier_1",
+        "productClass": "brazier",
+        "id": "brazier_1"
+    },
+    {
+        "src": "../src/img/img-menu/brazier/brazier-2.jpg",
+        "price": "750",
+        "name": "brazier_2",
+        "productClass": "brazier",
+        "id": "brazier_2"
+    } 
+     
+]
+
+ 

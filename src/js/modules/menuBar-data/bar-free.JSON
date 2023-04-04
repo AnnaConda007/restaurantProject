@@ -1,0 +1,59 @@
+[ 
+    {
+        "src": "../src/img/img-bar/free/caramel.jpg",
+        "price": "500",
+        "name": "Caramel explosion",
+        "productClass": "free",
+        "id": "Caramel explosion"
+    },
+    {
+        "src": "../src/img/img-bar/free/chockolate.jpg",
+        "price": "650",
+        "name": "Chocolate madness",
+        "productClass": "free",
+        "id": "Chocolate madness"
+    },
+    {
+        "src": "../src/img/img-bar/free/chocko-match.jpg",
+        "price": "420",
+        "name": "Chocolate explosion",
+        "productClass": "free",
+        "id": "Chocolate explosion"
+    },
+    {
+        "src": "../src/img/img-bar/free/cockie.jpg",
+        "price": "600",
+        "name": "Ice coffe",
+        "productClass": "free",
+        "id": "Ice coffe"
+    },
+    {
+        "src": "../src/img/img-bar/free/green.jpg",
+        "price": "500",
+        "name": "Ice matcha",
+        "productClass": "free",
+        "id": "Ice matcha"
+    },
+    {
+        "src": "../src/img/img-bar/free/pina-colada.jpg",
+        "price": "550",
+        "name": "Pina-colada",
+        "productClass": "free",
+        "id": "Pina-colada"
+    },
+    {
+        "src": "../src/img/img-bar/free/white.jpg",
+        "price": "650",
+        "name": "Milkshake",
+        "productClass": "free",
+        "id": "Milkshake"
+    },
+    {
+        "src": "../src/img/img-bar/free/wildbery.jpg",
+        "price": "450",
+        "name": "Creamy coffee",
+        "productClass": "free",
+        "id": "Creamy coffee"
+    }
+]
+
