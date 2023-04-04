@@ -1,48 +1,21 @@
 const filter = () => {
-    const allBtn = document.querySelectorAll(".menu-wrap__item")
-    const allProduct = document.querySelectorAll(".product")
-   
-    const removeClass = (elem, remClass)=>{
-        elem.forEach(item=>{
-            item.classList.remove(remClass)
-        })   
+    const allBtn = document.querySelectorAll('.menu-wrap__item')
+    const allProduct = document.querySelectorAll('.product')
+    const removeClass = (elem, classRem) => {
+        elem.forEach((item) => {
+            item.classList.remove(classRem)
+        })
     }
-
-    allBtn.forEach(btn => {
-
-        
-        btn.addEventListener("click", function () {
-            allBtn.forEach(btn=>{
-                btn.classList.remove("active")
+    allBtn.forEach((btn) => {
+        btn.addEventListener('click', function () {
+            removeClass(allBtn, 'active')
+            removeClass(allProduct, 'active-product')
+            btn.classList.add('active')
+            document.querySelectorAll(`.${this.id}`).forEach((product) => {
+                product.classList.add('active-product')
             })
-            btn.classList.add("active")
-            allProduct.forEach(product=>{
-                product.classList.remove("active-product") 
-            })
-            let activeClass = this.id
-            document.querySelectorAll(`.${activeClass}`).forEach(
-                product=>{product.classList.add("active-product")}
-            ) 
-        })})
- 
-
-
-
-
+        })
+    })
 }
 
 export default filter
-
-/* document.querySelectorAll(`.${activeClass}`).forEach(
-            product=>{product.classList.add("active-product")}
-        ) 
-        
-        let activeClass = this.id
-        
-         const removeClass = (elem, remClass)=>{
-        elem.forEach(item=>{
-            item.classList.remove(remClass)
-        })   
-    }
-        
-        */
