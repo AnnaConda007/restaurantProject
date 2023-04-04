@@ -1,5 +1,5 @@
-import JSON from "./modules/JSON.js"
-
+import menuBar from "./modules/JSON.js"
 window.addEventListener("DOMContentLoaded", function () {
-    JSON()
+    menuBar()
+ 
 })   
