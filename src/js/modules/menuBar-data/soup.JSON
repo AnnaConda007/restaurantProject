@@ -3,35 +3,35 @@
         "src": "../src/img/img-menu/soup/soup-1.jpg",
         "price": "500",
         "name": "soup_1",
-        "class": "soup",
+        "productClass": "soup",
         "id": "soup_1"
     },
     {
         "src": "../src/img/img-menu/soup/soup-2.jpg",
         "price": "500",
         "name": "soup_2",
-        "class": "soup",
+        "productClass": "soup",
         "id": "soup_2"
     },
     {
         "src": "../src/img/img-menu/soup/soup-3.jpg",
-        "price": "500",
+        "price": "600",
         "name": "soup_3",
-        "class": "soup",
+        "productClass": "soup",
         "id": "soup_3"
     },
     {
         "src": "../src/img/img-menu/soup/soup-4.jpg",
-        "price": "500",
+        "price": "760",
         "name": "soup_4",
-        "class": "soup",
+        "productClass": "soup",
         "id": "soup_4"
     },
     {
         "src": "../src/img/img-menu/soup/soup-5.jpg",
-        "price": "500",
+        "price": "1000",
         "name": "soup_5",
-        "class": "soup",
+        "productClass": "soup",
         "id": "soup_5"
     }
      
