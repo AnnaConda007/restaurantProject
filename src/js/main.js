@@ -1,4 +1,4 @@
-import menuBar from "./modules/JSON.js"
+import menuBar from "./modules/menuBar.js"
 window.addEventListener("DOMContentLoaded", function () {
     menuBar()
  
