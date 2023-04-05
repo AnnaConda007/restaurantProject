@@ -7,9 +7,9 @@ const menuBar = async () => {
     const allPromise = await Promise.all([responseAlco, responseFree])
     const jsonObjects = await Promise.all(allPromise.map(response => response.json()));
     const data = await jsonObjects.reduce((acc, cur) => acc.concat(cur), [])
-    data.forEach(({ id, src, name, price, type }) => {
+    data.forEach(({ id, src, name, price, product }) => {
       wrap.innerHTML += `
-        <div class="product-wrap__product product ${type}" id=${id}>
+        <div class="product-wrap__product product"  data-product="${product}" id=${id}>
           <figure class="product__figure">
             <img class="product__img" src=${src} alt="фото напитка">
             <figcaption class="product__figcaption">${name}</figcaption>
@@ -40,9 +40,9 @@ const menuBar = async () => {
       responseGrill, responsePaste, responseSalad])
     const jsonObjects = await Promise.all(allPromise.map(response => response.json()));
     const data = await jsonObjects.reduce((acc, cur) => acc.concat(cur), [])
-    data.forEach(({ id, src, name, price, type }) => {
+    data.forEach(({ id, src, name, price, product }) => {
       wrap.innerHTML += `
-        <div class="product-wrap__product product ${type}" id=${id}>
+        <div class="product-wrap__product product"  data-product="${product}" id=${id}>
           <figure class="product__figure">
             <img class="product__img" src=${src} alt="фото напитка">
             <figcaption class="product__figcaption">${name}</figcaption>

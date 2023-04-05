@@ -3,49 +3,49 @@
         "src": "../src/img/img-menu/paste/paste-1.jpg",
         "price": "500",
         "name": "paste_1",
-        "type": "paste",
+        "product": "paste",
         "id": "paste_1"
     },
     {
         "src": "../src/img/img-menu/paste/paste-2.jpg",
         "price": "670",
         "name": "paste_2",
-        "type": "paste",
+        "product": "paste",
         "id": "paste_2"
     },
     {
         "src": "../src/img/img-menu/paste/paste-3.jpg",
         "price": "870",
         "name": "paste_3",
-        "type": "paste",
+        "product": "paste",
         "id": "paste_3"
     },
     {
         "src": "../src/img/img-menu/paste/paste-4.jpg",
         "price": "600",
         "name": "paste_4",
-        "type": "paste",
+        "product": "paste",
         "id": "paste_4"
     },
     {
         "src": "../src/img/img-menu/paste/paste-5.jpg",
         "price": "700",
         "name": "paste_5",
-        "type": "paste",
+        "product": "paste",
         "id": "paste_5"
     },
     {
         "src": "../src/img/img-menu/paste/rizotto-1.jpg",
         "price": "850",
         "name": "rizotto_1",
-        "type": "rizotto",
+        "product": "rizotto",
         "id": "rizotto_1"
     },
     {
         "src": "../src/img/img-menu/paste/rizotto-2.jpg",
         "price": "500",
         "name": "rizotto_2",
-        "type": "rizotto",
+        "product": "rizotto",
         "id": "rizotto_2"
     }
      

@@ -1,58 +1,58 @@
 [ 
-    {
-        "src": "../src/img/img-bar/free/caramel.jpg",
+    { 
+        "src": "../src/img/img-bar/free/pina-colada.jpg",
         "price": "500",
-        "name": "Caramel explosion",
-        "type": "alcohol-free",
-        "id": "Caramel explosion"
+        "name": "Pina-colada",
+        "product": "alcohol-free",
+        "id": "Pina-colada"
     },
     {
         "src": "../src/img/img-bar/free/chockolate.jpg",
         "price": "650",
         "name": "Chocolate madness",
-        "type": "alcohol-free",
+        "product": "alcohol-free",
         "id": "Chocolate madness"
     },
     {
         "src": "../src/img/img-bar/free/chocko-match.jpg",
         "price": "420",
         "name": "Chocolate explosion",
-        "type": "alcohol-free",
+        "product": "alcohol-free",
         "id": "Chocolate explosion"
     },
     {
         "src": "../src/img/img-bar/free/cockie.jpg",
         "price": "600",
         "name": "Ice coffe",
-        "type": "alcohol-free",
+        "product": "alcohol-free",
         "id": "Ice coffe"
     },
     {
         "src": "../src/img/img-bar/free/green.jpg",
         "price": "500",
         "name": "Ice matcha",
-        "type": "alcohol-free",
+        "product": "alcohol-free",
         "id": "Ice matcha"
     },
     {
-        "src": "../src/img/img-bar/free/pina-colada.jpg",
+        "src": "../src/img/img-bar/free/caramel.jpg",
         "price": "550",
-        "name": "Pina-colada",
-        "type": "alcohol-free",
-        "id": "Pina-colada"
+        "name": "Caramel explosion",
+        "product": "alcohol-free",
+        "id": "Caramel explosion"
     },
     {
         "src": "../src/img/img-bar/free/white.jpg",
         "price": "650",
         "name": "Milkshake",
-        "type": "alcohol-free",
+        "product": "alcohol-free",
         "id": "Milkshake"
     },
     {
         "src": "../src/img/img-bar/free/wildbery.jpg",
         "price": "450",
         "name": "Creamy coffee",
-        "type": "alcohol-free",
+        "product": "alcohol-free",
         "id": "Creamy coffee"
     }
 ]

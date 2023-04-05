@@ -3,70 +3,70 @@
         "src": "../src/img/img-bar/alcohol/blue-pineapple.jpg",
         "price": "500",
         "name": "Blue Lagoon",
-        "type": "alcohol",
+        "product": "alcohol",
         "id": "Blue Lagoon"
     },
     {
         "src": "../src/img/img-bar/alcohol/blue-mohito.jpg",
         "price": "650",
         "name": "Mai Tai",
-        "type": "alcohol",
+        "product": "alcohol",
         "id": "Mai Tai"
     },
     {
         "src": "../src/img/img-bar/alcohol/white-limon.jpg",
         "price": "420",
         "name": "Moscow Mule",
-        "type": "alcohol",
+        "product": "alcohol",
         "id": "Moscow Mule"
     },
     {
         "src": "../src/img/img-bar/alcohol/blue-violet.jpg",
         "price": "600",
         "name": "Daiquiri",
-        "type": "alcohol",
+        "product": "alcohol",
         "id": "Daiquiri"
     },
     {
         "src": "../src/img/img-bar/alcohol/orange.jpg",
         "price": "500",
         "name": "Zombie",
-        "type": "alcohol",
+        "product": "alcohol",
         "id": "Zombie"
     },
     {
         "src": "../src/img/img-bar/alcohol/violet.jpg",
         "price": "550",
         "name": "Tom Collins",
-        "type": "alcohol",
+        "product": "alcohol",
         "id": "Tom Collins"
     },
     {
         "src": "../src/img/img-bar/alcohol/whiskey.jpg",
         "price": "650",
         "name": "Dark and Stormy",
-        "type": "alcohol",
+        "product": "alcohol",
         "id": "Dark and Stormy"
     },
     {
         "src": "../src/img/img-bar/alcohol/white-limon.jpg",
         "price": "450",
         "name": "Bellini",
-        "type": "alcohol",
+        "product": "alcohol",
         "id": "Bellini"
     },
     {
         "src": "../src/img/img-bar/alcohol/blue-burn.jpg",
         "price": "600",
         "name": "Hurricane",
-        "type": "alcohol",
+        "product": "alcohol",
         "id": "Hurricane"
     },
     {
         "src": "../src/img/img-bar/alcohol/violet.jpg",
         "price": "400",
         "name": "Old Fashioned",
-        "type": "alcohol",
+        "product": "alcohol",
         "id": "Old Fashioned"
     }
 ]
