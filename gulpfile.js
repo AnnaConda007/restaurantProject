@@ -60,7 +60,8 @@ gulp.task('allHtml', function() {
 
   gulp.task('default', gulp.series('minify-html', 'minify-css',
    'minify-js', 'scripts','styles','allHtml','watch'));
-
+   gulp.task('build', gulp.series('minify-html', 'minify-css',
+   'minify-js', 'scripts','styles','allHtml'));
 
  
 
