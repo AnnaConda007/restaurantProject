@@ -3,42 +3,42 @@
         "src": "../src/img/img-menu/grill/grill-1.jpg",
         "price": "500",
         "name": "grill_1",
-        "productClass": "grill",
+        "product": "grill",
         "id": "grill_1"
     },
     {
         "src": "../src/img/img-menu/grill/grill-2.jpg",
         "price": "1200",
         "name": "grill_2",
-        "productClass": "grill",
+        "product": "grill",
         "id": "grill_2"
     },
     {
         "src": "../src/img/img-menu/grill/grill-3.jpg",
         "price": "500",
         "name": "grill_3",
-        "productClass": "grill",
+        "product": "grill",
         "id": "grill_3"
     },
     {
         "src": "../src/img/img-menu/grill/grill-4.jpg",
         "price": "1400",
         "name": "grill_4",
-        "productClass": "grill",
+        "product": "grill",
         "id": "grill_4"
     },
     {
         "src": "../src/img/img-menu/grill/grill-5.jpg",
         "price": "500",
         "name": "grill_5",
-        "productClass": "grill",
+        "product": "grill",
         "id": "grill_5"
     },
     {
         "src": "../src/img/img-menu/grill/grill-6.jpg",
         "price": "700",
         "name": "grill_6",
-        "productClass": "grill",
+        "product": "grill",
         "id": "grill_6"
     }
      
