@@ -3,70 +3,70 @@
         "src": "../src/img/img-bar/alcohol/blue-pineapple.jpg",
         "price": "500",
         "name": "Blue Lagoon",
-        "productClass": "alcohol active-product",
+        "type": "alcohol",
         "id": "Blue Lagoon"
     },
     {
         "src": "../src/img/img-bar/alcohol/blue-mohito.jpg",
         "price": "650",
         "name": "Mai Tai",
-        "productClass": "alcohol active-product",
+        "type": "alcohol",
         "id": "Mai Tai"
     },
     {
         "src": "../src/img/img-bar/alcohol/white-limon.jpg",
         "price": "420",
         "name": "Moscow Mule",
-        "productClass": "alcohol active-product",
+        "type": "alcohol",
         "id": "Moscow Mule"
     },
     {
         "src": "../src/img/img-bar/alcohol/blue-violet.jpg",
         "price": "600",
         "name": "Daiquiri",
-        "productClass": "alcohol active-product",
+        "type": "alcohol",
         "id": "Daiquiri"
     },
     {
         "src": "../src/img/img-bar/alcohol/orange.jpg",
         "price": "500",
         "name": "Zombie",
-        "productClass": "alcohol active-product",
+        "type": "alcohol",
         "id": "Zombie"
     },
     {
         "src": "../src/img/img-bar/alcohol/violet.jpg",
         "price": "550",
         "name": "Tom Collins",
-        "productClass": "alcohol active-product",
+        "type": "alcohol",
         "id": "Tom Collins"
     },
     {
         "src": "../src/img/img-bar/alcohol/whiskey.jpg",
         "price": "650",
         "name": "Dark and Stormy",
-        "productClass": "alcohol active-product",
+        "type": "alcohol",
         "id": "Dark and Stormy"
     },
     {
         "src": "../src/img/img-bar/alcohol/white-limon.jpg",
         "price": "450",
         "name": "Bellini",
-        "productClass": "alcohol active-product",
+        "type": "alcohol",
         "id": "Bellini"
     },
     {
         "src": "../src/img/img-bar/alcohol/blue-burn.jpg",
         "price": "600",
         "name": "Hurricane",
-        "productClass": "alcohol active-product",
+        "type": "alcohol",
         "id": "Hurricane"
     },
     {
         "src": "../src/img/img-bar/alcohol/violet.jpg",
         "price": "400",
         "name": "Old Fashioned",
-        "productClass": "alcohol active-product",
+        "type": "alcohol",
         "id": "Old Fashioned"
     }
 ]

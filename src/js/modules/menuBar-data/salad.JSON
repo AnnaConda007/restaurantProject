@@ -3,49 +3,49 @@
         "src": "../src/img/img-menu/salad/salad-1.jpg",
         "price": "400",
         "name": "salad_1",
-        "productClass": "salad",
+        "type": "salad",
         "id": "salad_1"
     },
     {
         "src": "../src/img/img-menu/salad/salad-2.jpg",
         "price": "500",
         "name": "salad_2",
-        "productClass": "salad",
+        "type": "salad",
         "id": "salad_2"
     },
     {
         "src": "../src/img/img-menu/salad/salad-3.jpg",
         "price": "450",
         "name": "salad_3",
-        "productClass": "salad",
+        "type": "salad",
         "id": "salad_3"
     },
     {
         "src": "../src/img/img-menu/salad/salad-4.jpg",
         "price": "600",
         "name": "salad_4",
-        "productClass": "salad",
+        "type": "salad",
         "id": "salad_4"
     },
     {
         "src": "../src/img/img-menu/salad/salad-5.jpg",
         "price": "800",
         "name": "salad_5",
-        "productClass": "salad",
+        "type": "salad",
         "id": "salad_5"
     },
     {
         "src": "../src/img/img-menu/salad/salad-6.jpg",
         "price": "900",
         "name": "salad_6",
-        "productClass": "salad",
+        "type": "salad",
         "id": "salad_6"
     },
     {
         "src": "../src/img/img-menu/salad/salad-7.jpg",
         "price": "500",
         "name": "salad_7",
-        "productClass": "salad",
+        "type": "salad",
         "id": "salad_7"
     }
      

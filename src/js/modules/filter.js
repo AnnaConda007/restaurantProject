@@ -1,19 +1,20 @@
 const filter = () => {
     const allBtn = document.querySelectorAll('.menu-wrap__item')
-    const allProduct = document.querySelectorAll('.product')
-    const removeClass = (elem, classRem) => {
-        elem.forEach((item) => {
-            item.classList.remove(classRem)
-        })
+    const removeAddClass = (elem, activeClass, act) => {
+        if (document.querySelectorAll(elem)) {
+            document.querySelectorAll(elem).forEach((product) => {
+                product.classList[act](activeClass)
+            })
+        }
     }
+    removeAddClass(`.breakfast`, 'active-product', "add")
+    removeAddClass(".alcohol", 'active-product', "add")
     allBtn.forEach((btn) => {
         btn.addEventListener('click', function () {
-            removeClass(allBtn, 'active')
-            removeClass(allProduct, 'active-product')
+            removeAddClass(".menu-wrap__item", 'active', "remove")
+            removeAddClass(".product", 'active-product', "remove")
             btn.classList.add('active')
-            document.querySelectorAll(`.${this.id}`).forEach((product) => {
-                product.classList.add('active-product')
-            })
+            removeAddClass(`.${this.id}`, 'active-product', "add")
         })
     })
 }
