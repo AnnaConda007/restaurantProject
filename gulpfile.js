@@ -5,9 +5,9 @@ const stripCssComments = require('gulp-strip-css-comments');
 const htmlmin = require('gulp-htmlmin');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
-/*const imagemin = require('gulp-imagemin').default;*/
 const watch = require('gulp-watch');
- 
+const replace = require('gulp-replace');
+
 gulp.task('minify-css', function() {
   return gulp.src('./src/*.css') /*возвращает все css файлы */
     .pipe(stripCssComments()) /*применяет методы */
@@ -52,16 +52,29 @@ gulp.task('allHtml', function() {
       .pipe(gulp.dest('./dist'));
   });
 
+
+
+  gulp.task('replace-css', function () {
+    return gulp.src('./dist/**/*.html')
+      .pipe(replace(/\.css/g, '.min.css'))
+      .pipe(gulp.dest('./dist'));
+  });
+
+  gulp.task('replace-js', function () {
+    return gulp.src('./dist/**/*.html')
+      .pipe(replace(/\.js/g, '.min.js'))
+      .pipe(gulp.dest('./dist'));
+  });
+  
   gulp.task('watch', function() {
     gulp.watch('src/*.html', gulp.series('allHtml','minify-html'));
     gulp.watch('src/*.css', gulp.series('styles','minify-css'));
     gulp.watch('src/*.js', gulp.series('scripts','minify-js'));
   })
 
-  gulp.task('default', gulp.series('minify-html', 'minify-css',
-   'minify-js', 'scripts','styles','allHtml','watch'));
-   gulp.task('build', gulp.series('minify-html', 'minify-css',
-   'minify-js', 'scripts','styles','allHtml'));
+  gulp.task('build', gulp.series('minify-html', 'minify-css',
+   'minify-js', 'scripts','styles','allHtml', 'replace-css','replace-js' ));
+   
 
  
 
