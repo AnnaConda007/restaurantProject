@@ -410,7 +410,7 @@ li {
     display: flex;
     justify-content: space-between;
     max-height: 15%;
-}
+}    
 
 .modal-form {
     position: absolute;

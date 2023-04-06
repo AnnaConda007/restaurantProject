@@ -1,47 +1,47 @@
 [ 
     {
-        "src": "../src/img/img-menu/fish/fish-1.jpg",
+        "src": "./img/img-menu/fish/fish-1.jpg",
         "price": "570",
         "name": "fish_1",
         "product": "fish",
         "id": "fish_1"
     },
     {
-        "src": "../src/img/img-menu/fish/fish-2.jpg",
+        "src": "./img/img-menu/fish/fish-2.jpg",
         "price": "600",
         "name": "fish_2",
         "product": "fish",
         "id": "fish_2"
     },
     {
-        "src": "../src/img/img-menu/fish/fish-3.jpg",
+        "src": "./img/img-menu/fish/fish-3.jpg",
         "price": "500",
         "name": "fish_3",
         "product": "fish",
         "id": "fish_3"
     },
     {
-        "src": "../src/img/img-menu/fish/fish-4.jpg",
+        "src": "./img/img-menu/fish/fish-4.jpg",
         "price": "800",
         "name": "fish_4",
         "product": "fish",
         "id": "fish_4"
     },
     {
-        "src": "../src/img/img-menu/fish/fish-5.jpg",
+        "src": "./img/img-menu/fish/fish-5.jpg",
         "price": "600",
         "name": "fish_5",
         "product": "fish",
         "id": "fish_5"
     },
     {
-        "src": "../src/img/img-menu/fish/fish-6.jpg",
+        "src": "./img/img-menu/fish/fish-6.jpg",
         "price": "800",
         "name": "fish_6",
         "product": "fish",
         "id": "fish_6"
     },{
-        "src": "../src/img/img-menu/fish/fish-7.jpg",
+        "src": "./img/img-menu/fish/fish-7.jpg",
         "price": "500",
         "name": "fish_7",
         "product": "fish",

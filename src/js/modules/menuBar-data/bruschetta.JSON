@@ -1,41 +1,41 @@
 [ 
     {
-        "src": "../src/img/img-menu/bruschetta/bruschetta-1.jpg",
+        "src": "./img/img-menu/bruschetta/bruschetta-1.jpg",
         "price": "400",
         "name": "bruschetta_1",
         "product": "bruschetta",
         "id": "bruschetta_1"
     },
     {
-        "src": "../src/img/img-menu/bruschetta/bruschetta-2.jpg",
+        "src": "./img/img-menu/bruschetta/bruschetta-2.jpg",
         "price": "500",
         "name": "bruschetta_2",
         "product": "bruschetta",
         "id": "bruschetta_2"
     },
     {
-        "src": "../src/img/img-menu/bruschetta/bruschetta-3.jpg",
+        "src": "./img/img-menu/bruschetta/bruschetta-3.jpg",
         "price": "600",
         "name": "bruschetta_3",
         "product": "bruschetta",
         "id": "bruschetta_3"
     },
     {
-        "src": "../src/img/img-menu/bruschetta/bruschetta-4.jpg",
+        "src": "./img/img-menu/bruschetta/bruschetta-4.jpg",
         "price": "500",
         "name": "bruschetta_4",
         "product": "bruschetta",
         "id": "bruschetta_4"
     },
     {
-        "src": "../src/img/img-menu/bruschetta/bruschetta-5.jpg",
+        "src": "./img/img-menu/bruschetta/bruschetta-5.jpg",
         "price": "550",
         "name": "bruschetta_5",
         "product": "bruschetta",
         "id": "bruschetta_5"
     },
     {
-        "src": "../src/img/img-menu/bruschetta/bruschetta-6.jpg",
+        "src": "./img/img-menu/bruschetta/bruschetta-6.jpg",
         "price": "500",
         "name": "bruschetta_6",
         "product": "bruschetta",
