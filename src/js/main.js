@@ -15,4 +15,4 @@ window.addEventListener("DOMContentLoaded", async function () {
         modalClose: ".modal-form__form-background",
         display: "block"
     });
-})   
+})    
