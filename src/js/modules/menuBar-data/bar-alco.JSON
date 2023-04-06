@@ -1,6 +1,6 @@
 [ 
     {
-        "src": "../src/img/img-bar/alcohol/blue-pineapple.jpg",
+        "src": "/src/img/img-bar/alcohol/blue-pineapple.jpg",
         "price": "500",
         "name": "Blue Lagoon",
         "product": "alcohol",
