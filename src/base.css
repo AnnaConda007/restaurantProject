@@ -354,7 +354,7 @@ li {
 
 .burger-nav__img-wrap {
     max-width: 100px;
-    max-height: 10%;
+    max-height: 150px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -401,7 +401,7 @@ li {
     font-size: 24px;
     line-height: 140%;
     padding: 20px 30px 20px 30px;
-    box-sizing: border-box;
+    box-sizing:content-box;
     width: 235px;
 }
 
