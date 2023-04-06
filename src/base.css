@@ -367,6 +367,10 @@ li {
     }
 }
 
+.hidden{
+    overflow: hidden;
+}
+
 .burger-nav__wrap {
     max-height: 428px;
     height: 75%;

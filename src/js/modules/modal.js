@@ -1,20 +1,20 @@
-const modal = (trigerSelector, modalSelector, modalClose, display) => {
+const modal = ({trigerSelector, modalSelector, modalClose, display}) => {
   const modalBtn = document.querySelectorAll(trigerSelector)
   const modalWindow = document.querySelector(modalSelector)
   const allModal = document.querySelectorAll('.modal')
   const closeModal = document.querySelector(modalClose)
 
-  modalBtn.forEach((btn) => {
+  modalBtn.forEach((btn) => {/*item-order повторяется дважды, так как форма вызывается с 2 разных мест */
     btn.addEventListener('click', () => {
       modalWindow.style.display = display
-      document.body.style.overflow = 'hidden'
+      document.body.classList.add("hidden")
     })
   })
 
   closeModal.addEventListener('click', () => {
-    allModal.forEach((modal) => {
+    allModal.forEach((modal) => { /*.modal используется при открытии формы через всплывающее окно */
       modal.style.display = 'none'
-      document.body.style.overflow = 'auto'
+      document.body.classList.remove("hidden")
     })
   })
 }
