@@ -1,34 +1,34 @@
 [ 
     {
-        "src": "../src/img/img-menu/canape/canape-1.jpg",
+        "src": "./img/img-menu/canape/canape-1.jpg",
         "price": "500",
         "name": "canape_1",
         "product": "canape",
         "id": "canape_1"
     },
     {
-        "src": "../src/img/img-menu/canape/canape-2.jpg",
+        "src": "./img/img-menu/canape/canape-2.jpg",
         "price": "400",
         "name": "canape_2",
         "product": "canape",
         "id": "canape_2"
     },
     {
-        "src": "../src/img/img-menu/canape/canape-3.jpg",
+        "src": "./img/img-menu/canape/canape-3.jpg",
         "price": "300",
         "name": "canape_3",
         "product": "canape",
         "id": "canape_3"
     },
     {
-        "src": "../src/img/img-menu/canape/canape-4.jpg",
+        "src": "./img/img-menu/canape/canape-4.jpg",
         "price": "450",
         "name": "canape_4",
         "product": "canape",
         "id": "canape_4"
     },
     {
-        "src": "../src/img/img-menu/canape/canape-5.jpg",
+        "src": "./img/img-menu/canape/canape-5.jpg",
         "price": "500",
         "name": "canape_5",
         "product": "canape",
