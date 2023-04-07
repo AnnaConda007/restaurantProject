@@ -607,7 +607,7 @@ li {
     width: 40%;
 }
 
-.unit__calk {
+.unit__calculator {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -615,13 +615,13 @@ li {
     width: 50%;
 }
 
-.calk__buttons {
+.calculator__buttons {
     display: flex;
     justify-content: space-evenly;
     width: 70%;
 }
 
-.calk__button {
+.calculator__button {
     width: 20px;
     height: 20px;
     background-color: var(--background);
@@ -632,7 +632,7 @@ li {
     justify-content: center;
 }
 
-.calk__button:active {
+.calculator__button:active {
     margin-top: 5px;
     border: 1px solid white;
 }
