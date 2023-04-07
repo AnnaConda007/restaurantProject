@@ -53,7 +53,8 @@ const shoppingCart = async () => {
                 product.amount++
                 const amountText = e.target.closest(".calculator");
                 amountText.querySelector(".calculator__amount").innerHTML = product.amount
-                count(e) 
+                count(e)
+                renderSum()  
             })
         })
         const minusBtns = document.querySelectorAll('.minus')
@@ -64,7 +65,7 @@ const shoppingCart = async () => {
                 if (product.amount != 0) {
                     product.amount = product.amount - 1
                     count(e)
-                
+                    renderSum()  
                 }
                 const amountText = e.target.closest(".calculator");
                 amountText.querySelector(".calculator__amount").innerHTML = product.amount
