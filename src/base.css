@@ -18,7 +18,7 @@
 }
 
 body {
-    font-family: 'Open Sans'; 
+    font-family: 'Open Sans';
 }
 
 a {
@@ -367,6 +367,10 @@ li {
     }
 }
 
+.hidden {
+    overflow: hidden;
+}
+
 .burger-nav__wrap {
     max-height: 428px;
     height: 75%;
@@ -534,10 +538,11 @@ li {
     width: 100%;
     height: 100%;
     background-image: url(img/screenImg.png);
-    display:none; /*flex*/
+    display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--background); 
+    color: var(--background);
+    overflow: hidden; /* не работает */
 }
 
 .cart__background {
@@ -562,6 +567,10 @@ li {
 
 .cart__background::-webkit-scrollbar-thumb {
     background-color: var(--element);
+}
+
+html::-webkit-scrollbar {
+    display: none;
 }
 
 .background__header {
@@ -606,7 +615,7 @@ li {
     width: 40%;
 }
 
-.unit__calculator {
+.unit__calk {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -614,13 +623,13 @@ li {
     width: 50%;
 }
 
-.calculator__buttons {
+.calk__buttons {
     display: flex;
     justify-content: space-evenly;
     width: 70%;
 }
 
-.calculator__button {
+.calk__button {
     width: 20px;
     height: 20px;
     background-color: var(--background);
@@ -631,7 +640,7 @@ li {
     justify-content: center;
 }
 
-.calculator__button:active {
+.calk__button:active {
     margin-top: 5px;
     border: 1px solid white;
 }
