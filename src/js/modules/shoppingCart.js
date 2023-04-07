@@ -32,8 +32,8 @@ const shoppingCart = async () => {
                 <div class="unit__price">
                     <div class="unit__calculator calculator">
                         <div class="calculator__buttons">
-                            <button class="calculator__button plus">+</button>
-                            <button class="calculator__button minus">-</button>
+                            <button class="calculator__button plus" data-articul="${id}">+</button>
+                            <button class="calculator__button minus" data-articul="${id}">-</button>
                         </div>
                         <h3 class="calculator__amount">${amount}</h3>
                     </div>
@@ -48,18 +48,19 @@ const shoppingCart = async () => {
         const plusBtns = document.querySelectorAll('.plus')
         plusBtns.forEach(btn => {
             btn.addEventListener("click", (e) => {
+                const productIndex = shoppingArr.findIndex(p => p.id === e.target.dataset.articul);
+                const product = shoppingArr[productIndex];
                 product.amount++
                 const amountText = e.target.closest(".calculator");
                 amountText.querySelector(".calculator__amount").innerHTML = product.amount
                 count(e)
-            
-            
-            
             })
         })
         const minusBtns = document.querySelectorAll('.minus')
         minusBtns.forEach(btn => {
             btn.addEventListener("click", (e) => {
+                const productIndex = shoppingArr.findIndex(p => p.id === e.target.dataset.articul);
+                const product = shoppingArr[productIndex];
                 if (product.amount != 0) {
                     product.amount = product.amount - 1
                     count(e)
@@ -72,16 +73,25 @@ const shoppingCart = async () => {
     }
    
 const count = (e)=>{
-    const unit = e.target.closest(".unit");
-    const price = unit.querySelector(".unit__cost")
-   const countPrice= product.amount * parseFloat(product.price)
-    price.innerHTML=countPrice
-     product.countPrice=countPrice
-console.log(product.countPrice)
-    }
+    const productIndex = shoppingArr.findIndex(p => p.id === e.target.dataset.articul);
+    const product = shoppingArr[productIndex];
+     const unit = e.target.closest(".unit");
+     const price = unit.querySelector(".unit__cost")
+     console.log( parseFloat(product.price) ,product.amount)
+      price.innerHTML=parseFloat(product.price)*product.amount
+      
+   }
+
+
+
+  
 
     const removeUnitProduct = (e)=>{
+        const productIndex = shoppingArr.findIndex(p => p.id === e.target.dataset.articul);
+    const product = shoppingArr[productIndex];
         if (product.amount<1) {
+            shoppingArr.splice(productIndex, 1);
+
             const cardProduct = e.target.closest(".unit");
             const idBtn = cardProduct.getAttribute('data-articul')
             document.getElementById(idBtn).querySelector(".button").classList.remove("added")
