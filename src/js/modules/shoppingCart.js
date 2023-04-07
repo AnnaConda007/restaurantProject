@@ -14,6 +14,7 @@ const shoppingCart = async () => {
             img: imgSrc,
             nameProd: name,
             price: price,
+            countPrice:price,
             amount: 1,
             id: idProduct
         };
@@ -50,6 +51,10 @@ const shoppingCart = async () => {
                 product.amount++
                 const amountText = e.target.closest(".calculator");
                 amountText.querySelector(".calculator__amount").innerHTML = product.amount
+                count(e)
+            
+            
+            
             })
         })
         const minusBtns = document.querySelectorAll('.minus')
@@ -57,6 +62,7 @@ const shoppingCart = async () => {
             btn.addEventListener("click", (e) => {
                 if (product.amount != 0) {
                     product.amount = product.amount - 1
+                    count(e)
                 }
                 const amountText = e.target.closest(".calculator");
                 amountText.querySelector(".calculator__amount").innerHTML = product.amount
@@ -64,14 +70,24 @@ const shoppingCart = async () => {
             })
         })
     }
+   
+const count = (e)=>{
+    const unit = e.target.closest(".unit");
+    const price = unit.querySelector(".unit__cost")
+   const countPrice= product.amount * parseFloat(product.price)
+    price.innerHTML=countPrice
+     product.countPrice=countPrice
+console.log(product.countPrice)
+    }
 
     const removeUnitProduct = (e)=>{
-        if (product.amount === 0) {
+        if (product.amount<1) {
             const cardProduct = e.target.closest(".unit");
             const idBtn = cardProduct.getAttribute('data-articul')
             document.getElementById(idBtn).querySelector(".button").classList.remove("added")
             cardProduct.remove()
         }
+
     }
 
     shopBtn.forEach(btn => {
