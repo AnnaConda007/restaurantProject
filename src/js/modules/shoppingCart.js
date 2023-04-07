@@ -14,15 +14,16 @@ const shoppingCart = async () => {
             img: imgSrc,
             nameProd: name,
             price: price,
-            amount: 1
+            amount: 1,
+            id: idProduct
         };
         shoppingArr.push(product)
     }
     const renderCart = () => {
         document.querySelector(".background__products").innerHTML = ``
-        shoppingArr.forEach(({ img, nameProd, price,amount,idProduct}) => {
+        shoppingArr.forEach(({ img, nameProd, price,amount,id}) => {
             document.querySelector(".background__products").innerHTML += `
-            <div class="background_unit unit id=${idProduct}">
+            <div class="background_unit unit" data-articul="${id}">
                 <div class="unit__dish">
                     <img class="unit__img" src=${img} alt="фото блюда">
                     <h3 class="unit__name">${nameProd}</h3>
@@ -37,7 +38,8 @@ const shoppingCart = async () => {
                     </div>
                     <h3 class="unit__cost">${price}</h3>
                 </div>
-            </div>`
+            </div>` 
+ 
         });
     }
 const calculatorBtn = ()=>{
@@ -59,8 +61,9 @@ minusBtns.forEach(btn=>{
         amountText.querySelector(".calculator__amount").innerHTML=product.amount
         if(product.amount===0){
             const cardProduct = e.target.closest(".unit");
-            const btn = document.getElementById(cardProduct.id)
-          console.log(cardProduct.id)
+             const idBtn = cardProduct.getAttribute('data-articul') 
+             document.getElementById(idBtn).querySelector(".button").classList.remove("added")
+               cardProduct.remove()
         }
     })
 })
