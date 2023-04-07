@@ -128,7 +128,7 @@ li {
     border-radius: 0;
     border: none;
     color: white;
-    background-color: var(--element);
+    background-color: var(--element) ;
 }
 
 @media (max-width:800px) {
@@ -141,10 +141,6 @@ li {
 .button:active {
     transform: scale(0.95);
     border: 1px solid #eddb66;
-}
-
-.button:hover{
-    transform: scale(1.2);
 }
 
 .button--large {
