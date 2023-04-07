@@ -542,7 +542,6 @@ li {
     align-items: center;
     justify-content: center;
     color: var(--background);
-    overflow: hidden; /* не работает */
 }
 
 .cart__background {
@@ -556,7 +555,14 @@ li {
     align-items: center;
     overflow: auto;
 }
-
+/*
+.cart__background::-webkit-scrollbar {
+   background-color: red;
+  }
+  .cart__background::-webkit-scrollbar-thumb {
+    background: #23ff3c;
+  }
+*/
 .background__header {
     text-align: center;
     width: 100%;
