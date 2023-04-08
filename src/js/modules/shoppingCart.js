@@ -56,8 +56,7 @@ const shoppingCart = async () => {
     }
 
     const CountAmount = () => {
-        const plusBtns = document.querySelectorAll('.plus')
-        plusBtns.forEach(btn => {
+        document.querySelectorAll('.plus').forEach(btn => {
             btn.addEventListener("click", (e) => {
                 const productIndex = shoppingArr.findIndex(p => p.id === e.target.dataset.articul);
                 const product = shoppingArr[productIndex];
@@ -68,8 +67,7 @@ const shoppingCart = async () => {
                 renderSum()
             })
         })
-        const minusBtns = document.querySelectorAll('.minus')
-        minusBtns.forEach(btn => {
+        document.querySelectorAll('.minus').forEach(btn => {
             btn.addEventListener("click", (e) => {
                 const productIndex = shoppingArr.findIndex(p => p.id === e.target.dataset.articul);
                 const product = shoppingArr[productIndex];
@@ -92,16 +90,15 @@ const shoppingCart = async () => {
         const price = unit.querySelector(".unit__cost")
         price.innerHTML = parseFloat(product.price) * product.amount
         product.countPrice = parseFloat(product.price) * product.amount
-
     }
 
     const renderSum = () => {
         let sum = shoppingArr.reduce((acc, cur) => acc + parseFloat(cur.countPrice), 0);
         document.querySelector(".background__sum").innerHTML = sum
+       if(sum===0){
+        document.querySelector(".cart").style.display="none"
+       } 
     }
-
-
-
 
     const removeUnitProduct = (e) => {
         const productIndex = shoppingArr.findIndex(p => p.id === e.target.dataset.articul);
@@ -113,7 +110,6 @@ const shoppingCart = async () => {
             document.getElementById(idBtn).querySelector(".button").classList.remove("added")
             cardProduct.remove()
         }
-
     }
 
 
