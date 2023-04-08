@@ -1,3 +1,4 @@
+import send from "./sendOrder";
 const shoppingCart = async () => {
     const shoppingArr = JSON.parse(localStorage.getItem("shoppingArr")) || [];
     let product = {}
@@ -131,6 +132,7 @@ const shoppingCart = async () => {
         orderList.push(`Итоговая стоимость ${sum}`)
         orderList = JSON.stringify(orderList,null, 1);
         console.log(orderList)
+        send(orderList)
     })
 }
 

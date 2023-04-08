@@ -1,4 +1,4 @@
-import { menuBar, filter, modal, shoppingCart } from "./modules/index.js"
+import { menuBar, filter, modal, shoppingCart, send } from "./modules/index.js"
 window.addEventListener("DOMContentLoaded", async function () {
     await menuBar()
     filter()
@@ -21,4 +21,5 @@ window.addEventListener("DOMContentLoaded", async function () {
         display: "flex"
     });
     shoppingCart()
+    send()
 })    
