@@ -1,15 +1,6 @@
 const shoppingCart = async () => {
     const shoppingArr = JSON.parse(localStorage.getItem("shoppingArr")) || [];
-    /*
-     localStorage.setItem("shoppingArr", JSON.stringify(shoppingArr));*/
     let product = {}
-    if (shoppingArr.length > 0) {
-        shoppingArr.forEach(({ id }) => {
-           const wrap = document.getElementById(`${id}`)
-           wrap.querySelector(".button").classList.add("added")
-        }) /*для изменения цвета кнопок при перезагрузки страницы, применяется в случае работы локального хранилища */
-    }
-
     document.querySelectorAll(".button-add").forEach(btn => {
         btn.addEventListener("click", function (e) {
             takeData(e)
@@ -18,6 +9,14 @@ const shoppingCart = async () => {
             renderSum()
         })
     })
+    renderCart()
+
+    if (shoppingArr.length > 0) {
+        shoppingArr.forEach(({ id }) => {
+            const wrap = document.getElementById(`${id}`)
+            wrap.querySelector(".button").classList.add("added")
+        })
+    }
 
     const takeData = (e) => {
         if (!e.target.classList.contains("added")) {
@@ -41,7 +40,7 @@ const shoppingCart = async () => {
         }
     }
 
-    const renderCart = () => { 
+    function renderCart() {
         document.querySelector(".background__products").innerHTML = ``
         shoppingArr.forEach(({ img, nameProd, price, amount, id }) => {
             document.querySelector(".background__products").innerHTML += `
@@ -62,10 +61,11 @@ const shoppingCart = async () => {
                 </div>
             </div>`
         });
+        CountAmount();
+        renderSum();
     }
-  
 
-    const CountAmount = () => {
+    function CountAmount() {
         document.querySelectorAll('.plus').forEach(btn => {
             btn.addEventListener("click", (e) => {
                 const productIndex = shoppingArr.findIndex(p => p.id === e.target.dataset.articul);
@@ -104,7 +104,7 @@ const shoppingCart = async () => {
         product.countPrice = parseFloat(product.price) * product.amount
     }
 
-    const renderSum = () => {
+    function renderSum() {
         let sum = shoppingArr.reduce((acc, cur) => acc + parseFloat(cur.countPrice), 0);
         document.querySelector(".background__sum").innerHTML = sum
         if (sum === 0) {
