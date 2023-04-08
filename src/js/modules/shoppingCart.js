@@ -124,14 +124,13 @@ const shoppingCart = async () => {
             cardProduct.remove()
         }
     }
+
     document.querySelector(".button--order").addEventListener("click", () => {
         let orderList = [] /* для отправки на почту */
         orderList = shoppingArr.map(({ nameProd, price }) => ({ nameProd, price }));
         orderList.push(`Итоговая стоимость ${sum}`)
         console.log(orderList)
     })
-
-
 }
 
 export default shoppingCart
