@@ -129,6 +129,7 @@ const shoppingCart = async () => {
         let orderList = [] /* для отправки на почту */
         orderList = shoppingArr.map(({ nameProd, price }) => ({ nameProd, price }));
         orderList.push(`Итоговая стоимость ${sum}`)
+        orderList = JSON.stringify(orderList,null, 1);
         console.log(orderList)
     })
 }
