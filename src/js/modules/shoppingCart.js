@@ -5,7 +5,8 @@ const shoppingCart = async () => {
     let product = {}
     if (shoppingArr.length > 0) {
         shoppingArr.forEach(({ id }) => {
-            document.getElementById(`${id}`).classList.add("added")
+           const wrap = document.getElementById(`${id}`)
+            wrap.document.querySelectorAll(".button").classList.add("added")
         }) /*для изменения цвета кнопок при перезагрузки страницы, применяется в случае работы локального хранилища */
     }
 
