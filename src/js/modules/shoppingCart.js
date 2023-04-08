@@ -1,6 +1,13 @@
 const shoppingCart = async () => {
     const shoppingArr = []
+    /*const shoppingArr = JSON.parse(localStorage.getItem("shoppingArr")) || [];
+    shoppingArr = JSON.parse(localStorage.getItem("shoppingArr")) || [];*/
     let product = {}
+    if (shoppingArr.length > 0) {
+        shoppingArr.forEach(({ id }) => {
+            document.getElementById(`${id}`).classList.add("added")
+        }) /*для изменения цвета кнопок при перезагрузки страницы, применяется в случае работы локального хранилища */
+    }
 
     document.querySelectorAll(".button-add").forEach(btn => {
         btn.addEventListener("click", function (e) {
@@ -95,9 +102,9 @@ const shoppingCart = async () => {
     const renderSum = () => {
         let sum = shoppingArr.reduce((acc, cur) => acc + parseFloat(cur.countPrice), 0);
         document.querySelector(".background__sum").innerHTML = sum
-       if(sum===0){
-        document.querySelector(".cart").style.display="none"
-       } 
+        if (sum === 0) {
+            document.querySelector(".cart").style.display = "none"
+        }
     }
 
     const removeUnitProduct = (e) => {
@@ -111,10 +118,6 @@ const shoppingCart = async () => {
             cardProduct.remove()
         }
     }
-
-
-
-
 }
 
 export default shoppingCart
