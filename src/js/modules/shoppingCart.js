@@ -1,17 +1,18 @@
 const shoppingCart = async () => {
-    const shoppingArr = []
-    /*const shoppingArr = JSON.parse(localStorage.getItem("shoppingArr")) || [];
+    const shoppingArr = JSON.parse(localStorage.getItem("shoppingArr")) || [];
+    /*
      localStorage.setItem("shoppingArr", JSON.stringify(shoppingArr));*/
     let product = {}
     if (shoppingArr.length > 0) {
         shoppingArr.forEach(({ id }) => {
            const wrap = document.getElementById(`${id}`)
-            wrap.document.querySelectorAll(".button").classList.add("added")
+           wrap.querySelector(".button").classList.add("added")
         }) /*для изменения цвета кнопок при перезагрузки страницы, применяется в случае работы локального хранилища */
     }
 
     document.querySelectorAll(".button-add").forEach(btn => {
         btn.addEventListener("click", function (e) {
+            localStorage.setItem("shoppingArr", JSON.stringify(shoppingArr));
             takeData(e)
             renderCart()
             CountAmount()
