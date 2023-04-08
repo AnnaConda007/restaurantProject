@@ -1,7 +1,7 @@
 const shoppingCart = async () => {
     const shoppingArr = []
     /*const shoppingArr = JSON.parse(localStorage.getItem("shoppingArr")) || [];
-    shoppingArr = JSON.parse(localStorage.getItem("shoppingArr")) || [];*/
+     localStorage.setItem("shoppingArr", JSON.stringify(shoppingArr));*/
     let product = {}
     if (shoppingArr.length > 0) {
         shoppingArr.forEach(({ id }) => {
