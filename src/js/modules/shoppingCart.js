@@ -1,15 +1,14 @@
 const shoppingCart = async () => {
     const shoppingArr = JSON.parse(localStorage.getItem("shoppingArr")) || [];
     let product = {}
+
     document.querySelectorAll(".button-add").forEach(btn => {
-        btn.addEventListener("click", function (e) {
+        btn.addEventListener("click", (e)=>{
             takeData(e)
             renderCart()
-            CountAmount()
-            renderSum()
         })
     })
-    
+    renderCart()
 
     if (shoppingArr.length > 0) {
         shoppingArr.forEach(({ id }) => {
@@ -61,7 +60,8 @@ const shoppingCart = async () => {
                 </div>
             </div>`
         });
-       
+        CountAmount()
+        renderSum()
     }
 
     function CountAmount() {
