@@ -37,10 +37,11 @@ const shoppingCart = async () => {
                 id: idProduct
             };
             shoppingArr.push(product)
+            localStorage.setItem("shoppingArr", JSON.stringify(shoppingArr))
         }
     }
 
-    const renderCart = () => {
+    const renderCart = () => { 
         document.querySelector(".background__products").innerHTML = ``
         shoppingArr.forEach(({ img, nameProd, price, amount, id }) => {
             document.querySelector(".background__products").innerHTML += `
@@ -62,6 +63,7 @@ const shoppingCart = async () => {
             </div>`
         });
     }
+  
 
     const CountAmount = () => {
         document.querySelectorAll('.plus').forEach(btn => {
@@ -115,6 +117,7 @@ const shoppingCart = async () => {
         const product = shoppingArr[productIndex];
         if (product.amount < 1) {
             shoppingArr.splice(productIndex, 1);
+            localStorage.setItem("shoppingArr", JSON.stringify(shoppingArr));
             const cardProduct = e.target.closest(".unit");
             const idBtn = cardProduct.getAttribute('data-articul')
             document.getElementById(idBtn).querySelector(".button").classList.remove("added")
