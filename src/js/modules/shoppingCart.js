@@ -9,7 +9,7 @@ const shoppingCart = async () => {
             renderSum()
         })
     })
-    renderCart()
+    
 
     if (shoppingArr.length > 0) {
         shoppingArr.forEach(({ id }) => {
@@ -61,8 +61,7 @@ const shoppingCart = async () => {
                 </div>
             </div>`
         });
-        CountAmount();
-        renderSum();
+       
     }
 
     function CountAmount() {
