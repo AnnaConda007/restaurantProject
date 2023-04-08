@@ -1,4 +1,4 @@
-import send from "./sendOrder";
+import send from "./sendOrder.js";
 const shoppingCart = async () => {
     const shoppingArr = JSON.parse(localStorage.getItem("shoppingArr")) || [];
     let product = {}
