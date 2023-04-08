@@ -1,9 +1,10 @@
 const shoppingCart = async () => {
     const shoppingArr = JSON.parse(localStorage.getItem("shoppingArr")) || [];
     let product = {}
+    let sum = 0
 
     document.querySelectorAll(".button-add").forEach(btn => {
-        btn.addEventListener("click", (e)=>{
+        btn.addEventListener("click", (e) => {
             takeData(e)
             renderCart()
         })
@@ -104,7 +105,7 @@ const shoppingCart = async () => {
     }
 
     function renderSum() {
-        let sum = shoppingArr.reduce((acc, cur) => acc + parseFloat(cur.countPrice), 0);
+        sum = shoppingArr.reduce((acc, cur) => acc + parseFloat(cur.countPrice), 0);
         document.querySelector(".background__sum").innerHTML = sum
         if (sum === 0) {
             document.querySelector(".cart").style.display = "none"
@@ -123,6 +124,14 @@ const shoppingCart = async () => {
             cardProduct.remove()
         }
     }
+    document.querySelector(".button--order").addEventListener("click", () => {
+        let orderList = [] /* для отправки на почту */
+        orderList = shoppingArr.map(({ nameProd, price }) => ({ nameProd, price }));
+        orderList.push(`Итоговая стоимость ${sum}`)
+        console.log(orderList)
+    })
+
+
 }
 
 export default shoppingCart
