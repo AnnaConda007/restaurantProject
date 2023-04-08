@@ -12,7 +12,6 @@ const shoppingCart = async () => {
 
     document.querySelectorAll(".button-add").forEach(btn => {
         btn.addEventListener("click", function (e) {
-            localStorage.setItem("shoppingArr", JSON.stringify(shoppingArr));
             takeData(e)
             renderCart()
             CountAmount()
@@ -71,9 +70,10 @@ const shoppingCart = async () => {
                 const product = shoppingArr[productIndex];
                 product.amount++
                 const amountText = e.target.closest(".calculator");
-                amountText.querySelector(".calculator__amount").innerHTML = product.amount
                 totalPrice(e)
                 renderSum()
+                localStorage.setItem("shoppingArr", JSON.stringify(shoppingArr));
+                amountText.querySelector(".calculator__amount").innerHTML = product.amount
             })
         })
         document.querySelectorAll('.minus').forEach(btn => {
@@ -86,6 +86,7 @@ const shoppingCart = async () => {
                     renderSum()
                 }
                 const amountText = e.target.closest(".calculator");
+                localStorage.setItem("shoppingArr", JSON.stringify(shoppingArr));
                 amountText.querySelector(".calculator__amount").innerHTML = product.amount
                 removeUnitProduct(e)
             })
