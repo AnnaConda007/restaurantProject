@@ -1,5 +1,5 @@
 const shoppingCart = async () => {
-    const products = JSON.parse(localStorage.getItem("products")) || [];
+    const products = JSON.parse(localStorage.products) || [];
     let sum = 0
 
     document.querySelectorAll(".button-add").forEach(btn => {
@@ -26,7 +26,7 @@ const shoppingCart = async () => {
             const idProduct = сardProduct.id
             const btn = сardProduct.querySelector(".button");
             btn.classList.add("added")
-           const product = {
+            const product = {
                 img: imgSrc,
                 nameProd: name,
                 price: price,
@@ -67,8 +67,9 @@ const shoppingCart = async () => {
     function CountAmount() {
         document.querySelectorAll('.plus').forEach(btn => {
             btn.addEventListener("click", (e) => {
-                const productIndex = products.findIndex(p => p.id === e.target.dataset.articul);
-                const product = products[productIndex];
+                const product = products.find(product => {
+                    return product.id === e.target.dataset.articul
+                })
                 product.amount++
                 const amountText = e.target.closest(".calculator");
                 renderlPrice(e)
@@ -79,8 +80,9 @@ const shoppingCart = async () => {
         })
         document.querySelectorAll('.minus').forEach(btn => {
             btn.addEventListener("click", (e) => {
-                const productIndex = products.findIndex(p => p.id === e.target.dataset.articul);
-                const product = products[productIndex];
+                const product = products.find(product => {
+                    return product.id === e.target.dataset.articul
+                })
                 if (product.amount != 0) {
                     product.amount = product.amount - 1
                     renderlPrice(e)
@@ -95,8 +97,9 @@ const shoppingCart = async () => {
     }
 
     const renderlPrice = (e) => {
-        const productIndex = products.findIndex(p => p.id === e.target.dataset.articul);
-        const product = products[productIndex];
+        const product = products.find(product => {
+            return product.id === e.target.dataset.articul
+        })
         const unit = e.target.closest(".unit");
         const price = unit.querySelector(".unit__cost")
         product.countPrice = parseFloat(product.price) * product.amount
@@ -113,10 +116,11 @@ const shoppingCart = async () => {
     }
 
     const removeProduct = (e) => {
-        const productIndex = products.findIndex(p => p.id === e.target.dataset.articul);
-        const product = products[productIndex];
+        const product = products.find(product => {
+            return product.id === e.target.dataset.articul
+        })
         if (product.amount < 1) {
-            products.splice(productIndex, 1);
+            products.filter(item => { item !== product });
             localStorage.setItem("products", JSON.stringify(products));
             const cardProduct = e.target.closest(".unit");
             const idBtn = cardProduct.getAttribute('data-articul')
@@ -129,7 +133,7 @@ const shoppingCart = async () => {
         let orderList = [] /* для отправки на почту */
         orderList = products.map(({ nameProd, amount, price }) => ({ nameProd, amount, price }));
         orderList.push(`Итоговая стоимость ${sum}`)
-        orderList = JSON.stringify(orderList,null, 1);
+        orderList = JSON.stringify(orderList, null, 1);
         console.log(orderList)
     })
 }
