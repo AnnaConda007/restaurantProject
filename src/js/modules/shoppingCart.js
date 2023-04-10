@@ -1,6 +1,5 @@
 const shoppingCart = async () => {
-    const shoppingArr = JSON.parse(localStorage.getItem("shoppingArr")) || [];
-    let product = {}
+    const products = JSON.parse(localStorage.getItem("products")) || [];
     let sum = 0
 
     document.querySelectorAll(".button-add").forEach(btn => {
@@ -11,8 +10,8 @@ const shoppingCart = async () => {
     })
     renderCart()
 
-    if (shoppingArr.length > 0) {
-        shoppingArr.forEach(({ id }) => {
+    if (products.length > 0) {
+        products.forEach(({ id }) => {
             const wrap = document.getElementById(`${id}`)
             wrap.querySelector(".button").classList.add("added")
         })
@@ -27,7 +26,7 @@ const shoppingCart = async () => {
             const idProduct = сardProduct.id
             const btn = сardProduct.querySelector(".button");
             btn.classList.add("added")
-            product = {
+           const product = {
                 img: imgSrc,
                 nameProd: name,
                 price: price,
@@ -35,14 +34,14 @@ const shoppingCart = async () => {
                 amount: 1,
                 id: idProduct
             };
-            shoppingArr.push(product)
-            localStorage.setItem("shoppingArr", JSON.stringify(shoppingArr))
+            products.push(product)
+            localStorage.setItem("products", JSON.stringify(products))
         }
     }
 
     function renderCart() {
         document.querySelector(".background__products").innerHTML = ``
-        shoppingArr.forEach(({ img, nameProd, countPrice, amount, id }) => {
+        products.forEach(({ img, nameProd, countPrice, amount, id }) => {
             document.querySelector(".background__products").innerHTML += `
             <div class="background_unit unit" data-articul="${id}">
                 <div class="unit__dish">
@@ -62,51 +61,51 @@ const shoppingCart = async () => {
             </div>`
         });
         CountAmount()
-        renderSum()
+        renderTotalPrice()
     }
 
     function CountAmount() {
         document.querySelectorAll('.plus').forEach(btn => {
             btn.addEventListener("click", (e) => {
-                const productIndex = shoppingArr.findIndex(p => p.id === e.target.dataset.articul);
-                const product = shoppingArr[productIndex];
+                const productIndex = products.findIndex(p => p.id === e.target.dataset.articul);
+                const product = products[productIndex];
                 product.amount++
                 const amountText = e.target.closest(".calculator");
-                totalPrice(e)
-                renderSum()
-                localStorage.setItem("shoppingArr", JSON.stringify(shoppingArr));
+                renderlPrice(e)
+                renderTotalPrice()
+                localStorage.setItem("products", JSON.stringify(products));
                 amountText.querySelector(".calculator__amount").innerHTML = product.amount
             })
         })
         document.querySelectorAll('.minus').forEach(btn => {
             btn.addEventListener("click", (e) => {
-                const productIndex = shoppingArr.findIndex(p => p.id === e.target.dataset.articul);
-                const product = shoppingArr[productIndex];
+                const productIndex = products.findIndex(p => p.id === e.target.dataset.articul);
+                const product = products[productIndex];
                 if (product.amount != 0) {
                     product.amount = product.amount - 1
-                    totalPrice(e)
-                    renderSum()
+                    renderlPrice(e)
+                    renderTotalPrice()
                 }
                 const amountText = e.target.closest(".calculator");
-                localStorage.setItem("shoppingArr", JSON.stringify(shoppingArr));
+                localStorage.setItem("products", JSON.stringify(products));
                 amountText.querySelector(".calculator__amount").innerHTML = product.amount
                 removeUnitProduct(e)
             })
         })
     }
 
-    const totalPrice = (e) => {
-        const productIndex = shoppingArr.findIndex(p => p.id === e.target.dataset.articul);
-        const product = shoppingArr[productIndex];
+    const renderlPrice = (e) => {
+        const productIndex = products.findIndex(p => p.id === e.target.dataset.articul);
+        const product = products[productIndex];
         const unit = e.target.closest(".unit");
         const price = unit.querySelector(".unit__cost")
         product.countPrice = parseFloat(product.price) * product.amount
         price.innerHTML = product.countPrice
-        localStorage.setItem("shoppingArr", JSON.stringify(shoppingArr));
+        localStorage.setItem("products", JSON.stringify(products));
     }
 
-    function renderSum() {
-        sum = shoppingArr.reduce((acc, cur) => acc + parseFloat(cur.countPrice), 0);
+    function renderTotalPrice() {
+        sum = products.reduce((acc, cur) => acc + parseFloat(cur.countPrice), 0);
         document.querySelector(".background__sum").innerHTML = sum
         if (sum === 0) {
             document.querySelector(".cart").style.display = "none"
@@ -114,11 +113,11 @@ const shoppingCart = async () => {
     }
 
     const removeUnitProduct = (e) => {
-        const productIndex = shoppingArr.findIndex(p => p.id === e.target.dataset.articul);
-        const product = shoppingArr[productIndex];
+        const productIndex = products.findIndex(p => p.id === e.target.dataset.articul);
+        const product = products[productIndex];
         if (product.amount < 1) {
-            shoppingArr.splice(productIndex, 1);
-            localStorage.setItem("shoppingArr", JSON.stringify(shoppingArr));
+            products.splice(productIndex, 1);
+            localStorage.setItem("products", JSON.stringify(products));
             const cardProduct = e.target.closest(".unit");
             const idBtn = cardProduct.getAttribute('data-articul')
             document.getElementById(idBtn).querySelector(".button").classList.remove("added")
@@ -128,7 +127,7 @@ const shoppingCart = async () => {
 
     document.querySelector(".button--order").addEventListener("click", () => {
         let orderList = [] /* для отправки на почту */
-        orderList = shoppingArr.map(({ nameProd, amount, price }) => ({ nameProd, amount, price }));
+        orderList = products.map(({ nameProd, amount, price }) => ({ nameProd, amount, price }));
         orderList.push(`Итоговая стоимость ${sum}`)
         orderList = JSON.stringify(orderList,null, 1);
         console.log(orderList)
