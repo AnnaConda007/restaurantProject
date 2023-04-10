@@ -42,7 +42,7 @@ const shoppingCart = async () => {
 
     function renderCart() {
         document.querySelector(".background__products").innerHTML = ``
-        shoppingArr.forEach(({ img, nameProd, price, amount, id }) => {
+        shoppingArr.forEach(({ img, nameProd, countPrice, amount, id }) => {
             document.querySelector(".background__products").innerHTML += `
             <div class="background_unit unit" data-articul="${id}">
                 <div class="unit__dish">
@@ -57,7 +57,7 @@ const shoppingCart = async () => {
                         </div>
                         <h3 class="calculator__amount">${amount}</h3>
                     </div>
-                    <h3 class="unit__cost">${price}</h3>
+                    <h3 class="unit__cost">${countPrice}</h3>
                 </div>
             </div>`
         });
@@ -100,8 +100,9 @@ const shoppingCart = async () => {
         const product = shoppingArr[productIndex];
         const unit = e.target.closest(".unit");
         const price = unit.querySelector(".unit__cost")
-        price.innerHTML = parseFloat(product.price) * product.amount
         product.countPrice = parseFloat(product.price) * product.amount
+        price.innerHTML = product.countPrice
+        localStorage.setItem("shoppingArr", JSON.stringify(shoppingArr));
     }
 
     function renderSum() {
@@ -127,7 +128,7 @@ const shoppingCart = async () => {
 
     document.querySelector(".button--order").addEventListener("click", () => {
         let orderList = [] /* для отправки на почту */
-        orderList = shoppingArr.map(({ nameProd, price }) => ({ nameProd, price }));
+        orderList = shoppingArr.map(({ nameProd, amount, price }) => ({ nameProd, price }));
         orderList.push(`Итоговая стоимость ${sum}`)
         orderList = JSON.stringify(orderList,null, 1);
         console.log(orderList)
