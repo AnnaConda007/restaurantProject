@@ -128,7 +128,7 @@ const shoppingCart = async () => {
 
     document.querySelector(".button--order").addEventListener("click", () => {
         let orderList = [] /* для отправки на почту */
-        orderList = shoppingArr.map(({ nameProd, amount, price }) => ({ nameProd, price }));
+        orderList = shoppingArr.map(({ nameProd, amount, price }) => ({ nameProd, amount, price }));
         orderList.push(`Итоговая стоимость ${sum}`)
         orderList = JSON.stringify(orderList,null, 1);
         console.log(orderList)
