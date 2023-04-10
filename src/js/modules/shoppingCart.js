@@ -89,7 +89,7 @@ const shoppingCart = async () => {
                 const amountText = e.target.closest(".calculator");
                 localStorage.setItem("products", JSON.stringify(products));
                 amountText.querySelector(".calculator__amount").innerHTML = product.amount
-                removeUnitProduct(e)
+                removeProduct(e)
             })
         })
     }
@@ -112,7 +112,7 @@ const shoppingCart = async () => {
         }
     }
 
-    const removeUnitProduct = (e) => {
+    const removeProduct = (e) => {
         const productIndex = products.findIndex(p => p.id === e.target.dataset.articul);
         const product = products[productIndex];
         if (product.amount < 1) {
