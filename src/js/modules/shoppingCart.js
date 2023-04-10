@@ -116,11 +116,10 @@ const shoppingCart = async () => {
     }
 
     const removeProduct = (e) => {
-        const product = products.find(product => {
-            return product.id === e.target.dataset.articul
-        })
+        const productIndex = products.findIndex(p => p.id === e.target.dataset.articul);
+        const product = products[productIndex];
         if (product.amount < 1) {
-            products.filter(item => { item !== product });
+            products.splice(productIndex, 1);
             localStorage.setItem("products", JSON.stringify(products));
             const cardProduct = e.target.closest(".unit");
             const idBtn = cardProduct.getAttribute('data-articul')
