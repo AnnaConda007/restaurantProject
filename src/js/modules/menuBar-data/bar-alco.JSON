@@ -4,21 +4,21 @@
         "price": "500",
         "name": "Blue Lagoon",
         "product": "alcohol",
-        "id": "Blue Lagoon"
+        "id":"blue"
     },
     {
         "src": "./img/img-bar/alcohol/blue-mohito.jpg",
         "price": "650",
         "name": "Mai Tai",
         "product": "alcohol",
-        "id": "Mai Tai"
+        "id": "Maci"
     },
     {
         "src": "./img/img-bar/alcohol/white-limon.jpg",
         "price": "420",
         "name": "Moscow Mule",
         "product": "alcohol",
-        "id": "Moscow Mule"
+        "id": "Moxscow"
     },
     {
         "src": "./img/img-bar/alcohol/blue-violet.jpg",
@@ -39,14 +39,14 @@
         "price": "550",
         "name": "Tom Collins",
         "product": "alcohol",
-        "id": "Tom Collins"
+        "id": "TomCollins"
     },
     {
         "src": "./img/img-bar/alcohol/whiskey.jpg",
         "price": "650",
         "name": "Dark and Stormy",
         "product": "alcohol",
-        "id": "Dark and Stormy"
+        "id": "Dark"
     },
     {
         "src": "./img/img-bar/alcohol/white-limon.jpg",
@@ -67,7 +67,7 @@
         "price": "400",
         "name": "Old Fashioned",
         "product": "alcohol",
-        "id": "Old Fashioned"
+        "id": "OldFashioned"
     }
 ]
 

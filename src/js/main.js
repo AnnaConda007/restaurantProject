@@ -1,5 +1,4 @@
-import {menuBar, filter, modal} from "./modules/index.js"
- 
+import { menuBar, filter, modal, shoppingCart } from "./modules/index.js"
 window.addEventListener("DOMContentLoaded", async function () {
     await menuBar()
     filter()
@@ -15,4 +14,11 @@ window.addEventListener("DOMContentLoaded", async function () {
         modalClose: ".modal-form__form-background",
         display: "block"
     });
+    modal({
+        trigerSelector: ".shopping-cart",
+        modalSelector: ".cart",
+        modalClose: ".background__close",
+        display: "flex"
+    });
+    shoppingCart()
 })    

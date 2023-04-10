@@ -128,7 +128,7 @@ li {
     border-radius: 0;
     border: none;
     color: white;
-    background-color: var(--element);
+    background-color: var(--element) ;
 }
 
 @media (max-width:800px) {
@@ -139,8 +139,8 @@ li {
 }
 
 .button:active {
-    margin-top: 5px;
-    border: 1px solid #000000;
+    transform: scale(0.95);
+    border: 1px solid #eddb66;
 }
 
 .button--large {
@@ -529,4 +529,144 @@ li {
     width: 100%;
     text-align: center;
     margin-top: 10px;
+}
+
+.cart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/screenImg.png);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: var(--background);
+}
+
+.cart__background {
+    background-color: white;
+    max-width: 1300px;
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+.background__close{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.background__header {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    height: auto;
+}
+
+.background__products {
+    width: 100%;
+    min-height: 70%;
+}
+
+.background_unit {
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.unit__dish {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 200px;
+    width: 40%;
+}
+
+.unit__img {
+    width: 50px;
+    height: 80px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.unit__price {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 200px;
+    width: 40%;
+}
+
+.unit__calculator {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 80px;
+    width: 50%;
+}
+
+.calculator__buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+}
+
+.calculator__button {
+    width: 20px;
+    height: 20px;
+    background-color: var(--background);
+    color: var(--element);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator__button:active {
+    margin-top: 5px;
+    border: 1px solid white;
+}
+
+.unit__cost {
+    padding: 0px 20px 0px 20px;
+}
+
+@media (max-width:600px) {
+    .unit__cost {
+        padding: 0px;
+    }
+}
+
+.background__order {
+    margin-right: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 50px;
+}
+
+@media (max-width:800px) {
+    .background__order {
+        margin-right: 0px
+    }
+}
+
+.background__total {
+    margin-right: 30px;
+    display: flex;
+}
+
+.background__sum {
+    margin-right: 20px;
+}
+
+.button--order{
+    margin-bottom: 20px;
 }

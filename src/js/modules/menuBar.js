@@ -16,7 +16,7 @@ const menuBar = async () => {
           </figure>
           <div class="product__order">
             <h2 class="product__price">${price} &#x20bd</h2>
-            <button class="button button--smal"> В корзину</button>
+            <button class="button button--smal button-add"> В корзину</button>
           </div>
         </div>
       `;
