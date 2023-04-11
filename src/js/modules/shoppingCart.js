@@ -112,6 +112,7 @@ const shoppingCart = async () => {
         document.querySelector(".background__sum").innerHTML = sum
         if (sum === 0) {
             document.querySelector(".cart").style.display = "none"
+            document.body.classList.remove("hidden")
         }
     }
 
