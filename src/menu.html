@@ -32,9 +32,9 @@
             </div>
             <nav class="burger-nav__wrap">
                 <ul class="burger-nav__wrap__menu">
-                    <li class="burger-nav__wrap__item"><a href="#">Меню</a></li>
-                    <li class="burger-nav__wrap__item"><a href="#">Доставка</a></li>
-                    <li class="burger-nav__wrap__item"><a href="#">Оплата</a></li>
+                    <li class="burger-nav__wrap__item"><a class="modal-close-button" href="#drink">Меню</a></li>
+                    <li class="burger-nav__wrap__item"><a class="absence__triger"  href="#">Доставка</a></li>
+                    <li class="burger-nav__wrap__item"><a class="absence__triger" href="#">Оплата</a></li>
                     <li class="burger-nav__wrap__item burger-nav__wrap__item--order item-order "><a href="#">Бронь
                             столика</a></li>
                 </ul>
@@ -87,7 +87,7 @@
                     <img class="shopping-cart__img" src="img/shopping-basket.svg" alt="корзина" id="shopping-basket">
                 </div>
             </div>
-            <div class="main__menu-wrap  menu-wrap inner-container ">
+            <div class="main__menu-wrap  menu-wrap inner-container" id="drink">
                 <ul class="menu-wrap__list">
                     <li class="menu-wrap__item item-drink  active" id="alcohol">Алкагольные напитки</li>
                     <li class="menu-wrap__item item-drink" id="alcohol-free">Безалкогольные напитки</li>
@@ -223,6 +223,13 @@
                 <h2 class="background__sum">  &#x20bd</h2>
             </div>
             <button class="button button--large button--order">заказать</button>
+        </div>
+    </section>
+    <section class="absence modal">
+        <div class="absence__text-wrap">
+            <img class="absence__close" src="img/close-fill.svg" alt="закрыть">
+           <p class="absence__text">Это учебный проект, для секций "оплата" и "доставка" отсутствовал макет.
+            Остальной функционал реализован.</p> 
         </div>
     </section>
     <script src="js/main.js" type="module"></script>
