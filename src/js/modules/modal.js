@@ -1,4 +1,5 @@
 const modal = ({trigerSelector, modalSelector, modalClose, display}) => {
+
   const modalBtn = document.querySelectorAll(trigerSelector)
   const modalWindow = document.querySelector(modalSelector)
   const allModal = document.querySelectorAll('.modal')
@@ -6,6 +7,7 @@ const modal = ({trigerSelector, modalSelector, modalClose, display}) => {
 
   modalBtn.forEach((btn) => { 
     btn.addEventListener('click', () => {
+    
       modalWindow.style.display = display
       document.body.classList.add("hidden")
     })
