@@ -1,8 +1,8 @@
 const shoppingCart = async () => {
-    if(document.querySelector(".inner-container")){
+    if (document.querySelector(".inner-container")) {
         const products = JSON.parse(localStorage.products) || [];
         let sum = 0
-    
+
         document.querySelectorAll(".button-add").forEach(btn => {
             btn.addEventListener("click", (e) => {
                 takeData(e)
@@ -10,14 +10,14 @@ const shoppingCart = async () => {
             })
         })
         renderCart()
-    
+
         if (products.length > 0) {
             products.forEach(({ id }) => {
                 const wrap = document.getElementById(`${id}`)
                 wrap.querySelector(".button").classList.add("added")
             })
         }
-    
+
         const takeData = (e) => {
             if (!e.target.classList.contains("added")) {
                 const сardProduct = e.target.closest(".product");
@@ -39,7 +39,7 @@ const shoppingCart = async () => {
                 localStorage.setItem("products", JSON.stringify(products))
             }
         }
-    
+
         function renderCart() {
             document.querySelector(".background__products").innerHTML = ``
             products.forEach(({ img, nameProd, countPrice, amount, id }) => {
@@ -64,7 +64,7 @@ const shoppingCart = async () => {
             CountAmount()
             renderTotalPrice()
         }
-    
+
         function CountAmount() {
             document.querySelectorAll('.plus').forEach(btn => {
                 btn.addEventListener("click", (e) => {
@@ -96,7 +96,7 @@ const shoppingCart = async () => {
                 })
             })
         }
-    
+
         const renderlPrice = (e) => {
             const product = products.find(product => {
                 return product.id === e.target.dataset.articul
@@ -107,7 +107,7 @@ const shoppingCart = async () => {
             price.innerHTML = product.countPrice
             localStorage.setItem("products", JSON.stringify(products));
         }
-    
+
         function renderTotalPrice() {
             sum = products.reduce((acc, cur) => acc + parseFloat(cur.countPrice), 0);
             document.querySelector(".background__sum").innerHTML = sum
@@ -116,7 +116,7 @@ const shoppingCart = async () => {
                 document.body.classList.remove("hidden")
             }
         }
-    
+
         const removeProduct = (e) => {
             const productIndex = products.findIndex(p => p.id === e.target.dataset.articul);
             const product = products[productIndex];
@@ -129,9 +129,9 @@ const shoppingCart = async () => {
                 cardProduct.remove()
             }
         }
-    
+
         document.querySelector(".button--order").addEventListener("click", () => {
-            let orderList = [] /* для отправки на почту */
+            let orderList = []
             orderList = products.map(({ nameProd, amount, price }) => ({ nameProd, amount, price }));
             orderList.push(`Итоговая стоимость ${sum}`)
             orderList = JSON.stringify(orderList, null, 1);

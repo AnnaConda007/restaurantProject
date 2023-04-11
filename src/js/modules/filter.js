@@ -21,4 +21,3 @@ const filter = (tablo, prod) => {
 
 export default filter
 
- 
