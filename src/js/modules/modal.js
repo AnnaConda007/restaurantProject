@@ -11,14 +11,18 @@ const modal = ({trigerSelector, modalSelector, modalClose, display}) => {
     })
   })
 
-  closeModal.forEach(btn=>{
-btn.addEventListener('click', () => {
-  allModal.forEach((modal) => {  
-    modal.style.display = 'none'
-    document.body.classList.remove("hidden")
-  })
-})
-  })
+  closeModal.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      if (e.target === btn) {
+        allModal.forEach((modal) => {  
+          modal.style.display = 'none';
+          document.body.classList.remove("hidden");
+        });
+      }
+    });
+  });
   
 }
 export default modal
+
+

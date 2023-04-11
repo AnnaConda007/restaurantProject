@@ -18,7 +18,7 @@ window.addEventListener("DOMContentLoaded", async function () {
     modal({
         trigerSelector: ".shopping-cart",
         modalSelector: ".cart",
-        modalClose: ".background__close",
+        modalClose: ".background__close-button",
         display: "flex"
     });
     shoppingCart()

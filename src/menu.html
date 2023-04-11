@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Меню</title>
+    <title>Барная карта</title>
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="menu-bar.css">
 </head>
@@ -87,7 +87,41 @@
                     <img class="shopping-cart__img" src="img/shopping-basket.svg" alt="корзина" id="shopping-basket">
                 </div>
             </div>
-            
+            <div class="main__menu-wrap  menu-wrap inner-container ">
+                <ul class="menu-wrap__list">
+                    <li class="menu-wrap__item item-drink  active" id="alcohol">Алкагольные напитки</li>
+                    <li class="menu-wrap__item item-drink" id="alcohol-free">Безалкогольные напитки</li>
+                </ul>
+            </div>
+            <div class="main__inner-container inner-container">
+                <div class="inner-container__product-wrap product-wrap product-wrap-bar ">
+                    
+                </div>
+            </div>
+
+
+            <div class="main__menu-wrap  menu-wrap inner-container" id="food">
+                <ul class="menu-wrap__list">
+                    <li class="menu-wrap__item item-food active" id="breakfast">Завтраки </li>
+                    <li class="menu-wrap__item item-food " id="canape">Холодные закуски</li>
+                    <li class="menu-wrap__item item-food " id="bruschetta">Брускетты </li>
+                    <li class="menu-wrap__item item-food " id="salad">Салаты</li>
+                    <li class="menu-wrap__item item-food " id="soup">Супы</li>
+                    <li class="menu-wrap__item item-food " id="paste">Паста и ризотто </li>
+                    <li class="menu-wrap__item item-food " id="fish">Рыба </li>
+                    <li class="menu-wrap__item item-food " id="brazier">Мангал </li>
+                    <li class="menu-wrap__item item-food " id="grill">Grill </li>
+                    <li class="menu-wrap__item item-food " id="garnish">Гарниры </li>
+                </ul>
+            </div>
+            <div class="main__inner-container inner-container">
+                <div class="inner-container__product-wrap product-wrap product-wrap-menu">
+                
+                </div>
+            </div>
+
+
+
             <section class="container main__major major  inner-container">
                 <div class="major__heading heading">
                     <h3 class="heading__title">Доставка</h3>
@@ -173,6 +207,24 @@
             <li class="footer__item"><a href="">Дизайн d-e-n.ru</a></li>
         </ol>
     </footer>
+    <section class="cart modal">
+        <div class="cart__background background">
+            <div class="background__close">
+                <img class="background__close-button" src="img/close-fill.svg" alt="">
+            </div>
+            <div class="background__header">
+                <h3 class="header__text">Заказ</h3>
+            </div>
+            <div class="background__products">
+               
+             </div>
+            <div class="background__order">
+                <h2 class="background__total">итого</h2>
+                <h2 class="background__sum">  &#x20bd</h2>
+            </div>
+            <button class="button button--large button--order">заказать</button>
+        </div>
+    </section>
     <script src="js/main.js" type="module"></script>
 </body>
 
