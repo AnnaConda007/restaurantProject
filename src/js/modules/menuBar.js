@@ -9,7 +9,7 @@ const menuBar = async () => {
     const data = await jsonObjects.reduce((acc, cur) => acc.concat(cur), [])
     data.forEach(({ id, src, name, price, product }) => {
       wrap.innerHTML += `
-        <div class="product-wrap__product product"  data-product="${product}" id=${id}>
+        <div class="product-wrap__product product drink"  data-product="${product}" id=${id}>
           <figure class="product__figure">
             <img class="product__img" src=${src} alt="фото напитка">
             <figcaption class="product__figcaption">${name}</figcaption>
@@ -42,7 +42,7 @@ const menuBar = async () => {
     const data = await jsonObjects.reduce((acc, cur) => acc.concat(cur), [])
     data.forEach(({ id, src, name, price, product }) => {
       wrap.innerHTML += `
-        <div class="product-wrap__product product"  data-product="${product}" id=${id}>
+        <div class="product-wrap__product product food"  data-product="${product}" id=${id}>
           <figure class="product__figure">
             <img class="product__img" src=${src} alt="фото напитка">
             <figcaption class="product__figcaption">${name}</figcaption>
