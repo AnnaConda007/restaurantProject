@@ -42,14 +42,14 @@ const menuBar = async () => {
     const data = await jsonObjects.reduce((acc, cur) => acc.concat(cur), [])
     data.forEach(({ id, src, name, price, product }) => {
       wrap.innerHTML += `
-        <div class="product-wrap__product product food"  data-product="${product}" id=${id}>
+      <div class="product-wrap__product product food"  data-product="${product}" id=${id}>
           <figure class="product__figure">
             <img class="product__img" src=${src} alt="фото напитка">
             <figcaption class="product__figcaption">${name}</figcaption>
           </figure>
           <div class="product__order">
             <h2 class="product__price">${price} &#x20bd</h2>
-            <button class="button button--smal"> В корзину</button>
+            <button class="button button--smal button-add"> В корзину</button>
           </div>
         </div>
       `;
