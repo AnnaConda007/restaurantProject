@@ -2,7 +2,7 @@ const modal = ({trigerSelector, modalSelector, modalClose, display}) => {
   const modalBtn = document.querySelectorAll(trigerSelector)
   const modalWindow = document.querySelector(modalSelector)
   const allModal = document.querySelectorAll('.modal')
-  const closeModal = document.querySelector(modalClose)
+  const closeModal = document.querySelectorAll(modalClose)
 
   modalBtn.forEach((btn) => { 
     btn.addEventListener('click', () => {
@@ -11,11 +11,14 @@ const modal = ({trigerSelector, modalSelector, modalClose, display}) => {
     })
   })
 
-  closeModal.addEventListener('click', () => {
-    allModal.forEach((modal) => {  
-      modal.style.display = 'none'
-      document.body.classList.remove("hidden")
-    })
+  closeModal.forEach(btn=>{
+btn.addEventListener('click', () => {
+  allModal.forEach((modal) => {  
+    modal.style.display = 'none'
+    document.body.classList.remove("hidden")
   })
+})
+  })
+  
 }
 export default modal
