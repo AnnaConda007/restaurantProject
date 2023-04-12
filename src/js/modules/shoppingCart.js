@@ -132,7 +132,7 @@ const shoppingCart = async () => {
         }
 
         const orderFormation = () => {
-            let htmlString
+            let htmlString = ""
             products.forEach(({ nameProd, amount, price }) => {
                 htmlString += `
                 <li class="order__li" > Наименование: ${nameProd}, колличество: ${amount}, цена: ${price}, </li> `;
@@ -148,7 +148,7 @@ const shoppingCart = async () => {
             <section class="order">
             <h3 class="order__title">Новый заказ</h3>
             <div class="order__content">
-                <ol class="order__ol">
+                <ol >
                  ${htmlString}
                 </ol>
                 <h5 class="order__title">Итого: ${sum}</h5>
