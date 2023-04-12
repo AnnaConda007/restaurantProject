@@ -1,7 +1,8 @@
 import { menuBar, filter, modal, shoppingCart } from "./modules/index.js"
 window.addEventListener("DOMContentLoaded", async function () {
     await menuBar()
-    filter()
+    filter(".item-food", ".food")
+    filter(".item-drink", ".drink")
     modal({
         trigerSelector: ".menu",
         modalSelector: ".burger-nav",
@@ -11,13 +12,19 @@ window.addEventListener("DOMContentLoaded", async function () {
     modal({
         trigerSelector: ".item-order",
         modalSelector: ".modal-form",
-        modalClose: ".modal-form__form-background",
+        modalClose: ".modal-form",
         display: "block"
     });
     modal({
         trigerSelector: ".shopping-cart",
         modalSelector: ".cart",
-        modalClose: ".background__close",
+        modalClose: ".background__close-button",
+        display: "flex"
+    });
+    modal({
+        trigerSelector: ".absence__triger",
+        modalSelector: ".absence",
+        modalClose: ".absence",
         display: "flex"
     });
     shoppingCart()

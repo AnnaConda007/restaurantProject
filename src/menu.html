@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Меню</title>
+    <title>Барная карта</title>
     <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="menu-bar.css">
+    <link rel="stylesheet" href="menu.css">
 </head>
 
 <body>
@@ -32,78 +32,89 @@
             </div>
             <nav class="burger-nav__wrap">
                 <ul class="burger-nav__wrap__menu">
-                    <li class="burger-nav__wrap__item"><a href="#">Меню</a></li>
-                    <li class="burger-nav__wrap__item"><a href="#">Доставка</a></li>
-                    <li class="burger-nav__wrap__item"><a href="#">Оплата</a></li>
+                    <li class="burger-nav__wrap__item"><a class="modal-close-button" href="#drink">Меню</a></li>
+                    <li class="burger-nav__wrap__item"><a class="absence__triger" href="#">Доставка</a></li>
+                    <li class="burger-nav__wrap__item"><a class="absence__triger" href="#">Оплата</a></li>
                     <li class="burger-nav__wrap__item burger-nav__wrap__item--order item-order "><a href="#">Бронь
                             столика</a></li>
                 </ul>
             </nav>
             <div class="burger-nav__media">
                 <a href="https://www.youtube.com/"><img class="img-wrap__img" src="img\left-bar\u-tube.svg"
-                    alt="ю-туб"></a>
-            <a href="https://vk.com/"><img class="img-wrap__img" src="img\left-bar\vk.svg" alt="вк"></a>
-            <a href="https://t.me/MsAnnaKonda"><img class="img-wrap__img" src="img\left-bar\telegramm.svg"
-                    alt="телеграмм"></a>
+                        alt="ю-туб"></a>
+                <a href="https://vk.com/"><img class="img-wrap__img" src="img\left-bar\vk.svg" alt="вк"></a>
+                <a href="https://t.me/MsAnnaKonda"><img class="img-wrap__img" src="img\left-bar\telegramm.svg"
+                        alt="телеграмм"></a>
             </div>
         </div>
-         <section class="modal-form modal">
-        <div class="modal-form__form-background">
-            <div class="modal-form__form-wrap">
-                <img class="modal-form__form-wrap__img" src="img\left-bar\logo.svg" alt="logo">
-                <form class="modal-form__form-wrap__form form" action="">
-                    <legend class="form__title">Забронировать столик</legend>
-                    <input class="form__item form__item--padding form__item--font" autocomplete="off" type="text"
-                        id="name" name="name" placeholder="Имя" />
-                    <div class="form__item">
-                        <select class="form__select form__item--border  form__item--padding form__item--font"
-                            id="phone-code" name="phone-code">
-                            <option class="form__option " value="">Телефон</option>
-                            <option class="form__option" value="+7">+(7)</option>
-                            <option class="form__option" value="+374 ">+(374)</option>
-                            <option class="form__option" value="+995">+(995)</option>
-                            <option class="form__option" value="+380">+(380)</option>
-                            <option class="form__option" value="+373">+(373)</option>
-                        </select>
-                        <input class="form__item  form__item--border form__item--font" autocomplete="off"
-                            type="text" id="phone" name="phone" />
-                    </div>
-                    <div class="form__item form__item--border ">
-                        <input class="form__item form__item--short form__item--padding  form__item--font"
-                            autocomplete="off" type="text" id="guests" name="guests" placeholder="Гостей" />
-                        <input class="form__item form__item--short form__item--padding  form__item--font"
-                            autocomplete="off" type="text" id="time" name="time" placeholder="Время" />
-                    </div>
-                    <div class="form__button-wrap">
-                        <button class="form__button button button--smal " type="submit">Забронировать</button>
-                    </div>
-                </form>
+        <section class="modal-form modal">
+            <div class="modal-form__form-background">
+                <div class="modal-form__form-wrap">
+                    <img class="modal-form__form-wrap__img" src="img\left-bar\logo.svg" alt="logo">
+                    <form class="modal-form__form-wrap__form form" action="">
+                        <legend class="form__title">Забронировать столик</legend>
+                        <input class="form__item form__item--padding form__item--font" autocomplete="off" type="text"
+                            id="name" name="name" placeholder="Имя" />
+                        <div class="form__item">
+                            <select class="form__select form__item--border  form__item--padding form__item--font"
+                                id="phone-code" name="phone-code">
+                                <option class="form__option " value="">Телефон</option>
+                                <option class="form__option" value="+7">+(7)</option>
+                                <option class="form__option" value="+374 ">+(374)</option>
+                                <option class="form__option" value="+995">+(995)</option>
+                                <option class="form__option" value="+380">+(380)</option>
+                                <option class="form__option" value="+373">+(373)</option>
+                            </select>
+                            <input class="form__item  form__item--border form__item--font" autocomplete="off"
+                                type="text" id="phone" name="phone" />
+                        </div>
+                        <div class="form__item form__item--border ">
+                            <input class="form__item form__item--short form__item--padding  form__item--font"
+                                autocomplete="off" type="text" id="guests" name="guests" placeholder="Гостей" />
+                            <input class="form__item form__item--short form__item--padding  form__item--font"
+                                autocomplete="off" type="text" id="time" name="time" placeholder="Время" />
+                        </div>
+                        <div class="form__button-wrap">
+                            <button class="form__button button button--smal " type="submit">Забронировать</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
         <div class="main__container container">
             <div class="main__inner-container inner-container">
                 <div class="inner-container__shopping-cart shopping-cart ">
                     <img class="shopping-cart__img" src="img/shopping-basket.svg" alt="корзина" id="shopping-basket">
                 </div>
             </div>
-            <div class="main__menu-wrap  menu-wrap inner-container ">
+            <div class="main__menu-wrap  menu-wrap inner-container" id="drink">
                 <ul class="menu-wrap__list">
-                    <li class="menu-wrap__item  active" id="breakfast">Завтраки </li>
-                    <li class="menu-wrap__item" id="canape">Холодные закуски</li>
-                    <li class="menu-wrap__item" id="bruschetta">Брускетты </li>
-                    <li class="menu-wrap__item" id="salad">Салаты</li>
-                    <li class="menu-wrap__item" id="soup">Супы</li>
-                    <li class="menu-wrap__item" id="paste">Паста и ризотто </li>
-                    <li class="menu-wrap__item" id="fish">Рыба </li>
-                    <li class="menu-wrap__item" id="brazier">Мангал </li>
-                    <li class="menu-wrap__item" id="grill">Grill </li>
-                    <li class="menu-wrap__item" id="garnish">Гарниры </li>
+                    <li class="menu-wrap__item item-drink  active" id="alcohol">Алкагольные напитки</li>
+                    <li class="menu-wrap__item item-drink" id="alcohol-free">Безалкогольные напитки</li>
+                </ul>
+            </div>
+            <div class="main__inner-container inner-container">
+                <div class="inner-container__product-wrap product-wrap product-wrap-bar ">
+
+                </div>
+            </div>
+            <div class="main__menu-wrap  menu-wrap inner-container" id="food">
+                <ul class="menu-wrap__list">
+                    <li class="menu-wrap__item item-food active" id="breakfast">Завтраки </li>
+                    <li class="menu-wrap__item item-food " id="canape">Холодные закуски</li>
+                    <li class="menu-wrap__item item-food " id="bruschetta">Брускетты </li>
+                    <li class="menu-wrap__item item-food " id="salad">Салаты</li>
+                    <li class="menu-wrap__item item-food " id="soup">Супы</li>
+                    <li class="menu-wrap__item item-food " id="paste">Паста и ризотто </li>
+                    <li class="menu-wrap__item item-food " id="fish">Рыба </li>
+                    <li class="menu-wrap__item item-food " id="brazier">Мангал </li>
+                    <li class="menu-wrap__item item-food " id="grill">Grill </li>
+                    <li class="menu-wrap__item item-food " id="garnish">Гарниры </li>
                 </ul>
             </div>
             <div class="main__inner-container inner-container">
                 <div class="inner-container__product-wrap product-wrap product-wrap-menu">
-                
+
                 </div>
             </div>
             <section class="container main__major major  inner-container">
@@ -191,6 +202,31 @@
             <li class="footer__item"><a href="">Дизайн d-e-n.ru</a></li>
         </ol>
     </footer>
+    <section class="cart modal">
+        <div class="cart__background background">
+            <div class="background__close">
+                <img class="background__close-button" src="img/close-fill.svg" alt="">
+            </div>
+            <div class="background__header">
+                <h3 class="header__text">Заказ</h3>
+            </div>
+            <div class="background__products">
+
+            </div>
+            <div class="background__order">
+                <h2 class="background__total">итого</h2>
+                <h2 class="background__sum"> &#x20bd</h2>
+            </div>
+            <button class="button button--large button--order">заказать</button>
+        </div>
+    </section>
+    <section class="absence modal">
+        <div class="absence__text-wrap">
+            <img class="absence__close" src="img/close-fill.svg" alt="закрыть">
+            <p class="absence__text">Это учебный проект, для секций "оплата" и "доставка" отсутствовал макет.
+                Остальной функционал реализован.</p>
+        </div>
+    </section>
     <script src="js/main.js" type="module"></script>
 </body>
 

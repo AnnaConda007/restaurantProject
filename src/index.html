@@ -31,8 +31,9 @@
                     <ul class="header__nav">
                         <li class="header__nav-item"><a href="#menu-cards">Меню</a></li>
                         <li class="header__nav-item"><a href="#delivery">Доставка</a></li>
-                        <li class="header__nav-item"><a href="#">Оплата</a></li>
-                        <li class="header__nav-item header__nav-item--order item-order "><a href="#">Бронь столика</a></li>
+                        <li class="header__nav-item"><a class="absence__triger" href="#">Оплата</a></li>
+                        <li class="header__nav-item header__nav-item--order item-order "><a href="#">Бронь столика</a>
+                        </li>
                     </ul>
                 </nav>
                 <p class="header__text">
@@ -46,55 +47,58 @@
                 </div>
                 <nav class="burger-nav__wrap">
                     <ul class="burger-nav__wrap__menu">
-                        <li class="burger-nav__wrap__item"><a href="#">Меню</a></li>
-                        <li class="burger-nav__wrap__item"><a href="#">Доставка</a></li>
-                        <li class="burger-nav__wrap__item"><a href="#">Оплата</a></li>
+                        <li class="burger-nav__wrap__item "><a class="modal-close-button" href="#menu-cards">Меню</a>
+                        </li>
+                        <li class="burger-nav__wrap__item "><a class="modal-close-button" href="#delivery">Доставка</a>
+                        </li>
+                        <li class="burger-nav__wrap__item modal-close-button absence__triger"><a href="#">Оплата</a>
+                        </li>
                         <li class="burger-nav__wrap__item burger-nav__wrap__item--order item-order "><a href="#">Бронь
                                 столика</a></li>
                     </ul>
                 </nav>
                 <div class="burger-nav__media">
                     <a href="https://www.youtube.com/"><img class="img-wrap__img" src="img\left-bar\u-tube.svg"
-                        alt="ю-туб"></a>
-                <a href="https://vk.com/"><img class="img-wrap__img" src="img\left-bar\vk.svg" alt="вк"></a>
-                <a href="https://t.me/MsAnnaKonda"><img class="img-wrap__img" src="img\left-bar\telegramm.svg"
-                        alt="телеграмм"></a>
+                            alt="ю-туб"></a>
+                    <a href="https://vk.com/"><img class="img-wrap__img" src="img\left-bar\vk.svg" alt="вк"></a>
+                    <a href="https://t.me/MsAnnaKonda"><img class="img-wrap__img" src="img\left-bar\telegramm.svg"
+                            alt="телеграмм"></a>
                 </div>
             </div>
-             <section class="modal-form modal">
-            <div class="modal-form__form-background">
-                <div class="modal-form__form-wrap">
-                    <img class="modal-form__form-wrap__img" src="img\left-bar\logo.svg" alt="logo">
-                    <form class="modal-form__form-wrap__form form" action="">
-                        <legend class="form__title">Забронировать столик</legend>
-                        <input class="form__item form__item--padding form__item--font" autocomplete="off" type="text"
-                            id="name" name="name" placeholder="Имя" />
-                        <div class="form__item">
-                            <select class="form__select form__item--border  form__item--padding form__item--font"
-                                id="phone-code" name="phone-code">
-                                <option class="form__option " value="">Телефон</option>
-                                <option class="form__option" value="+7">+(7)</option>
-                                <option class="form__option" value="+374 ">+(374)</option>
-                                <option class="form__option" value="+995">+(995)</option>
-                                <option class="form__option" value="+380">+(380)</option>
-                                <option class="form__option" value="+373">+(373)</option>
-                            </select>
-                            <input class="form__item  form__item--border form__item--font" autocomplete="off"
-                                type="text" id="phone" name="phone" />
-                        </div>
-                        <div class="form__item form__item--border ">
-                            <input class="form__item form__item--short form__item--padding  form__item--font"
-                                autocomplete="off" type="text" id="guests" name="guests" placeholder="Гостей" />
-                            <input class="form__item form__item--short form__item--padding  form__item--font"
-                                autocomplete="off" type="text" id="time" name="time" placeholder="Время" />
-                        </div>
-                        <div class="form__button-wrap">
-                            <button class="form__button button button--smal " type="submit">Забронировать</button>
-                        </div>
-                    </form>
+            <section class="modal-form modal">
+                <div class="modal-form__form-background">
+                    <div class="modal-form__form-wrap">
+                        <img class="modal-form__form-wrap__img" src="img\left-bar\logo.svg" alt="logo">
+                        <form class="modal-form__form-wrap__form form" action="">
+                            <legend class="form__title">Забронировать столик</legend>
+                            <input class="form__item form__item--padding form__item--font" autocomplete="off"
+                                type="text" id="name" name="name" placeholder="Имя" />
+                            <div class="form__item">
+                                <select class="form__select form__item--border  form__item--padding form__item--font"
+                                    id="phone-code" name="phone-code">
+                                    <option class="form__option " value="">Телефон</option>
+                                    <option class="form__option" value="+7">+(7)</option>
+                                    <option class="form__option" value="+374 ">+(374)</option>
+                                    <option class="form__option" value="+995">+(995)</option>
+                                    <option class="form__option" value="+380">+(380)</option>
+                                    <option class="form__option" value="+373">+(373)</option>
+                                </select>
+                                <input class="form__item  form__item--border form__item--font" autocomplete="off"
+                                    type="text" id="phone" name="phone" />
+                            </div>
+                            <div class="form__item form__item--border ">
+                                <input class="form__item form__item--short form__item--padding  form__item--font"
+                                    autocomplete="off" type="text" id="guests" name="guests" placeholder="Гостей" />
+                                <input class="form__item form__item--short form__item--padding  form__item--font"
+                                    autocomplete="off" type="text" id="time" name="time" placeholder="Время" />
+                            </div>
+                            <div class="form__button-wrap">
+                                <button class="form__button button button--smal " type="submit">Забронировать</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
         </div>
     </header>
     <main class="main">
@@ -125,7 +129,7 @@
                 </div>
             </div>
         </section>
-        <section class="container main__major major" id="menu-cards">
+        <section class="container main__major major">
             <div class="major__heading heading">
                 <h3 class="heading__title">Меню</h3>
                 <img class="heading__img" src="img\decorate-line.svg" alt="декоративная линия">
@@ -147,12 +151,12 @@
                 </div>
             </div>
         </section>
-        <section class="additional container">
+        <section class="additional container" id="menu-cards">
             <div class="additional__content content ">
                 <div class="content__frame">
                     <figure class="content__figure">
                         <img class="content__img" src="img\main-menu.svg" alt="меню">
-                        <figcaption class="content__figcaption"> <a href="menu.html">
+                        <figcaption class="content__figcaption"> <a href="menu.html#food">
                                 <h2 class="content__text">Основное меню </h2>
                             </a> <img class="contente__decorate-img" src="img\decorate-line.svg"
                                 alt="декоративная линия"> </figcaption>
@@ -163,7 +167,7 @@
                 <div class="content__frame">
                     <figure class="content__figure">
                         <img class="content__img" src="img/bar-card.svg" alt="меню">
-                        <figcaption class="content__figcaption"> <a href="bar-card.html">
+                        <figcaption class="content__figcaption"> <a href="menu.html">
                                 <h2 class="content__text">Барная карта </h2>
                             </a> <img class="contente__decorate-img" src="img\decorate-line.svg"
                                 alt="декоративная линия"> </figcaption>
@@ -195,8 +199,9 @@
         </section>
         <section class="additional container">
             <div class="additional__alignment">
-                <button class="button button--large button-more">Подробнее</button>
-                <button class="button button--large button--additional button--dark-text button-conditions">условия
+                <button class="button button--large button-more absence__triger ">Подробнее</button>
+                <button
+                    class="button button--large button--additional button--dark-text button-conditions  absence__triger ">условия
                     доставки </button>
             </div>
         </section>
@@ -268,8 +273,9 @@
                             billboard__line--modified-font "> с 12:00 до 03:00</p>
                         </div>
                         <div class="billboard__line">
-                            <button class="button button--smal button-order">Подробнее</button>
-                            <button class="button button--smal button--additional button-question">Задать
+                            <button class="button button--smal button-order  absence__triger">Подробнее</button>
+                            <button
+                                class="button button--smal button--additional button-question  absence__triger">Задать
                                 вопрос</button>
                         </div>
                     </div>
@@ -284,6 +290,13 @@
             <li class="footer__item"><a href="">Дизайн d-e-n.ru</a></li>
         </ol>
     </footer>
+    <section class="absence modal">
+        <div class="absence__text-wrap">
+            <img class="absence__close" src="img/close-fill.svg" alt="закрыть">
+            <p class="absence__text">Это учебный проект, для секций "оплата" и "доставка" отсутствовал макет.
+                Остальной функционал реализован.</p>
+        </div>
+    </section>
     <script src="js/main.js" type="module"></script>
 </body>
 
