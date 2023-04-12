@@ -1,6 +1,6 @@
 const shoppingCart = async () => {
     if (document.querySelector(".inner-container")) {
-        const products = JSON.parse(localStorage.products) || [];
+        let products = JSON.parse(localStorage.products) || [];
         let sum = 0
 
         document.querySelectorAll(".button-add").forEach(btn => {
@@ -130,12 +130,45 @@ const shoppingCart = async () => {
             }
         }
 
+        const orderFormation = () => {
+            let htmlString
+            products.forEach(({ nameProd, amount, price }) => {
+                htmlString += `
+                <li class="order__li" > Наименование: ${nameProd}, колличество: ${amount}, цена: ${price}, </li> `;
+            })
+            const fullHtmlDocument = `
+            <!DOCTYPE html>
+            <html>
+            <head>
+              <meta charset="utf-8">
+              <title>Заказ</title>
+            </head>
+            <body>
+            <section class="order">
+            <h3 class="order__title">Новый заказ</h3>
+            <div class="order__content">
+                <ol class="order__ol">
+                 ${htmlString}
+                </ol>
+                <h5 class="order__title">Итого: ${sum}</h5>
+            </div>
+        </section> 
+            </body>
+            </html>`;
+            console.log(fullHtmlDocument)
+        }
+
+
         document.querySelector(".button--order").addEventListener("click", () => {
-            let orderList = []
-            orderList = products.map(({ nameProd, amount, price }) => ({ nameProd, amount, price }));
-            orderList.push(`Итоговая стоимость ${sum}`)
-            orderList = JSON.stringify(orderList, null, 1);
-            console.log(orderList)
+            orderFormation()
+            products = []
+            localStorage.setItem("products", JSON.stringify(products));
+            document.querySelectorAll(".button").forEach(btn => {
+                btn.classList.remove("added")
+            })
+            renderCart()
+
+
         })
     }
 }
