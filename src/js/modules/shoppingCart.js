@@ -1,8 +1,8 @@
 const shoppingCart = async () => {
-    if (document.querySelector(".inner-container")) {
+    if (!document.querySelector(".inner-container")) {return}
         let products = JSON.parse(localStorage.products) || [];
         let sum = 0
-       let fullHtmlDocument
+    
         document.querySelectorAll(".button-add").forEach(btn => {
             btn.addEventListener("click", (e) => {
                 takeData(e)
@@ -136,7 +136,7 @@ const shoppingCart = async () => {
                 htmlString += `
                 <li class="order__li" > Наименование: ${nameProd}, колличество: ${amount}, цена: ${price}, </li> `;
             })
-          fullHtmlDocument = `
+         const fullHtmlDocument = `
             <!DOCTYPE html>
             <html>
             <head>
@@ -155,70 +155,21 @@ const shoppingCart = async () => {
         </section> 
             </body>
             </html>`;
-            console.log(fullHtmlDocument)
+return fullHtmlDocument    
         }
-
-
-        /* шаблон*/
-        const CLIENT_ID = "661085015733-f8a5qebqp1otlmfu4k0i243r7ph5empg.apps.googleusercontent.com";
-        const SCOPES = "https://www.googleapis.com/auth/gmail.send";
-        function initGapi() {
-          gapi.load("client:auth2", () => {
-            gapi.client.init({
-              clientId: CLIENT_ID,
-              scope: SCOPES
-            }).then(() => {
-              if (!gapi.auth2.getAuthInstance().isSignedIn.get()) {
-                gapi.auth2.getAuthInstance().signIn();
-              }
-            });
-          });
-        }
-        
-        initGapi();
-
-        function sendEmail(htmlDocument) {
-            const email = {
-              to: 'annahrulckova@yandex.ru',  
-              subject: 'Новый заказ',
-              body: htmlDocument,
-            };
-          
-            const base64EncodedEmail = btoa(
-              `To: ${email.to}\r\n` +
-              `Subject: ${email.subject}\r\n` +
-              "\r\n" +
-              `${email.body}`
-            ).replace(/\+/g, "-").replace(/\//g, "_");
-             
-            const message = {
-              raw: base64EncodedEmail
-            };
-          
-            return gapi.client.gmail.users.messages.send({
-              userId: "me",
-              resource: message
-            }).then(response => {
-              console.log("Email sent:", response);
-            }).catch(error => {
-              console.error("Error sending email:", error);
-            });
-          }
-
-        /*шаблон заканчивается */
 
         document.querySelector(".button--order").addEventListener("click", () => {
-            orderFormation()
+          const fullHtmlDocument = orderFormation()
             products = []
             localStorage.setItem("products", JSON.stringify(products));
             document.querySelectorAll(".button").forEach(btn => {
                 btn.classList.remove("added")
             })
             renderCart()
-            sendEmail(fullHtmlDocument);
+     console.log(fullHtmlDocument)
 
         })
-    }
+    
 }
 
 export default shoppingCart
