@@ -28,20 +28,6 @@
         "id": "Ice coffe"
     },
     {
-        "src": "./img/img-bar/free/green.jpg",
-        "price": "500",
-        "name": "Ice matcha",
-        "product": "alcohol-free",
-        "id": "Ice matcha"
-    },
-    {
-        "src": "./img/img-bar/free/caramel.jpg",
-        "price": "550",
-        "name": "Caramel explosion",
-        "product": "alcohol-free",
-        "id": "Caramel explosion"
-    },
-    {
         "src": "./img/img-bar/free/white.jpg",
         "price": "650",
         "name": "Milkshake",

@@ -140,14 +140,13 @@
 
 @media (max-width: 650px) {
   .product {
-    width: 90%;
   }
 }
 
 .product__figure {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center; 
 }
 
 .product__img {

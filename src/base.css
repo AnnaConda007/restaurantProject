@@ -586,6 +586,7 @@ li {
     align-items: center;
     max-width: 200px;
     width: 40%;
+    margin-left: 10px;
 }
 
 .unit__img {
