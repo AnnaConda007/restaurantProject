@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded", async function () {
     modal({
         trigerSelector: ".item-order",
         modalSelector: ".modal-form",
-        modalClose: ".modal-form__form-background",
+        modalClose: ".modal-form",
         display: "block"
     });
     modal({
