@@ -1,3 +1,4 @@
+
 const shoppingCart = async () => {
     if (!document.querySelector(".inner-container")) {return}
         let products = JSON.parse(localStorage.products) || [];
@@ -158,7 +159,7 @@ const shoppingCart = async () => {
 return fullHtmlDocument    
         }
 
-        document.querySelector(".button--order").addEventListener("click", () => {
+        document.querySelector(".button--order").addEventListener("click", async() => {
           const fullHtmlDocument = orderFormation()
             products = []
             localStorage.setItem("products", JSON.stringify(products));
@@ -166,6 +167,25 @@ return fullHtmlDocument
                 btn.classList.remove("added")
             })
             renderCart()
+
+            try {
+                const response = await fetch("http://localhost:3000/sendmail", {
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "application/json",
+                  },
+                  body: JSON.stringify({ htmlContent: fullHtmlDocument }),
+                });
+            
+                if (response.ok) {
+                  console.log("Письмо успешно отправлено");
+                } else {
+                  console.log("Ошибка отправки");
+                }
+              } catch (error) {
+                console.log("Ошибка отправки:", error);
+              }
+            
      console.log(fullHtmlDocument)
 
         })
