@@ -178,7 +178,10 @@ return fullHtmlDocument
                 });
             
                 if (response.ok) {
-                  console.log("Письмо успешно отправлено");
+                    document.querySelector(".sended").style.display = "flex"
+                    setTimeout(() => {
+                        document.querySelector(".sended").style.display = "none";
+                    }, 1500)
                 } else {
                   console.log("Ошибка отправки");
                 }
