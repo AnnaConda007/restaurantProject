@@ -19,7 +19,7 @@ const modal = ({ trigerSelector, modalSelector, modalClose, display }) => {
 
   closeModal.forEach((btn) => {
     btn.addEventListener('click',(e)=>{
-      if (!e.target.closest(".modal-form__form-wrap__form")) {
+      if (!e.target.closest(".modal-form__form-wrap")) {
         closeAllModals()
       }
       
