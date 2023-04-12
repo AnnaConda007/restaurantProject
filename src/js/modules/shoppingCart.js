@@ -169,7 +169,7 @@ return fullHtmlDocument
             renderCart()
 
             try {
-                const response = await fetch("http://localhost:3000/sendmail", {
+                const response = await fetch("http://localhost:4000/sendmail", {
                   method: "POST",
                   headers: {
                     "Content-Type": "application/json",

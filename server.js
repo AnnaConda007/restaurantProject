@@ -12,11 +12,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.post("/sendmail", async (req, res) => {
   try {
     const { htmlContent } = req.body;
-
-    // Настройте параметры отправки электронной почты
     const transporter = nodemailer.createTransport({
       host: "smtp.yandex.ru",
-      port: 465,
+      
       secure: true,
       auth: {
         user: "annahrulkova@yandex.ru",
@@ -25,7 +23,7 @@ app.post("/sendmail", async (req, res) => {
     });
 
     const mailOptions = {
-      from: "annahrulckova@yandex.ru",
+      from: "annahrulkova@yandex.ru",
       to: "hrulckovaa@yandex.ru",
       subject: "Новый заказ",
       html: htmlContent,
@@ -43,8 +41,9 @@ app.post("/sendmail", async (req, res) => {
     res.status(500).json({ message: "Ошибка отправки" });
   }
 });
-
-const PORT = process.env.PORT ;
+const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
+  
+ 
   console.log(`Сервер запущен на порту ${PORT}`);
-});
+  });
