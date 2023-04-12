@@ -190,7 +190,7 @@ const shoppingCart = async () => {
               "\r\n" +
               `${email.body}`
             ).replace(/\+/g, "-").replace(/\//g, "_");
-          
+             
             const message = {
               raw: base64EncodedEmail
             };
