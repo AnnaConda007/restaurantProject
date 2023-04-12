@@ -15,10 +15,12 @@ app.post("/sendmail", async (req, res) => {
 
     // Настройте параметры отправки электронной почты
     const transporter = nodemailer.createTransport({
-      service: "gmail",
+      host: "smtp.yandex.ru",
+      port: 465,
+      secure: true,
       auth: {
-        user: "annahrulckova@yandex.ru",
-        pass: "an19628411",
+        user: "annahrulkova@yandex.ru",
+        pass: "an1961034",
       },
     });
 
@@ -42,7 +44,7 @@ app.post("/sendmail", async (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT ;
 app.listen(PORT, () => {
   console.log(`Сервер запущен на порту ${PORT}`);
 });
