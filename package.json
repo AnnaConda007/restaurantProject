@@ -36,8 +36,7 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "nodemailer": "^6.9.1",
-    "pngquant": "^4.1.0",
-    "pngquant-bin": "^8.0.1",
-    "vendor": "^1.7.0"
+    "pngquant-bin": "^8.0.1"
   }
 }
+
