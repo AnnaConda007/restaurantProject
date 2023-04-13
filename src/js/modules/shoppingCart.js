@@ -167,7 +167,7 @@ return fullHtmlDocument
                 btn.classList.remove("added")
             })
             try {
-                const response = await fetch("http://localhost:4000/sendmail", {
+                const response = await fetch("https://server-n3bl.onrender.com:4000/sendmail", {
                   method: "POST",
                   headers: {
                     "Content-Type": "application/json",
