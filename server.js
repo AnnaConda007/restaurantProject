@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
-
+const password = process.env.PASSWORD;
 const app = express();
 
 app.use(cors());
@@ -18,7 +18,7 @@ app.post("/sendmail", async (req, res) => {
       secure: true,
       auth: {
         user: "annahrulkova@yandex.ru",
-        pass: "wswonquvijdnolli",
+        pass: `${password}`,
       },
     });
 
