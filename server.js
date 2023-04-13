@@ -14,7 +14,7 @@ app.post("/sendmail", async (req, res) => {
     const { htmlContent } = req.body;
     const transporter = nodemailer.createTransport({
       host: "smtp.yandex.ru",
-      
+
       secure: true,
       auth: {
         user: "annahrulkova@yandex.ru",
@@ -30,7 +30,6 @@ app.post("/sendmail", async (req, res) => {
     };
 
     const result = await transporter.sendMail(mailOptions);
-
     if (result) {
       res.status(200).json({ message: "Письмо успешно отправлено" });
     } else {
@@ -43,7 +42,5 @@ app.post("/sendmail", async (req, res) => {
 });
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
-  
- 
   console.log(`Сервер запущен на порту ${PORT}`);
-  });
+});

@@ -166,8 +166,6 @@ return fullHtmlDocument
             document.querySelectorAll(".button").forEach(btn => {
                 btn.classList.remove("added")
             })
-            renderCart()
-
             try {
                 const response = await fetch("http://localhost:4000/sendmail", {
                   method: "POST",
@@ -188,9 +186,8 @@ return fullHtmlDocument
               } catch (error) {
                 console.log("Ошибка отправки:", error);
               }
-            
-     console.log(fullHtmlDocument)
-
+              renderCart()
+        
         })
     
 }
