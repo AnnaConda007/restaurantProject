@@ -50,7 +50,7 @@ const sendForm = () => {
         time: true
     })
 
-    document.querySelector(".").addEventListener("click", (e) => {
+    document.querySelector(".form").addEventListener("click", (e) => {
         e.preventDefault()
     })
 }
