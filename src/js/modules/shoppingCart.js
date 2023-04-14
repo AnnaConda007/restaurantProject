@@ -1,7 +1,7 @@
 
 const shoppingCart = async () => {
     if (!document.querySelector(".inner-container")) { return }
-    let products = JSON.parse(localStorage.products) || [];
+    let products = localStorage.products ? JSON.parse(localStorage.products) : [];
     let sum = 0
 
     document.querySelectorAll(".button-add").forEach(btn => {
