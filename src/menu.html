@@ -51,7 +51,7 @@
             <div class="modal-form__form-background">
                 <div class="modal-form__form-wrap">
                     <img class="modal-form__form-wrap__img" src="img\left-bar\logo.svg" alt="logo">
-                    <form class="modal-form__form-wrap__form form" action="">
+                    <form name="reservation" method="POST" data-netlify="true">
                         <legend class="form__title">Забронировать столик</legend>
                         <input class="form__item form__item--padding form__item--font" autocomplete="off" type="text"
                             id="name" name="name" placeholder="Имя" />
@@ -216,6 +216,9 @@
             <div class="background__order">
                 <h2 class="background__total">итого</h2>
                 <h2 class="background__sum"> &#x20bd</h2>
+            </div>
+            <div class="background__loading-wrap">
+                <img class="background__loading" src="./img/loading.gif" alt="загрузка">
             </div>
             <button class="button button--large button--order">заказать</button>
         </div>
