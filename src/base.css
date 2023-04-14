@@ -449,6 +449,7 @@ li {
 .modal-form__form-wrap__img {
     margin-top: 30px;
     max-height: 10%;
+    width: 100%;
 }
 
 .modal-form__form-wrap__form {
