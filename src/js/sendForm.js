@@ -28,7 +28,7 @@ const sendForm = () => {
 
     valid({
         inputType: document.getElementById("phone"),
-        regex: /[^0-9]/g,
+        regex: /[^0-9]/g,    
         name: false,
         phone: true,
         time: false
