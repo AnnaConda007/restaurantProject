@@ -71,9 +71,9 @@
                 <div class="modal-form__form-background">
                     <div class="modal-form__form-wrap">
                         <img class="modal-form__form-wrap__img" src="img\left-bar\logo.svg" alt="logo">
-                        <form name="reservation" method="POST" data-netlify="true" action="/src/index.html">
+                        <form  class ="modal-form__form form" name="reservation" method="POST" data-netlify="true" action="/src/index.html">
                             <legend class="form__title">Забронировать столик</legend>   
-                            <input class="form__item form__item--padding form__item--font" autocomplete="off"
+                            <input class="form__item form__item--padding form__item--font name" autocomplete="off" required
                                 type="text" id="name" name="name" placeholder="Имя" />
                             <div class="form__item">
                                 <select class="form__select form__item--border  form__item--padding form__item--font"
@@ -85,13 +85,13 @@
                                     <option class="form__option" value="+373">+(373)</option>
                                 </select>
                                 <input class="form__item  form__item--border form__item--font" autocomplete="off"
-                                    type="text" id="phone" name="phone" />
+                                    type="tel" id="phone" name="phone" placeholder="___  ___  __ __" required/>
                             </div>
                             <div class="form__item form__item--border ">
                                 <input class="form__item form__item--short form__item--padding  form__item--font"
-                                    autocomplete="off" type="text" id="guests" name="guests" placeholder="Гостей" />
+                                required  autocomplete="off" type="text" id="guests" name="guests" placeholder="Гостей" />
                                 <input class="form__item form__item--short form__item--padding  form__item--font"
-                                    autocomplete="off" type="text" id="time" name="time" placeholder="Время" />
+                                required autocomplete="off" type="text" id="time" name="time" placeholder="Время" />
                             </div>
                             <div class="form__button-wrap">
                                 <button class="form__button button button--smal " type="submit">Забронировать</button>
