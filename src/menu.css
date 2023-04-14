@@ -248,3 +248,21 @@ align-items: center;
 width: 200px;
 height: 100px;
   }
+
+  .background__error{
+    width: 100%;
+    justify-content: center; 
+    position: absolute;
+    display: none;
+  }
+
+  .background__error-text{
+background-color: rgb(255, 0, 0);
+border-radius: 5px;
+border: 2px solid black;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 200px;
+height: 100px;
+  }
