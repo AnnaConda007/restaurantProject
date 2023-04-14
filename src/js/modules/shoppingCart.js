@@ -167,7 +167,7 @@ return fullHtmlDocument
                 btn.classList.remove("added")
             })
             try {
-                const response = await fetch("https://server-uzl7.onrender.com:10000/sendmail", {
+                const response = await fetch("https://server-uzl7.onrender.com/sendmail", {
                   method: "POST",
                   headers: {
                     "Content-Type": "application/json",
