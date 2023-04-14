@@ -163,9 +163,8 @@ const shoppingCart = async () => {
         const fullHtmlDocument = orderFormation()
         products = []
         localStorage.setItem("products", JSON.stringify(products));
-        document.querySelectorAll(".button").forEach(btn => {
-            btn.classList.remove("added")
-        })
+        const loading = document.querySelector(".background__loading-wrap");
+        loading.style.display="flex"
         try {
             const response = await fetch("https://server-uzl7.onrender.com/sendmail", {
                 method: "POST",
@@ -176,6 +175,7 @@ const shoppingCart = async () => {
             });
 
             if (response.ok) {
+                loading.style.display="none"
                 document.querySelector(".sended").style.display = "flex"
                 setTimeout(() => {
                     document.querySelector(".sended").style.display = "none";
@@ -187,6 +187,9 @@ const shoppingCart = async () => {
             console.log("Ошибка отправки:", error);
         }
         renderCart()
+        document.querySelectorAll(".button").forEach(btn => {
+            btn.classList.remove("added")
+        })
     })
 
 }
