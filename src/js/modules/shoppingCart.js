@@ -164,7 +164,7 @@ const shoppingCart = async () => {
         products = []
         localStorage.setItem("products", JSON.stringify(products));
         const loading = document.querySelector(".background__loading-wrap");
-        loading.style.display="flex"
+        loading.style.display = "flex"
         try {
             const response = await fetch("https://server-uzl7.onrender.com/sendmail", {
                 method: "POST",
@@ -175,23 +175,27 @@ const shoppingCart = async () => {
             });
 
             if (response.ok) {
-                loading.style.display="none"
+                renderCart()
+                document.querySelectorAll(".button").forEach(btn => {
+                    btn.classList.remove("added")
+                })
+                loading.style.display = "none"
                 document.querySelector(".sended").style.display = "flex"
                 setTimeout(() => {
                     document.querySelector(".sended").style.display = "none";
                 }, 1500)
             } else {
-                console.log("Ошибка отправки");
+                setTimeout(() => {
+                    document.querySelector(".background__error-text").style.display = "flex";
+                    document.querySelector(".background__error-text").style.display = "none";
+                }, 1500)
             }
         } catch (error) {
             console.log("Ошибка отправки:", error);
         }
-        renderCart()
-        document.querySelectorAll(".button").forEach(btn => {
-            btn.classList.remove("added")
-        })
     })
 
 }
 
 export default shoppingCart
+

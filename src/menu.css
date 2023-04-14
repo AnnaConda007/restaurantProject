@@ -232,3 +232,19 @@ background-color:var(--background);
   max-width: 150px; 
   }
  
+  .background__error{
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    position: absolute;
+  }
+  .background__error-text{
+background-color: rgb(238, 101, 101);
+border-radius: 5px;
+border: 2px solid black;
+display: none;
+justify-content: center;
+align-items: center;
+width: 200px;
+height: 100px;
+  }
