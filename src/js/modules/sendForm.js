@@ -51,17 +51,18 @@ const sendForm = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-
         const myForm = event.target;
         const formData = new FormData(myForm);
-
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: new URLSearchParams(formData).toString(),
         })
             .then(() => {
-                document.querySelector(".modal-form").style.display = "none"
+                document.querySelector(".sended").style.display = "flex"
+                setTimeout(() => {
+                    document.querySelector(".sended").style.display = "none";
+                }, 1500)
             })
             .catch((error) => alert(error));
     };
