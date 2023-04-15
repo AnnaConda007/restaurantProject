@@ -705,6 +705,21 @@ li {
   background-color: rgb(245, 83, 83);
 }
 
+.sended {
+  background-color: transparent;
+  border: 3px solid rgb(244, 244, 244);
+  width: 100%;
+  height: 100px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .sended__ok {
   display: flex;
   align-items: center;
