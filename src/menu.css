@@ -208,25 +208,6 @@
   height: 100%;
 }
 
-.sended__ok {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 60%;
-  height: 100px;
-  border-radius: 5px;
-  color: white;
-  background-color: var(--background);
-}
-
-.background__loading-wrap {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  display: none;
-}
-
 .background__loading {
   max-width: 150px;
 }
