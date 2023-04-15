@@ -50,8 +50,7 @@ const sendForm = () => {
     })
 
     document.querySelector(".form__button").addEventListener("submit", (e) => {
-        e.target.submit()
-        e.preventDefault()
+      
     })
 }
 
