@@ -59,12 +59,14 @@ const sendForm = () => {
             body: new URLSearchParams(formData).toString(),
         })
             .then(() => {
-                document.querySelector(".modal-form").style.display = "none"
+                document.querySelectorAll(".modal").forEach(modal => {
+                    modal.style.display = "none"
+                });
                 document.querySelector("body").classList.remove("hidden")
                 document.querySelector(".sended").style.display = "flex"
                 setTimeout(() => {
                     document.querySelector(".sended").style.display = "none";
-                }, 1500)
+                }, 1000)
             })
             .catch((error) => alert(error));
     };

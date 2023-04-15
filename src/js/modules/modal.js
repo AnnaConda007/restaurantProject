@@ -18,15 +18,15 @@ const modal = ({ trigerSelector, modalSelector, modalClose, display }) => {
   });
 
   closeModal.forEach((btn) => {
-    btn.addEventListener('click',(e)=>{
+    btn.addEventListener('click', (e) => {
       if (!e.target.closest(".modal-form__form-wrap")) {
         closeAllModals()
       }
-      
+
     });
   });
 
- 
+
 };
 export default modal
 

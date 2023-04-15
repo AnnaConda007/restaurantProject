@@ -183,7 +183,7 @@ const shoppingCart = async () => {
                 document.querySelector(".sended").style.display = "flex"
                 setTimeout(() => {
                     document.querySelector(".sended").style.display = "none";
-                }, 1500)
+                }, 1000)
             } else {
                 loading.style.display = "none"
                 document.querySelector(".background__error").style.display = "flex";

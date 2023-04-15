@@ -141,7 +141,7 @@
 .product__figure {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .product__img {
@@ -177,7 +177,6 @@
   }
 }
 
-
 .product__price {
   font-weight: 700;
   font-size: 32px;
@@ -186,83 +185,83 @@
 .added {
   background-color: #d6bfa4;
 }
-.result { 
+.result {
   background-color: rgb(32, 129, 214);
-  width:50%;
+  width: 50%;
   height: 30%;
   position: fixed;
   display: block;
 }
 
-.sended{
+.sended {
   background-color: transparent;
   border: 3px solid rgb(244, 244, 244);
   width: 100%;
-  height: 100px; 
+  height: 100px;
   display: none;
-align-items: center;
+  align-items: center;
   justify-content: center;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-   }
-
-   .sended__ok{
-    display: flex;
-    align-items: center;
-    justify-content: center;
- width: 60%;
-height: 100px;
-border-radius: 5px;
-color: white;
-background-color:var(--background);
-  }
-
-.background__loading-wrap{
-  width: 100%;
-  display: flex;
-  justify-content: center; 
-  position: absolute;
- display: none;
 }
 
-  .background__loading{
-  max-width: 150px; 
-  }
- 
-  .background__error{
-    width: 100%;
-    display: flex;
-    justify-content: center; 
-    position: absolute;
-  }
-  .background__error-text{
-background-color: rgb(238, 101, 101);
-border-radius: 5px;
-border: 2px solid black;
-display: none;
-justify-content: center;
-align-items: center;
-width: 200px;
-height: 100px;
-  }
+.sended__ok {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 100px;
+  border-radius: 5px;
+  color: white;
+  background-color: var(--background);
+}
 
-  .background__error{
-    width: 100%;
-    justify-content: center; 
-    position: absolute;
-    display: none;
-  }
+.background__loading-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  display: none;
+}
 
-  .background__error-text{
-background-color: rgb(255, 0, 0);
-border-radius: 5px;
-border: 2px solid black;
-display: flex;
-justify-content: center;
-align-items: center;
-width: 200px;
-height: 100px;
-  }
+.background__loading {
+  max-width: 150px;
+}
+
+.background__error {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+.background__error-text {
+  background-color: rgb(238, 101, 101);
+  border-radius: 5px;
+  border: 2px solid black;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 100px;
+}
+
+.background__error {
+  width: 100%;
+  justify-content: center;
+  position: absolute;
+  display: none;
+}
+
+.background__error-text {
+  background-color: rgb(255, 0, 0);
+  border-radius: 5px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 100px;
+}
