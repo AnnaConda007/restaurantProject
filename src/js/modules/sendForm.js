@@ -27,7 +27,7 @@ const sendForm = () => {
 
     valid({
         inputId: document.getElementById("phone"),
-        regex: /[^0-9]/g,    
+        regex: /[^0-9]/g,
         name,
         phone: true,
         time
@@ -51,21 +51,23 @@ const sendForm = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-  
+
         const myForm = event.target;
         const formData = new FormData(myForm);
-  
+
         fetch("/", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: new URLSearchParams(formData).toString(),
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(formData).toString(),
         })
-          .then(() => console.log("Form successfully submitted"))
-          .catch((error) => alert(error));
-      };
-  
-      document.querySelector("form").addEventListener("submit", handleSubmit);
-      document.querySelector("form").style.display="none"
+            .then(() => {
+                document.querySelector("form").style.display = "none"
+            })
+            .catch((error) => alert(error));
+    };
+
+    document.querySelector("form").addEventListener("submit", handleSubmit);
+
 }
 
 export default sendForm
