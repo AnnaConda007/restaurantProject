@@ -1,8 +1,8 @@
 const sendForm = () => {
 
-    function valid({ inputType, regex, name = false, phone = false, time = false }) {
-        inputType.addEventListener("input", () => {
-            let newValue = inputType.value.replace(regex, "");
+    function valid({ input, regex, name, phone, time }) {
+        input.addEventListener("input", () => {
+            let newValue = input.value.replace(regex, "");
             if (name == true) {
                 newValue = newValue.charAt(0).toUpperCase() + newValue.slice(1);
             }
@@ -13,40 +13,39 @@ const sendForm = () => {
             if (time == true) {
                 newValue = newValue.replace(/(\d{2})(\d{2})/, "$1 $2")
             }
-            inputType.value = newValue;
+            input.value = newValue;
         });
     }
 
-
     valid({
-        inputType: document.getElementById("name"),
+        input: document.getElementById("name"),
         regex: /[^а-яА-Я]/g,
         name: true,
-        phone: false,
-        time: false
+        phone,
+        time
     })
 
     valid({
-        inputType: document.getElementById("phone"),
+        input: document.getElementById("phone"),
         regex: /[^0-9]/g,    
-        name: false,
+        name,
         phone: true,
-        time: false
+        time
     })
 
     valid({
-        inputType: document.getElementById("guests"),
+        input: document.getElementById("guests"),
         regex: /[^0-9]/g,
-        name: false,
-        phone: false,
-        time: false
+        name,
+        phone,
+        time
     })
 
     valid({
-        inputType: document.getElementById("time"),
+        input: document.getElementById("time"),
         regex: /[^0-9]/g,
-        name: false,
-        phone: false,
+        name,
+        phone,
         time: true
     })
 
