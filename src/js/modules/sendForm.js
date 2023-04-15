@@ -65,6 +65,7 @@ const sendForm = () => {
       };
   
       document.querySelector("form").addEventListener("submit", handleSubmit);
+      document.querySelector("form").style.display="none"
 }
 
 export default sendForm
