@@ -60,6 +60,7 @@ const sendForm = () => {
         })
             .then(() => {
                 document.querySelector(".modal-form").style.display = "none"
+                document.querySelector("body").classList.remove("hidden")
                 document.querySelector(".sended").style.display = "flex"
                 setTimeout(() => {
                     document.querySelector(".sended").style.display = "none";
