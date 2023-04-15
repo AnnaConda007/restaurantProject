@@ -49,8 +49,9 @@ const sendForm = () => {
         time: true
     })
 
-    document.querySelector(".form__button").addEventListener("submit", (e) => {
+    document.querySelector(".form").addEventListener("submit", (e) => {
         e.preventDefault()
+        e.target.submit()
     })
 }
 
