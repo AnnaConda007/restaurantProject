@@ -49,9 +49,10 @@ const sendForm = () => {
         time: true
     })
 
-    document.querySelector(".form__button").addEventListener("submit", (e) => {
-      
-    })
+    if (window.location.search.includes('submission=true')) {
+        window.location.href = '/index.html';
+      }
+  
 }
 
 export default sendForm
