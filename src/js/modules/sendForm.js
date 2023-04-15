@@ -61,7 +61,7 @@ const sendForm = () => {
             body: new URLSearchParams(formData).toString(),
         })
             .then(() => {
-                document.querySelector("form").style.display = "none"
+                document.querySelector(".modal-form").style.display = "none"
             })
             .catch((error) => alert(error));
     };
