@@ -50,7 +50,7 @@ const sendForm = () => {
     })
 
     if (window.location.search.includes('submission=true')) {
-        window.location.href = '/index.html';
+        window.location.href = './src/index.html';
       }
   
 }
